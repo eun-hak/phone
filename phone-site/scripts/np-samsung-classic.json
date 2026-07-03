@@ -1,0 +1,116 @@
+[
+  {
+    "slug": "galaxy-s10",
+    "name": "갤럭시 S10",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2019-03-08",
+    "releasePriceKRW": 1056000,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "삼성 엑시노스 9820", "displayInch": 6.1, "batteryMah": 3400, "ramGb": 8 },
+    "eol": { "policy": "OS 3회 업그레이드(안드로이드 12까지) + 보안 약 4년. 2023년 4월 보안 패치를 끝으로 정기 지원 종료됨.", "osEndDate": "2022-03-31", "securityEndDate": "2023-04-30", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 217000, "source": { "label": "삼성전자서비스 고지가 (반납 기준, 배터리 일체형 동시 교체 · 부품 단종 가능)", "url": "https://well.makemelife.com/", "asOf": "2026-07" } }
+    ],
+    "issues": [
+      { "id": "s10-green-line", "title": "화면 세로 녹색 줄(그린라인)", "severity": "common", "status": "open", "summary": "AMOLED 패널 노후화·일부 업데이트 이후 화면에 세로 녹색 줄이 나타나는 현상. 삼성은 인도 등에서 S21/S22 계열에 한해 무상 교체를 진행했으나 국내 S10에 대한 공식 무상수리 지침은 없음.", "symptoms": ["화면에 얇은 세로 녹색 줄 1~여러 줄", "시간이 지날수록 줄 개수 증가"], "solutions": ["보증기간 내라면 서비스센터 무상 점검 요청", "보증 종료 시 유상 교체(반납 기준 약 21만원)", "중고 구매 시 흰 배경으로 세로줄 필수 확인"], "source": { "label": "비즈니스포스트 — 화면 녹색 줄 품질문제", "url": "https://www.businesspost.co.kr/BP?command=article_view&num=371249", "asOf": "2026-07" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 110000, "source": "cetizen-bunjang(추정)" } ]
+  },
+  {
+    "slug": "galaxy-note10",
+    "name": "갤럭시 노트10",
+    "brand": "samsung",
+    "series": "갤럭시 노트",
+    "releaseDate": "2019-08-23",
+    "releasePriceKRW": 1248500,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "삼성 엑시노스 9825", "displayInch": 6.3, "batteryMah": 3500, "ramGb": 8 },
+    "eol": { "policy": "OS 3회 업그레이드(안드로이드 12까지) + 보안 약 4년. 일반형은 2023년 2월 보안 패치를 끝으로 정기 지원 종료됨.", "osEndDate": "2022-03-31", "securityEndDate": "2023-02-28", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 254000, "source": { "label": "삼성전자서비스 고지가 (반납 기준 · 부품 단종 가능)", "url": "https://www.makemelife.com/", "asOf": "2026-07" } },
+      { "part": "battery", "officialKRW": 53500, "source": { "label": "삼성전자서비스 고지가 (부품 단종 가능)", "url": "https://www.makemelife.com/", "asOf": "2026-07" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 140000, "source": "cetizen-bunjang(추정)" } ]
+  },
+  {
+    "slug": "galaxy-s9",
+    "name": "갤럭시 S9",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2018-03-16",
+    "releasePriceKRW": 957000,
+    "storageBase": "64GB",
+    "specSummary": { "chipset": "삼성 엑시노스 9810", "displayInch": 5.8, "batteryMah": 3000, "ramGb": 4 },
+    "eol": { "policy": "OS 2회 업그레이드(안드로이드 10까지) + 보안 약 4년. 2022년 3월 보안 패치를 끝으로 정기 지원 종료됨.", "osEndDate": "2020-04-30", "securityEndDate": "2022-03-31", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 192000, "source": { "label": "삼성전자서비스 고지가 (반납 기준 · 부품 단종 가능)", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-07" } },
+      { "part": "battery", "officialKRW": 41500, "source": { "label": "삼성전자서비스 고지가 (부품 단종 가능)", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-07" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 55000, "source": "cetizen-bunjang(추정)" } ]
+  },
+  {
+    "slug": "galaxy-s9-plus",
+    "name": "갤럭시 S9+",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2018-03-16",
+    "releasePriceKRW": 1056000,
+    "storageBase": "64GB",
+    "specSummary": { "chipset": "삼성 엑시노스 9810", "displayInch": 6.2, "batteryMah": 3500, "ramGb": 6 },
+    "eol": { "policy": "OS 2회 업그레이드(안드로이드 10까지) + 보안 약 4년. 2022년 3월 보안 패치를 끝으로 정기 지원 종료됨.", "osEndDate": "2020-04-30", "securityEndDate": "2022-03-31", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 230000, "source": { "label": "삼성전자서비스 고지가 (반납 기준 · 부품 단종 가능)", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-07" } },
+      { "part": "battery", "officialKRW": 49000, "source": { "label": "삼성전자서비스 고지가 (부품 단종 가능)", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-07" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 70000, "source": "cetizen-bunjang(추정)" } ]
+  },
+  {
+    "slug": "galaxy-note9",
+    "name": "갤럭시 노트9",
+    "brand": "samsung",
+    "series": "갤럭시 노트",
+    "releaseDate": "2018-08-24",
+    "releasePriceKRW": 1094500,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "삼성 엑시노스 9810", "displayInch": 6.4, "batteryMah": 4000, "ramGb": 6 },
+    "eol": { "policy": "OS 2회 업그레이드(안드로이드 10까지) + 보안 약 4년. 2023년 초 보안 패치를 끝으로 정기 지원 종료됨.", "osEndDate": "2020-05-31", "securityEndDate": "2023-02-28", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 215000, "source": { "label": "삼성전자서비스 고지가 (반납 기준 · 부품 단종 가능)", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-07" } },
+      { "part": "battery", "officialKRW": 48000, "source": { "label": "삼성전자서비스 고지가 (부품 단종 가능)", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-07" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 95000, "source": "cetizen-bunjang(추정)" } ]
+  },
+  {
+    "slug": "galaxy-a23",
+    "name": "갤럭시 A23",
+    "brand": "samsung",
+    "series": "갤럭시 A",
+    "releaseDate": "2022-03-25",
+    "releasePriceKRW": 374000,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "퀄컴 스냅드래곤 680", "displayInch": 6.6, "batteryMah": 5000, "ramGb": 4 },
+    "eol": { "policy": "OS 2회 업그레이드(안드로이드 14까지) + 보안 4년. 2026년 5월 소프트웨어 지원 종료(A13·A23·M23 일괄 제외).", "osEndDate": "2024-06-30", "securityEndDate": "2026-05-31", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [],
+    "issues": [],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 110000, "source": "cetizen-bunjang(추정)" } ]
+  },
+  {
+    "slug": "galaxy-a13",
+    "name": "갤럭시 A13",
+    "brand": "samsung",
+    "series": "갤럭시 A",
+    "releaseDate": "2022-07-22",
+    "releasePriceKRW": 297000,
+    "storageBase": "64GB",
+    "specSummary": { "chipset": "삼성 엑시노스 850", "displayInch": 6.6, "batteryMah": 5000, "ramGb": 4 },
+    "eol": { "policy": "OS 2회 업그레이드(안드로이드 14까지) + 보안 4년. 2026년 5월 소프트웨어 지원 종료(A13·A23·M23 일괄 제외).", "osEndDate": "2024-06-30", "securityEndDate": "2026-05-31", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [],
+    "issues": [],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 75000, "source": "cetizen-bunjang(추정)" } ]
+  }
+]

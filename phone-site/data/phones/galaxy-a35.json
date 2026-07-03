@@ -1,0 +1,115 @@
+{
+  "slug": "galaxy-a35",
+  "name": "갤럭시 A35",
+  "brand": "samsung",
+  "series": "갤럭시 A",
+  "releaseDate": "2024-06-21",
+  "releasePriceKRW": 499400,
+  "storageBase": "128GB",
+  "specSummary": {
+    "chipset": "엑시노스 1380",
+    "displayInch": 6.6,
+    "batteryMah": 5000,
+    "ramGb": 8
+  },
+  "eol": {
+    "policy": "OS 업그레이드 4회 + 보안 업데이트 5년 (삼성 공식 정책 · 글로벌 출시 2024년 3월 기준, 현재 분기별 보안 업데이트 목록)",
+    "osEndDate": "2028-03-01",
+    "securityEndDate": "2029-03-01",
+    "estimated": false,
+    "source": {
+      "label": "삼성 모바일 보안 업데이트 정책 · 삼성전자 제품 페이지",
+      "url": "https://security.samsungmobile.com/workScope.smsb",
+      "asOf": "2026-07-01"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 109000,
+      "withCareKRW": 30000,
+      "source": {
+        "label": "AS유통센터 집계 (부품 반납 기준, 미반납 시 153,500원 · 단일 출처라 교차검증 필요)",
+        "url": "https://well.makemelife.com/entry/갤럭시-A35-액정",
+        "asOf": "2024"
+      }
+    },
+    {
+      "part": "battery",
+      "officialKRW": 53500,
+      "source": {
+        "label": "AS유통센터 집계 (단일 출처)",
+        "url": "https://well.makemelife.com/entry/갤럭시-A35-액정",
+        "asOf": "2024"
+      }
+    },
+    {
+      "part": "back-glass",
+      "officialKRW": 37000,
+      "source": {
+        "label": "AS유통센터 집계 (후면 케이스 기준 · 단일 출처)",
+        "url": "https://well.makemelife.com/entry/갤럭시-A35-액정",
+        "asOf": "2024"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "a35-screen-flicker",
+      "title": "화면 깜빡임·컬러 줄무늬",
+      "severity": "common",
+      "status": "patched",
+      "summary": "흰 배경에서 색색의 깜빡이는 줄이 나타나는 등 화면 깜빡임·무반응 문제가 여러 국가에서 보고됐고, 2024년 5월 소프트웨어 업데이트로 수정됨.",
+      "symptoms": [
+        "흰 배경·작은 글씨에서 컬러 줄무늬 깜빡임",
+        "화면 깜빡임 또는 일시적 터치 무반응"
+      ],
+      "solutions": [
+        "최신 소프트웨어 업데이트 설치",
+        "접근성 > 시인성 향상에서 색상 보정·필터 끄기",
+        "적응형 밝기 끄고 밝기 조정"
+      ],
+      "source": {
+        "label": "Android Police",
+        "url": "https://www.androidpolice.com/samsung-galaxy-a35-5g-problems-fixes/",
+        "asOf": "2024-07"
+      }
+    },
+    {
+      "id": "a35-gps-accuracy",
+      "title": "GPS 위치 정확도 저하",
+      "severity": "common",
+      "status": "open",
+      "summary": "내비게이션 사용 중 GPS 위치가 부정확하게 표시되는 문제를 삼성이 공식 인지하고 수정을 예고함. 일부 개선 보고는 있으나 완전 해결 공식 발표는 확인되지 않음.",
+      "symptoms": [
+        "지도 앱에서 현재 위치가 어긋나게 표시",
+        "경로 안내 중 위치 갱신 지연",
+        "재부팅 후 잠시 정상화됐다가 재발"
+      ],
+      "solutions": [
+        "시스템 및 Google Play 시스템 업데이트 설치",
+        "위치 설정에서 정확도 향상(Wi-Fi·블루투스 스캔) 켜기",
+        "증상 지속 시 삼성 멤버스로 신고"
+      ],
+      "source": {
+        "label": "Sammy Fans",
+        "url": "https://www.sammyfans.com/2025/03/28/samsung-working-on-fix-for-gps-accuracy-issue-in-galaxy-a35/",
+        "asOf": "2025-03"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20A35%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20A35",
+    "subsidyNote": "보급형은 공시지원금으로 실구매가 0원에 가까워지는 경우가 있으나, 고가 요금제 유지 조건의 총비용을 반드시 계산할 것.",
+    "mvnoNote": "출고가가 낮아 자급제 + 알뜰폰 최저 요금제 조합이 통신비 최소화의 정석 조합.",
+    "asOf": "2026-06-15"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 250000,
+      "source": "bunjang-danawa"
+    }
+  ]
+}

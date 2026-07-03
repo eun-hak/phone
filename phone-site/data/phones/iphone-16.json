@@ -1,0 +1,117 @@
+{
+  "slug": "iphone-16",
+  "name": "아이폰 16",
+  "brand": "apple",
+  "series": "아이폰",
+  "releaseDate": "2024-09-20",
+  "releasePriceKRW": 1250000,
+  "storageBase": "128GB",
+  "specSummary": {
+    "chipset": "A18",
+    "displayInch": 6.1,
+    "batteryMah": 3561,
+    "ramGb": 8
+  },
+  "eol": {
+    "policy": "애플 미공표 — iOS 26(2025) 지원 확인. 역대 아이폰 지원 기간(메이저 iOS 6~7년 + 구버전 보안 패치 1~2년) 기반 추정",
+    "osEndDate": "2031-09-01",
+    "securityEndDate": "2033-09-01",
+    "estimated": true,
+    "source": {
+      "label": "Apple iOS 26 호환 기종 문서 (추정 근거)",
+      "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios",
+      "asOf": "2026-07-01"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 420000,
+      "withCareKRW": 40000,
+      "source": {
+        "label": "Apple 공식 수리 비용 (보증 외·VAT 포함, 공인 서비스 제공업체는 자체 요금으로 더 높을 수 있음)",
+        "url": "https://support.apple.com/ko-kr/iphone/repair",
+        "asOf": "2026-07-02"
+      }
+    },
+    {
+      "part": "battery",
+      "officialKRW": 146000,
+      "withCareKRW": 0,
+      "source": {
+        "label": "Apple 공식 수리 비용 (보증 외·VAT 포함)",
+        "url": "https://support.apple.com/ko-kr/iphone/repair",
+        "asOf": "2026-07-02"
+      }
+    },
+    {
+      "part": "back-glass",
+      "officialKRW": 240000,
+      "withCareKRW": 40000,
+      "source": {
+        "label": "Apple 공식 수리 비용 (보증 외·VAT 포함)",
+        "url": "https://support.apple.com/ko-kr/iphone/repair",
+        "asOf": "2026-07-02"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "ip16-touch-unresponsive",
+      "title": "출시 초기 터치스크린 간헐 무반응",
+      "severity": "common",
+      "status": "patched",
+      "summary": "출시 직후 화면 터치·스크롤이 간헐적으로 무시되는 소프트웨어 버그가 보고됐고, 애플이 iOS 18.0.1 릴리스 노트에 수정 사항으로 명시하며 해결됨.",
+      "symptoms": [
+        "화면 탭이 간헐적으로 인식되지 않음",
+        "스크롤 제스처 무시",
+        "카메라 컨트롤 근처 터치 후 화면 일시 무반응"
+      ],
+      "solutions": [
+        "iOS 18.0.1 이상으로 업데이트 (설정 > 일반 > 소프트웨어 업데이트)",
+        "업데이트 후에도 증상이 있으면 강제 재시동",
+        "케이스·보호필름 간섭 여부 확인"
+      ],
+      "source": {
+        "label": "ZDNet Korea",
+        "url": "https://zdnet.co.kr/view/?no=20241004084029",
+        "asOf": "2024-10"
+      }
+    },
+    {
+      "id": "ip16-battery-drain",
+      "title": "iOS 업데이트 후 배터리 급속 소모",
+      "severity": "common",
+      "status": "open",
+      "summary": "iOS 18 초기부터 대기 중 배터리가 비정상적으로 빨리 닳는다는 보고가 이어졌고, 이후 iOS 26.5까지도 일부 사용자 보고가 계속돼 애플이 업데이트로 관리 중인 진행형 이슈.",
+      "symptoms": [
+        "대기 상태에서도 배터리 급감",
+        "메이저 iOS 업데이트 직후 소모 심화"
+      ],
+      "solutions": [
+        "최신 iOS로 업데이트 유지 (배터리 최적화 포함 배포)",
+        "업데이트 직후 며칠은 백그라운드 인덱싱 완료를 기다리기",
+        "배터리 사용 내역에서 과소모 앱 확인 후 백그라운드 새로고침 제한"
+      ],
+      "source": {
+        "label": "BGR",
+        "url": "https://www.bgr.com/tech/iphone-16-battery-drain-issue-affecting-users-for-reasons-unknown/",
+        "asOf": "2024-10"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EC%95%84%EC%9D%B4%ED%8F%B0%2016%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EC%95%84%EC%9D%B4%ED%8F%B0%2016",
+    "subsidyNote": "아이폰은 공시지원금이 갤럭시 대비 적게 걸리는 편 — 선택약정 25% 할인이 기본 선택지.",
+    "mvnoNote": "감가 방어가 좋아 자급제 신품 구매 후 2~3년 뒤 되파는 전략의 총비용이 낮은 대표 기종.",
+    "asOf": "2026-06-15"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 770000,
+      "source": "cetizen-bunjang-mintit"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "slug": "galaxy-note20-ultra",
+  "name": "갤럭시 노트20 울트라",
+  "brand": "samsung",
+  "series": "갤럭시 노트",
+  "releaseDate": "2020-08-21",
+  "releasePriceKRW": 1452000,
+  "storageBase": "256GB",
+  "specSummary": {
+    "chipset": "스냅드래곤 865+",
+    "displayInch": 6.9,
+    "batteryMah": 4500,
+    "ramGb": 12
+  },
+  "eol": {
+    "policy": "OS 3회 업그레이드(안드로이드 11→13) + 보안 약 4년. 노트20 시리즈는 2025년 8월 마지막 보안 패치 후 지원 종료.",
+    "osEndDate": "2023-03-01",
+    "securityEndDate": "2025-08-28",
+    "estimated": false,
+    "source": {
+      "label": "삼성 모바일 보안 업데이트 정책",
+      "url": "https://security.samsungmobile.com/workScope.smsb",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 344000,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계 (반납 기준)",
+        "url": "https://www.samsungsvc.co.kr/info/fee",
+        "asOf": "2024-09"
+      }
+    },
+    {
+      "part": "battery",
+      "officialKRW": 60000,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계",
+        "url": "https://www.samsungsvc.co.kr/info/fee",
+        "asOf": "2024-09"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "note20-ultra-green-line",
+      "title": "그린라인(녹색 세로줄) 디스플레이 결함",
+      "severity": "common",
+      "status": "open",
+      "summary": "일정 사용 기간 후 외부 충격 없이 화면에 녹색/분홍 세로줄이 나타나는 AMOLED 계열 결함. 공식 리콜은 없으며 보증(2년) 내 무상교체, 경과 후 유상.",
+      "symptoms": [
+        "화면에 녹색/분홍색 세로줄",
+        "데드픽셀·잔상 동반 사례"
+      ],
+      "solutions": [
+        "보증기간(2년) 내 무상 액정 교체",
+        "보증 경과 시 유상 교체 또는 삼성케어플러스 이용",
+        "중고 구매 시 세로줄 여부 필수 확인"
+      ],
+      "source": {
+        "label": "아시아타임 — 디스플레이 불량 보도",
+        "url": "https://www.asiatime.co.kr/article/20220615500032",
+        "asOf": "2022-06"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20%EB%85%B8%ED%8A%B820%20%EC%9A%B8%ED%8A%B8%EB%9D%BC%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20%EB%85%B8%ED%8A%B820%20%EC%9A%B8%ED%8A%B8%EB%9D%BC",
+    "subsidyNote": "공시지원금과 선택약정 25% 할인을 월 요금 × 약정 개월 + 기기값의 2년 총비용으로 비교하세요. 성지 시세는 변동이 크니 총비용 계산 없이 계약하지 마세요.",
+    "mvnoNote": "신품가가 내려간 시점이라면 자급제 + 알뜰폰 조합의 가성비가 좋습니다. 중고 A급 시세와 신품 최저가 차이를 먼저 확인하세요.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 290000,
+      "source": "cetizen-bunjang"
+    }
+  ]
+}

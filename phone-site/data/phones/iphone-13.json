@@ -1,0 +1,94 @@
+{
+  "slug": "iphone-13",
+  "name": "아이폰 13",
+  "brand": "apple",
+  "series": "아이폰",
+  "releaseDate": "2021-10-08",
+  "releasePriceKRW": 1090000,
+  "storageBase": "128GB",
+  "specSummary": {
+    "chipset": "Apple A15 Bionic",
+    "displayInch": 6.1,
+    "batteryMah": 3240,
+    "ramGb": 4
+  },
+  "eol": {
+    "policy": "애플 미공표 — iOS 26(2025) 지원 확인. 역대 지원기간(6~7년) 추정",
+    "osEndDate": "2028-09-30",
+    "securityEndDate": "2030-09-30",
+    "estimated": true,
+    "source": {
+      "label": "Apple iOS 26 호환 기종 문서",
+      "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 511000,
+      "withCareKRW": 40000,
+      "source": {
+        "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표 (보증 외·VAT 포함)",
+        "url": "https://www.q-aid.co.kr/appleService/price",
+        "asOf": "2026-07"
+      }
+    },
+    {
+      "part": "battery",
+      "officialKRW": 141000,
+      "withCareKRW": 0,
+      "source": {
+        "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표 (배터리 80% 미만 시 케어 무상)",
+        "url": "https://www.q-aid.co.kr/appleService/price",
+        "asOf": "2026-07"
+      }
+    },
+    {
+      "part": "back-glass",
+      "officialKRW": 304000,
+      "withCareKRW": 120000,
+      "source": {
+        "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표",
+        "url": "https://www.q-aid.co.kr/appleService/price",
+        "asOf": "2026-07"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "ip13-faceid-lockout",
+      "title": "사설 화면 교체 시 Face ID 비활성화",
+      "severity": "common",
+      "status": "patched",
+      "summary": "화면에 연동된 마이크로컨트롤러 때문에 비공식 수리점에서 화면 교체 시 Face ID가 비활성화되던 문제. 애플이 이후 소프트웨어 업데이트로 제한을 해제함.",
+      "symptoms": [
+        "사설 화면 교체 후 'Face ID를 활성화할 수 없음' 표시",
+        "얼굴 인식 사용 불가"
+      ],
+      "solutions": [
+        "최신 iOS로 업데이트하면 제한 해제",
+        "중고 구매 시 화면 교체 이력과 Face ID 정상 작동을 반드시 확인"
+      ],
+      "source": {
+        "label": "블로터 — 사설 수리 페이스ID 제한 풀린다",
+        "url": "https://www.bloter.net/news/articleView.html?idxno=42078",
+        "asOf": "2021-11"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EC%95%84%EC%9D%B4%ED%8F%B0%2013%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EC%95%84%EC%9D%B4%ED%8F%B0%2013",
+    "subsidyNote": "아이폰은 공시지원금이 적게 걸려 선택약정 25% 할인이 기본 선택지입니다. 프로 라인은 애플케어+ 가입 여부가 수리비 리스크를 좌우합니다.",
+    "mvnoNote": "감가 방어가 좋아 자급제 신품 구매 후 2~3년 뒤 되파는 전략의 2년 총비용이 낮은 축입니다. 요금제는 모요·스마트초이스 참고.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 300000,
+      "source": "cetizen-bunjang-mintit"
+    }
+  ]
+}

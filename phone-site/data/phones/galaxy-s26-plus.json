@@ -1,0 +1,90 @@
+{
+  "slug": "galaxy-s26-plus",
+  "name": "갤럭시 S26+",
+  "brand": "samsung",
+  "series": "갤럭시 S",
+  "releaseDate": "2026-03-11",
+  "releasePriceKRW": 1452000,
+  "storageBase": "256GB",
+  "specSummary": {
+    "chipset": "엑시노스 2600 (한국 모델)",
+    "displayInch": 6.7,
+    "batteryMah": 4900,
+    "ramGb": 12
+  },
+  "eol": {
+    "policy": "OS 업그레이드 7회 + 보안 업데이트 7년 (S24 이후 정책)",
+    "osEndDate": "2033-03-11",
+    "securityEndDate": "2033-03-11",
+    "estimated": false,
+    "source": {
+      "label": "삼성 모바일 보안 업데이트 정책",
+      "url": "https://security.samsungmobile.com/workScope.smsb",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 258000,
+      "source": {
+        "label": "삼성전자서비스 요금 기반 집계",
+        "url": "https://techtown.co.kr/",
+        "asOf": "2026-03"
+      },
+      "withCareKRW": 64500
+    },
+    {
+      "part": "battery",
+      "officialKRW": 79000,
+      "source": {
+        "label": "삼성전자서비스 요금 기반 집계",
+        "url": "https://techtown.co.kr/",
+        "asOf": "2026-03"
+      }
+    },
+    {
+      "part": "back-glass",
+      "officialKRW": 70500,
+      "source": {
+        "label": "삼성전자서비스 요금 기반 집계 (후면 케이스)",
+        "url": "https://techtown.co.kr/",
+        "asOf": "2026-03"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "s26-plus-3x-blur",
+      "title": "3배 망원(3x) 줌 촬영 이미지 흐림",
+      "severity": "common",
+      "status": "open",
+      "summary": "S26 시리즈 사용자들이 3배 망원 카메라로 촬영한 사진이 흐리게 나온다고 보고. 삼성이 문제를 인정하고 개선을 예고했으나 2026년 4월 업데이트에는 실질적 수정이 반영되지 않았다.",
+      "symptoms": [
+        "3배 줌으로 촬영 시 사진이 흐릿하게 나옴"
+      ],
+      "solutions": [
+        "삼성 소프트웨어 업데이트 대기 (개선 예정 안내)"
+      ],
+      "source": {
+        "label": "SamMobile",
+        "url": "https://www.sammobile.com/news/galaxy-s26-april-2026-software-update-camera-improvements-released/",
+        "asOf": "2026-04"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20S26%2B%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20S26%2B",
+    "subsidyNote": "공시지원금과 선택약정 25% 할인을 월 요금 × 약정 개월 + 기기값의 2년 총비용으로 비교하세요. 성지 시세는 변동이 크니 총비용 계산 없이 계약하지 마세요.",
+    "mvnoNote": "신품가가 내려간 시점이라면 자급제 + 알뜰폰 조합의 가성비가 좋습니다. 중고 A급 시세와 신품 최저가 차이를 먼저 확인하세요.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 1050000,
+      "source": "cetizen-bunjang"
+    }
+  ]
+}

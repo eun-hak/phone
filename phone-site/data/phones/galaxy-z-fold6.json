@@ -1,0 +1,92 @@
+{
+  "slug": "galaxy-z-fold6",
+  "name": "갤럭시 Z 폴드6",
+  "brand": "samsung",
+  "series": "갤럭시 Z",
+  "releaseDate": "2024-07-24",
+  "releasePriceKRW": 2229700,
+  "storageBase": "256GB",
+  "specSummary": {
+    "chipset": "스냅드래곤 8 Gen 3 for Galaxy",
+    "displayInch": 7.6,
+    "batteryMah": 4400,
+    "ramGb": 12
+  },
+  "eol": {
+    "policy": "OS 업그레이드 7회 + 보안 업데이트 7년 (2024년 폴더블 확대), 월간 보안 업데이트 대상",
+    "osEndDate": "2031-07-24",
+    "securityEndDate": "2031-07-24",
+    "estimated": false,
+    "source": {
+      "label": "삼성 모바일 보안 업데이트 정책",
+      "url": "https://security.samsungmobile.com/workScope.smsb",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 705000,
+      "withCareKRW": 211500,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계 (메인 화면 반납 기준, 미반납 859,000원)",
+        "url": "https://mokdol.com/samsung-galaxy-repair-cost/",
+        "asOf": "2026-02"
+      }
+    },
+    {
+      "part": "battery",
+      "officialKRW": 111500,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계",
+        "url": "https://mokdol.com/samsung-galaxy-repair-cost/",
+        "asOf": "2026-02"
+      }
+    },
+    {
+      "part": "back-glass",
+      "officialKRW": 72000,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계",
+        "url": "https://mokdol.com/samsung-galaxy-repair-cost/",
+        "asOf": "2026-02"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "zfold6-inner-film",
+      "title": "내부 디스플레이 보호필름 들뜸·주름부 내구성",
+      "severity": "info",
+      "status": "open",
+      "summary": "폴더블 공통 특성으로 접힘부(주름)와 기본 부착 내부 보호필름이 장기 사용 시 들뜨거나 찢어질 수 있음. 폴드6는 UTG로 개선했으나 취약성은 잔존. 리콜·무상 프로그램은 없음.",
+      "symptoms": [
+        "접힘부 보호필름 들뜸/찢어짐",
+        "주름부 눌림 및 화면 손상 우려"
+      ],
+      "solutions": [
+        "서비스센터 내부 보호필름 재부착",
+        "임의로 필름을 떼지 말 것 — 패널 손상 시 화면 전체 교체로 이어짐"
+      ],
+      "source": {
+        "label": "디지털데일리",
+        "url": "https://m.ddaily.co.kr/page/view/2024071023352387643",
+        "asOf": "2024-07"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20Z%20%ED%8F%B4%EB%93%9C6%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20Z%20%ED%8F%B4%EB%93%9C6",
+    "subsidyNote": "폴더블은 공시지원금이 크게 걸리는 대표 기종군이지만 감가도 빨라, 2년 뒤 잔존가치까지 계산하면 지원금 매력이 상쇄되는 경우가 많습니다.",
+    "mvnoNote": "중고 구매 시 힌지·필름 상태 확인이 가격보다 중요합니다. 대면 거래로 개폐 상태를 직접 확인하세요.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 880000,
+      "source": "cetizen-bunjang-mintit"
+    }
+  ]
+}

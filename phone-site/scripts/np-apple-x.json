@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "iphone-xr",
+    "name": "아이폰 XR",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2018-11-02",
+    "releasePriceKRW": 990000,
+    "storageBase": "64GB",
+    "specSummary": { "chipset": "Apple A12 Bionic", "displayInch": 6.1, "batteryMah": 2942, "ramGb": 3 },
+    "eol": { "policy": "A12 Bionic 탑재. iOS 18이 마지막 지원 버전으로 2025년 iOS 26에서 제외됨(A13 이상 요구). 현재 iOS 18 보안 패치만 제공되며 2026년 말 종료 예상 — 보안 지원 종료 임박.", "osEndDate": "2025-09-15", "securityEndDate": "2026-12-31", "estimated": true, "source": { "label": "Apple iOS 26 호환 기종 문서 (미지원 확인)", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 349000, "withCareKRW": 40000, "source": { "label": "Apple 공인 서비스(큐에이드) 가격표, VAT 포함", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "battery", "officialKRW": 141000, "withCareKRW": 0, "source": { "label": "Apple 공인 서비스(큐에이드) 가격표, VAT 포함", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 150000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "iphone-xs",
+    "name": "아이폰 XS",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2018-11-02",
+    "releasePriceKRW": 1364000,
+    "storageBase": "64GB",
+    "specSummary": { "chipset": "Apple A12 Bionic", "displayInch": 5.8, "batteryMah": 2658, "ramGb": 4 },
+    "eol": { "policy": "A12 Bionic 탑재. iOS 18이 마지막 지원 버전으로 2025년 iOS 26에서 제외됨. 현재 iOS 18 보안 패치만 제공되며 2026년 말 종료 예상 — 보안 지원 종료 임박.", "osEndDate": "2025-09-15", "securityEndDate": "2026-12-31", "estimated": true, "source": { "label": "Apple iOS 26 호환 기종 문서 (미지원 확인)", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 493000, "withCareKRW": 40000, "source": { "label": "Apple 공인 서비스(큐에이드) 가격표, VAT 포함", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "battery", "officialKRW": 139000, "withCareKRW": 0, "source": { "label": "Apple 공인 서비스(큐에이드) 가격표, VAT 포함", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 220000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "iphone-xs-max",
+    "name": "아이폰 XS 맥스",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2018-11-02",
+    "releasePriceKRW": 1494000,
+    "storageBase": "64GB",
+    "specSummary": { "chipset": "Apple A12 Bionic", "displayInch": 6.5, "batteryMah": 3174, "ramGb": 4 },
+    "eol": { "policy": "A12 Bionic 탑재. iOS 18이 마지막 지원 버전으로 2025년 iOS 26에서 제외됨. 현재 iOS 18 보안 패치만 제공되며 2026년 말 종료 예상 — 보안 지원 종료 임박.", "osEndDate": "2025-09-15", "securityEndDate": "2026-12-31", "estimated": true, "source": { "label": "Apple iOS 26 호환 기종 문서 (미지원 확인)", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 574000, "withCareKRW": 40000, "source": { "label": "Apple 공인 서비스(큐에이드) 가격표, VAT 포함", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "battery", "officialKRW": 141000, "withCareKRW": 0, "source": { "label": "Apple 공인 서비스(큐에이드) 가격표, VAT 포함", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 270000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "iphone-x",
+    "name": "아이폰 X",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2017-11-24",
+    "releasePriceKRW": 1420000,
+    "storageBase": "64GB",
+    "specSummary": { "chipset": "Apple A11 Bionic", "displayInch": 5.8, "batteryMah": 2716, "ramGb": 3 },
+    "eol": { "policy": "A11 Bionic 탑재. iOS 16이 마지막 지원 버전으로 2023년 iOS 17에서 제외됨. iOS 16 보안 패치가 2026년경 종료 예상 — 사실상 보안 지원 종료 단계.", "osEndDate": "2023-09-18", "securityEndDate": "2026-09-30", "estimated": true, "source": { "label": "Apple 보안 업데이트 이력 (iOS 16이 마지막)", "url": "https://support.apple.com/en-us/100100", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 483000, "withCareKRW": 40000, "source": { "label": "Apple 공인 서비스(큐에이드) 가격표, VAT 포함", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "battery", "officialKRW": 139000, "withCareKRW": 0, "source": { "label": "Apple 공인 서비스(큐에이드) 가격표, VAT 포함", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } }
+    ],
+    "issues": [
+      { "id": "ipx-touch-defect", "title": "디스플레이 모듈 터치 결함(고스트터치)", "severity": "common", "status": "open", "summary": "애플이 일부 기기의 터치 미반응·고스트터치 결함을 인정하고 디스플레이 모듈 무상 교체 프로그램을 운영했으나, 프로그램 기간(3년)이 종료돼 현재는 유상 수리만 가능. 중고 구매 시 반드시 확인할 항목.", "symptoms": ["화면 터치가 간헐적으로 안 됨", "누르지 않아도 저절로 입력되는 고스트터치"], "solutions": ["무상 교체 프로그램은 기간 종료 — 현재는 유상 디스플레이 교체만 가능", "중고 구매 시 터치 정상 작동을 반드시 확인"], "source": { "label": "전자신문 — 아이폰 X 무상수리 프로그램", "url": "https://www.etnews.com/20181111000035", "asOf": "2018-11" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 130000, "source": "cetizen-bunjang" } ]
+  }
+]

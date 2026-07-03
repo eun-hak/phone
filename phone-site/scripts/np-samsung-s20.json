@@ -1,0 +1,127 @@
+[
+  {
+    "slug": "galaxy-s20",
+    "name": "갤럭시 S20",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2020-03-06",
+    "releasePriceKRW": 1248500,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "엑시노스 990", "displayInch": 6.2, "batteryMah": 4000, "ramGb": 12 },
+    "eol": { "policy": "OS 3회 업그레이드(안드로이드 11→13) + 보안 약 4년. S20 시리즈는 2025년 3월 정기 보안 업데이트를 마지막으로 지원 종료.", "osEndDate": "2023-03-01", "securityEndDate": "2025-03-05", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책 (endoflife.date 교차)", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 222000, "source": { "label": "삼성전자서비스 고지가 (반납 기준, 미반납 329,000원)", "url": "https://www.samsungsvc.co.kr/info/fee", "asOf": "2026-07" } },
+      { "part": "battery", "officialKRW": 53000, "source": { "label": "삼성전자서비스 고지가 (반납 기준)", "url": "https://www.samsungsvc.co.kr/info/fee", "asOf": "2026-07" } }
+    ],
+    "issues": [
+      { "id": "s20-green-line", "title": "디스플레이 녹색 세로줄(그린라인)·백화 현상", "severity": "common", "status": "open", "summary": "S20 시리즈 AMOLED 패널에서 외부 충격 없이 녹색/분홍 세로줄과 백화 현상이 다수 보고됨. 공식 리콜·무상수리는 없고 보증 경과 시 유상 액정 교체로 처리됨.", "symptoms": ["화면에 녹색/분홍색 세로줄", "화면 일부 백화(번짐)", "업데이트 후 증상 발생 사례"], "solutions": ["보증기간 내 무상 액정 교체 시도", "삼성전자서비스 유상 액정 교체(반납 기준 약 22만원)", "중고 구매 시 흰 배경으로 세로줄 여부 확인"], "source": { "label": "아시아타임 — 갤럭시 S20 디스플레이 불량 보도", "url": "https://www.asiatime.co.kr/article/20220615500032", "asOf": "2022-06" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 190000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "galaxy-s20-plus",
+    "name": "갤럭시 S20+",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2020-03-06",
+    "releasePriceKRW": 1353000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "엑시노스 990", "displayInch": 6.7, "batteryMah": 4500, "ramGb": 12 },
+    "eol": { "policy": "OS 3회 업그레이드(안드로이드 11→13) + 보안 약 4년. S20 시리즈는 2025년 3월 정기 보안 업데이트를 마지막으로 지원 종료.", "osEndDate": "2023-03-01", "securityEndDate": "2025-03-05", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책 (endoflife.date 교차)", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 273000, "source": { "label": "삼성전자서비스 고지가 (반납 기준)", "url": "https://www.samsungsvc.co.kr/info/fee", "asOf": "2026-07" } },
+      { "part": "battery", "officialKRW": 59000, "source": { "label": "삼성전자서비스 고지가 (반납 기준)", "url": "https://www.samsungsvc.co.kr/info/fee", "asOf": "2026-07" } }
+    ],
+    "issues": [
+      { "id": "s20-plus-green-line", "title": "디스플레이 녹색 세로줄(그린라인)·백화 현상", "severity": "common", "status": "open", "summary": "S20+ 사용자 사이 녹색/분홍 세로줄·백화 현상 다수 보고. 공식 무상수리 없이 보증 경과 시 유상 액정 교체로 처리됨.", "symptoms": ["화면에 녹색/분홍색 세로줄", "화면 백화 현상"], "solutions": ["보증기간 내 무상 액정 교체 시도", "삼성전자서비스 유상 액정 교체(반납 기준 약 27만원)", "중고 구매 시 흰 배경으로 세로줄 여부 확인"], "source": { "label": "아시아타임 — 갤럭시 S20 디스플레이 불량 보도", "url": "https://www.asiatime.co.kr/article/20220615500032", "asOf": "2022-06" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 240000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "galaxy-s20-ultra",
+    "name": "갤럭시 S20 울트라",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2020-03-06",
+    "releasePriceKRW": 1595000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "엑시노스 990", "displayInch": 6.9, "batteryMah": 5000, "ramGb": 12 },
+    "eol": { "policy": "OS 3회 업그레이드(안드로이드 11→13) + 보안 약 4년. S20 시리즈는 2025년 3월 정기 보안 업데이트를 마지막으로 지원 종료.", "osEndDate": "2023-03-01", "securityEndDate": "2025-03-05", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책 (endoflife.date 교차)", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 278000, "source": { "label": "삼성전자서비스 고지가 (반납 기준, 미반납 398,000원)", "url": "https://www.samsungsvc.co.kr/info/fee", "asOf": "2026-07" } },
+      { "part": "battery", "officialKRW": 59000, "source": { "label": "삼성전자서비스 고지가 (반납 기준)", "url": "https://www.samsungsvc.co.kr/info/fee", "asOf": "2026-07" } }
+    ],
+    "issues": [
+      { "id": "s20-ultra-green-line", "title": "디스플레이 녹색 세로줄(그린라인)·백화 현상", "severity": "common", "status": "open", "summary": "S20 시리즈 공통 그린라인·백화 현상이 울트라에서도 보고됨. 공식 무상수리 없이 보증 경과 시 유상 액정 교체로 처리됨.", "symptoms": ["화면에 녹색/분홍색 세로줄", "화면 백화 현상"], "solutions": ["보증기간 내 무상 액정 교체 시도", "삼성전자서비스 유상 액정 교체(반납 기준 약 28만원)", "중고 구매 시 흰 배경으로 세로줄 여부 확인"], "source": { "label": "아시아타임 — 갤럭시 S20 디스플레이 불량 보도", "url": "https://www.asiatime.co.kr/article/20220615500032", "asOf": "2022-06" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 250000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "galaxy-s20-fe",
+    "name": "갤럭시 S20 FE",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2020-10-02",
+    "releasePriceKRW": 899800,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "스냅드래곤 865", "displayInch": 6.5, "batteryMah": 4500, "ramGb": 6 },
+    "eol": { "policy": "OS 3회 업그레이드 + 보안 약 4년. S20 FE는 2025년 11월 정기 보안 업데이트를 마지막으로 지원 종료.", "osEndDate": "2023-08-01", "securityEndDate": "2025-11-04", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책 (endoflife.date 교차)", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [],
+    "issues": [],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 120000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "galaxy-note20-ultra",
+    "name": "갤럭시 노트20 울트라",
+    "brand": "samsung",
+    "series": "갤럭시 노트",
+    "releaseDate": "2020-08-21",
+    "releasePriceKRW": 1452000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "스냅드래곤 865+", "displayInch": 6.9, "batteryMah": 4500, "ramGb": 12 },
+    "eol": { "policy": "OS 3회 업그레이드(안드로이드 11→13) + 보안 약 4년. 노트20 시리즈는 2025년 8월 마지막 보안 패치 후 지원 종료.", "osEndDate": "2023-03-01", "securityEndDate": "2025-08-28", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 344000, "source": { "label": "삼성전자서비스 고지가 집계 (반납 기준)", "url": "https://www.samsungsvc.co.kr/info/fee", "asOf": "2024-09" } },
+      { "part": "battery", "officialKRW": 60000, "source": { "label": "삼성전자서비스 고지가 집계", "url": "https://www.samsungsvc.co.kr/info/fee", "asOf": "2024-09" } }
+    ],
+    "issues": [
+      { "id": "note20-ultra-green-line", "title": "그린라인(녹색 세로줄) 디스플레이 결함", "severity": "common", "status": "open", "summary": "일정 사용 기간 후 외부 충격 없이 화면에 녹색/분홍 세로줄이 나타나는 AMOLED 계열 결함. 공식 리콜은 없으며 보증(2년) 내 무상교체, 경과 후 유상.", "symptoms": ["화면에 녹색/분홍색 세로줄", "데드픽셀·잔상 동반 사례"], "solutions": ["보증기간(2년) 내 무상 액정 교체", "보증 경과 시 유상 교체 또는 삼성케어플러스 이용", "중고 구매 시 세로줄 여부 필수 확인"], "source": { "label": "아시아타임 — 디스플레이 불량 보도", "url": "https://www.asiatime.co.kr/article/20220615500032", "asOf": "2022-06" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 290000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "galaxy-note20",
+    "name": "갤럭시 노트20",
+    "brand": "samsung",
+    "series": "갤럭시 노트",
+    "releaseDate": "2020-08-21",
+    "releasePriceKRW": 1199000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "스냅드래곤 865+", "displayInch": 6.7, "batteryMah": 4300, "ramGb": 8 },
+    "eol": { "policy": "OS 3회 업그레이드(안드로이드 11→13) + 보안 약 4년. 노트20 시리즈는 2025년 8월 마지막 보안 패치 후 지원 종료.", "osEndDate": "2023-03-01", "securityEndDate": "2025-08-28", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 232000, "source": { "label": "삼성전자서비스 고지가 집계 (반납 기준)", "url": "https://www.samsungsvc.co.kr/info/fee", "asOf": "2024-09" } },
+      { "part": "battery", "officialKRW": 36000, "source": { "label": "삼성전자서비스 고지가 집계", "url": "https://www.samsungsvc.co.kr/info/fee", "asOf": "2024-09" } },
+      { "part": "back-glass", "officialKRW": 31000, "source": { "label": "삼성전자서비스 고지가 집계", "url": "https://www.samsungsvc.co.kr/info/fee", "asOf": "2024-09" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 200000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "galaxy-s23-fe",
+    "name": "갤럭시 S23 FE",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2023-12-08",
+    "releasePriceKRW": 847000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "엑시노스 2200", "displayInch": 6.4, "batteryMah": 4500, "ramGb": 8 },
+    "eol": { "policy": "OS 업그레이드 4회 + 보안 5년. 2026-07 현재 월별 보안 업데이트 대상으로 정상 지원 중.", "osEndDate": "2027-10-05", "securityEndDate": "2028-10-05", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 95000, "source": { "label": "삼성전자서비스 고지가 (반납 기준, 미반납 126,000원)", "url": "https://www.samsungsvc.co.kr/info/fee", "asOf": "2026-06" } },
+      { "part": "battery", "officialKRW": 53000, "source": { "label": "삼성전자서비스 고지가", "url": "https://www.samsungsvc.co.kr/info/fee", "asOf": "2026-06" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 250000, "source": "cetizen-bunjang" } ]
+  }
+]

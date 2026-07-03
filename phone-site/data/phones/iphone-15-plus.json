@@ -1,0 +1,93 @@
+{
+  "slug": "iphone-15-plus",
+  "name": "아이폰 15 플러스",
+  "brand": "apple",
+  "series": "아이폰",
+  "releaseDate": "2023-10-13",
+  "releasePriceKRW": 1350000,
+  "storageBase": "128GB",
+  "specSummary": {
+    "chipset": "Apple A16 Bionic",
+    "displayInch": 6.7,
+    "batteryMah": 4383,
+    "ramGb": 6
+  },
+  "eol": {
+    "policy": "애플 미공표 — iOS 26(2025) 지원 확인, 역대 지원기간(6~7년) 추정",
+    "osEndDate": "2030-09-30",
+    "securityEndDate": "2032-09-30",
+    "estimated": true,
+    "source": {
+      "label": "Apple iOS 26 호환 기종 문서",
+      "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 606000,
+      "source": {
+        "label": "큐에이드(공인 서비스) 애플 수리 가격표",
+        "url": "https://www.q-aid.co.kr/appleService/price",
+        "asOf": "2026-06"
+      },
+      "withCareKRW": 40000
+    },
+    {
+      "part": "battery",
+      "officialKRW": 158000,
+      "source": {
+        "label": "큐에이드(공인 서비스) 애플 수리 가격표",
+        "url": "https://www.q-aid.co.kr/appleService/price",
+        "asOf": "2026-06"
+      },
+      "withCareKRW": 0
+    },
+    {
+      "part": "back-glass",
+      "officialKRW": 359000,
+      "source": {
+        "label": "큐에이드(공인 서비스) 애플 수리 가격표",
+        "url": "https://www.q-aid.co.kr/appleService/price",
+        "asOf": "2026-06"
+      },
+      "withCareKRW": 120000
+    }
+  ],
+  "issues": [
+    {
+      "id": "ip15plus-overheating",
+      "title": "출시 초기 발열",
+      "severity": "common",
+      "status": "patched",
+      "summary": "2023년 9월 출시 직후 iOS 17 버그·일부 서드파티 앱(인스타그램·우버)으로 인한 발열 이슈. 하드웨어 결함은 아니며 iOS 17.0.3에서 수정됨.",
+      "symptoms": [
+        "충전·사용 중 본체 발열",
+        "특정 앱 사용 시 과열"
+      ],
+      "solutions": [
+        "iOS 17.0.3 이상으로 업데이트"
+      ],
+      "source": {
+        "label": "Macworld",
+        "url": "https://www.macworld.com/article/2095278/iphone-15-ios-17-0-3-thermal-tests-overheating.html",
+        "asOf": "2023-10"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EC%95%84%EC%9D%B4%ED%8F%B0%2015%20%ED%94%8C%EB%9F%AC%EC%8A%A4%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EC%95%84%EC%9D%B4%ED%8F%B0%2015%20%ED%94%8C%EB%9F%AC%EC%8A%A4",
+    "subsidyNote": "아이폰은 공시지원금이 적게 걸려 선택약정 25% 할인이 기본 선택지입니다. 프로 라인은 애플케어+ 가입 여부가 수리비 리스크를 좌우합니다.",
+    "mvnoNote": "감가 방어가 좋아 자급제 신품 구매 후 2~3년 뒤 되파는 전략의 2년 총비용이 낮은 축입니다. 요금제는 모요·스마트초이스 참고.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 700000,
+      "source": "cetizen-bunjang"
+    }
+  ]
+}

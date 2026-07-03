@@ -1,0 +1,84 @@
+{
+  "slug": "iphone-x",
+  "name": "아이폰 X",
+  "brand": "apple",
+  "series": "아이폰",
+  "releaseDate": "2017-11-24",
+  "releasePriceKRW": 1420000,
+  "storageBase": "64GB",
+  "specSummary": {
+    "chipset": "Apple A11 Bionic",
+    "displayInch": 5.8,
+    "batteryMah": 2716,
+    "ramGb": 3
+  },
+  "eol": {
+    "policy": "A11 Bionic 탑재. iOS 16이 마지막 지원 버전으로 2023년 iOS 17에서 제외됨. iOS 16 보안 패치가 2026년경 종료 예상 — 사실상 보안 지원 종료 단계.",
+    "osEndDate": "2023-09-18",
+    "securityEndDate": "2026-09-30",
+    "estimated": true,
+    "source": {
+      "label": "Apple 보안 업데이트 이력 (iOS 16이 마지막)",
+      "url": "https://support.apple.com/en-us/100100",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 483000,
+      "source": {
+        "label": "Apple 공인 서비스(큐에이드) 가격표, VAT 포함",
+        "url": "https://www.q-aid.co.kr/appleService/price",
+        "asOf": "2026-06"
+      },
+      "withCareKRW": 40000
+    },
+    {
+      "part": "battery",
+      "officialKRW": 139000,
+      "source": {
+        "label": "Apple 공인 서비스(큐에이드) 가격표, VAT 포함",
+        "url": "https://www.q-aid.co.kr/appleService/price",
+        "asOf": "2026-06"
+      },
+      "withCareKRW": 0
+    }
+  ],
+  "issues": [
+    {
+      "id": "ipx-touch-defect",
+      "title": "디스플레이 모듈 터치 결함(고스트터치)",
+      "severity": "common",
+      "status": "open",
+      "summary": "애플이 일부 기기의 터치 미반응·고스트터치 결함을 인정하고 디스플레이 모듈 무상 교체 프로그램을 운영했으나, 프로그램 기간(3년)이 종료돼 현재는 유상 수리만 가능. 중고 구매 시 반드시 확인할 항목.",
+      "symptoms": [
+        "화면 터치가 간헐적으로 안 됨",
+        "누르지 않아도 저절로 입력되는 고스트터치"
+      ],
+      "solutions": [
+        "무상 교체 프로그램은 기간 종료 — 현재는 유상 디스플레이 교체만 가능",
+        "중고 구매 시 터치 정상 작동을 반드시 확인"
+      ],
+      "source": {
+        "label": "전자신문 — 아이폰 X 무상수리 프로그램",
+        "url": "https://www.etnews.com/20181111000035",
+        "asOf": "2018-11"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EC%95%84%EC%9D%B4%ED%8F%B0%20X%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EC%95%84%EC%9D%B4%ED%8F%B0%20X",
+    "subsidyNote": "아이폰은 공시지원금이 적게 걸려 선택약정 25% 할인이 기본 선택지입니다. 프로 라인은 애플케어+ 가입 여부가 수리비 리스크를 좌우합니다.",
+    "mvnoNote": "감가 방어가 좋아 자급제 신품 구매 후 2~3년 뒤 되파는 전략의 2년 총비용이 낮은 축입니다. 요금제는 모요·스마트초이스 참고.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 130000,
+      "source": "cetizen-bunjang"
+    }
+  ]
+}

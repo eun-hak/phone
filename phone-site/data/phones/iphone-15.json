@@ -1,0 +1,137 @@
+{
+  "slug": "iphone-15",
+  "name": "아이폰 15",
+  "brand": "apple",
+  "series": "아이폰",
+  "releaseDate": "2023-10-13",
+  "releasePriceKRW": 1250000,
+  "storageBase": "128GB",
+  "specSummary": {
+    "chipset": "A16 Bionic",
+    "displayInch": 6.1,
+    "batteryMah": 3349,
+    "ramGb": 6
+  },
+  "eol": {
+    "policy": "애플 공식 '최소 5년 지원' 문서화 기종 (영국 PSTI 대응) — iOS 26(2025) 지원 확인. 역대 지원 기간(6~7년) 기반 추정",
+    "osEndDate": "2030-09-01",
+    "securityEndDate": "2032-09-01",
+    "estimated": true,
+    "source": {
+      "label": "Apple iOS 26 호환 기종 문서 (추정 근거)",
+      "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios",
+      "asOf": "2026-07-01"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 420000,
+      "withCareKRW": 40000,
+      "source": {
+        "label": "Apple 공식 수리 비용 (보증 외·VAT 포함, 공인 서비스 제공업체는 자체 요금으로 더 높을 수 있음)",
+        "url": "https://support.apple.com/ko-kr/iphone/repair",
+        "asOf": "2026-07-02"
+      }
+    },
+    {
+      "part": "battery",
+      "officialKRW": 146000,
+      "withCareKRW": 0,
+      "source": {
+        "label": "Apple 공식 수리 비용 (보증 외·VAT 포함)",
+        "url": "https://support.apple.com/ko-kr/iphone/repair",
+        "asOf": "2026-07-02"
+      }
+    },
+    {
+      "part": "back-glass",
+      "officialKRW": 240000,
+      "withCareKRW": 40000,
+      "source": {
+        "label": "Apple 공식 수리 비용 (보증 외·VAT 포함)",
+        "url": "https://support.apple.com/ko-kr/iphone/repair",
+        "asOf": "2026-07-02"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "ip15-launch-heat",
+      "title": "출시 초기 발열 이슈",
+      "severity": "common",
+      "status": "patched",
+      "summary": "출시 직후 iOS 17 버그와 일부 앱 문제로 기기가 비정상적으로 뜨거워지는 현상이 널리 보고됨. 애플이 2023년 10월 iOS 17.0.3으로 수정했고 실측 온도 하락이 확인돼 해결된 상태.",
+      "symptoms": [
+        "충전·초기 설정 중 기기가 심하게 뜨거워짐",
+        "일부 앱(SNS·게임) 사용 시 과열",
+        "발열에 따른 배터리 소모 증가"
+      ],
+      "solutions": [
+        "iOS 17.0.3 이상으로 업데이트",
+        "문제가 된 앱을 최신 버전으로 업데이트",
+        "발열 시 고사양 작업과 충전을 잠시 중단"
+      ],
+      "source": {
+        "label": "9to5Mac",
+        "url": "https://9to5mac.com/2023/10/04/ios-17-0-3-release-overheating-iphone/",
+        "asOf": "2023-10"
+      }
+    },
+    {
+      "id": "ip15-battery-cycles",
+      "title": "배터리 수명·사이클 논란",
+      "severity": "info",
+      "status": "open",
+      "summary": "적은 충전 사이클에도 배터리 성능 상태가 빠르게 떨어진다는 보고로 논란이 됐고, 애플은 2024년 2월 재시험 결과를 근거로 배터리 수명 기준을 500→1,000사이클로 상향 발표. 결함·수리 프로그램은 없으며 노화 편차 문제로 남음.",
+      "symptoms": [
+        "배터리 성능 상태 수치가 예상보다 빠르게 하락",
+        "체감 사용 시간 감소"
+      ],
+      "solutions": [
+        "충전 최적화(80% 상한 등) 기능 활용",
+        "고온 환경과 발열 동반 충전 피하기",
+        "성능 상태 80% 미만 시 애플케어+ 또는 유상 배터리 교체"
+      ],
+      "source": {
+        "label": "AppleInsider",
+        "url": "https://appleinsider.com/articles/24/02/20/apple-says-the-iphone-15-battery-is-more-durable-than-it-originally-thought",
+        "asOf": "2024-02"
+      }
+    },
+    {
+      "id": "ip15-image-retention",
+      "title": "화면 잔상(번인 오인) 현상",
+      "severity": "info",
+      "status": "patched",
+      "summary": "출시 초기 OLED 번인처럼 보이는 잔상 보고가 확산됐으나, 애플이 영구 번인이 아닌 소프트웨어성 이미지 잔류로 확인하고 iOS 17.1에서 수정함.",
+      "symptoms": [
+        "화면에 이전 이미지의 희미한 잔상이 남음",
+        "잠금화면 등에서 고스트 이미지 관찰"
+      ],
+      "solutions": [
+        "iOS 17.1 이상으로 업데이트",
+        "업데이트 후에도 지속되면 애플 지원에 하드웨어 점검 요청"
+      ],
+      "source": {
+        "label": "MacRumors",
+        "url": "https://www.macrumors.com/2023/10/17/ios-17-1-display-image-retention-fix/",
+        "asOf": "2023-10"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EC%95%84%EC%9D%B4%ED%8F%B0%2015%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EC%95%84%EC%9D%B4%ED%8F%B0%2015",
+    "subsidyNote": "후속작 출시 이후 자급제 가격이 안정화된 구간. 신품과 중고 A급의 가격차가 40만원 이상이면 중고가 합리적.",
+    "mvnoNote": "지원 기간이 길게 남아 중고 구매 + 알뜰폰 조합의 대표 추천 기종.",
+    "asOf": "2026-06-15"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 570000,
+      "source": "cetizen-bunjang-mintit"
+    }
+  ]
+}

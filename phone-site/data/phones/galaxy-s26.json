@@ -1,0 +1,82 @@
+{
+  "slug": "galaxy-s26",
+  "name": "갤럭시 S26",
+  "brand": "samsung",
+  "series": "갤럭시 S",
+  "releaseDate": "2026-03-11",
+  "releasePriceKRW": 1215000,
+  "storageBase": "256GB",
+  "specSummary": {
+    "chipset": "엑시노스 2600 (한국 내수판)",
+    "displayInch": 6.3,
+    "batteryMah": 4300,
+    "ramGb": 12
+  },
+  "eol": {
+    "policy": "OS 업그레이드 7회 + 보안 업데이트 7년 (S24 세대부터 정책), 2026-03 출시 기준 약 2033년까지",
+    "osEndDate": "2033-03-01",
+    "securityEndDate": "2033-03-01",
+    "estimated": false,
+    "source": {
+      "label": "삼성전자 갤럭시 S26 제품 페이지 (7 OS/7년 보안)",
+      "url": "https://www.samsung.com/sec/smartphones/galaxy-s26/",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 196000,
+      "source": {
+        "label": "삼성전자서비스 요금 기반 집계 (회수동의가)",
+        "url": "https://techtown.co.kr/",
+        "asOf": "2026-07"
+      }
+    },
+    {
+      "part": "battery",
+      "officialKRW": 79000,
+      "source": {
+        "label": "삼성전자서비스 요금 기반 집계",
+        "url": "https://techtown.co.kr/",
+        "asOf": "2026-07"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "s26-price-cut",
+      "title": "출시 2개월 만의 대규모 할인 논란",
+      "severity": "info",
+      "status": "open",
+      "summary": "S26 시리즈는 전작보다 출고가가 올랐고, 출시 두 달 만에 이마트 등에서 사실상 대폭 할인 판매가 이뤄지며 사전예약 구매자 불만이 컸다.",
+      "symptoms": [
+        "전작 대비 상승한 출고가",
+        "출시 직후 급격한 실구매가 하락"
+      ],
+      "solutions": [
+        "구독/반납 프로그램 활용",
+        "성지·자급제 가격 비교 후 구매"
+      ],
+      "source": {
+        "label": "머니투데이",
+        "url": "https://www.mt.co.kr/tech/2026/05/05/2026050411224283676",
+        "asOf": "2026-05"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20S26%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20S26",
+    "subsidyNote": "공시지원금과 선택약정 25% 할인을 월 요금 × 약정 개월 + 기기값의 2년 총비용으로 비교하세요. 성지 시세는 변동이 크니 총비용 계산 없이 계약하지 마세요.",
+    "mvnoNote": "신품가가 내려간 시점이라면 자급제 + 알뜰폰 조합의 가성비가 좋습니다. 중고 A급 시세와 신품 최저가 차이를 먼저 확인하세요.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 900000,
+      "source": "cetizen-bunjang"
+    }
+  ]
+}

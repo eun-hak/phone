@@ -1,0 +1,101 @@
+{
+  "slug": "galaxy-z-fold7",
+  "name": "갤럭시 Z 폴드7",
+  "brand": "samsung",
+  "series": "갤럭시 Z",
+  "releaseDate": "2025-07-25",
+  "releasePriceKRW": 2379300,
+  "storageBase": "256GB",
+  "specSummary": {
+    "chipset": "스냅드래곤 8 엘리트 for Galaxy",
+    "displayInch": 8,
+    "batteryMah": 4400,
+    "ramGb": 12
+  },
+  "eol": {
+    "policy": "OS 업그레이드 7회 + 보안 업데이트 7년 (S24/Z6 세대부터 정책). 출시(2025-07) 기준 약 2032-07까지",
+    "osEndDate": "2032-07-01",
+    "securityEndDate": "2032-07-01",
+    "estimated": false,
+    "source": {
+      "label": "디지털포커스 — 폴드7 7년 안드로이드 업데이트",
+      "url": "https://www.digitalfocus.news/news/articleView.html?idxno=12692",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 764000,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계 (메인 화면 반납가)",
+        "url": "https://korea7news.com/215",
+        "asOf": "2026-07"
+      },
+      "withCareKRW": 152800
+    },
+    {
+      "part": "battery",
+      "officialKRW": 118500,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계",
+        "url": "https://korea7news.com/215",
+        "asOf": "2026-07"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "zfold7-hinge-open",
+      "title": "출시 초기 힌지 완전 개방 논란",
+      "severity": "info",
+      "status": "patched",
+      "summary": "출시 직후 일부 전시/체험 기기가 완전히 펼쳐지지 않는다는 논란이 있었으나, 구조적 결함이 아니라 폴더블 접착제 특성에 따른 일시적 현상으로 사용 시 각도가 안정적으로 복원되는 것으로 확인됨.",
+      "symptoms": [
+        "화면이 완전히 평평하게 펴지지 않음",
+        "힌지가 뻣뻣하게 느껴짐"
+      ],
+      "solutions": [
+        "실사용 시간이 지나며 자연 복원",
+        "이상 지속 시 삼성전자서비스 점검"
+      ],
+      "source": {
+        "label": "디지털포커스",
+        "url": "https://www.digitalfocus.news/news/articleView.html?idxno=13003",
+        "asOf": "2025-07"
+      }
+    },
+    {
+      "id": "zfold7-horizontal-line",
+      "title": "가로선 디스플레이 결함 제보",
+      "severity": "info",
+      "status": "open",
+      "summary": "기존 세로 그린라인에 이어 폴드7에서 가로선 형태의 디스플레이 결함이 처음 보고됨. 다만 현재까지는 일부 데모 기기에 한정되며 정식 판매 제품에서의 재현 보고는 확인되지 않음.",
+      "symptoms": [
+        "메인 디스플레이에 가로선 표시"
+      ],
+      "solutions": [
+        "증상 발생 시 삼성전자서비스 무상 점검/수리 요청"
+      ],
+      "source": {
+        "label": "ABC뉴스",
+        "url": "https://www.abcn.kr/news/articleView.html?idxno=83286",
+        "asOf": "2025-08"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20Z%20%ED%8F%B4%EB%93%9C7%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20Z%20%ED%8F%B4%EB%93%9C7",
+    "subsidyNote": "폴더블은 공시지원금이 크게 걸리는 대표 기종군이지만 감가도 빨라, 2년 뒤 잔존가치까지 계산하면 지원금 매력이 상쇄되는 경우가 많습니다.",
+    "mvnoNote": "중고 구매 시 힌지·필름 상태 확인이 가격보다 중요합니다. 대면 거래로 개폐 상태를 직접 확인하세요.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 1550000,
+      "source": "cetizen-bunjang"
+    }
+  ]
+}

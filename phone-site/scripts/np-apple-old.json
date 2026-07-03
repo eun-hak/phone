@@ -1,0 +1,127 @@
+[
+  {
+    "slug": "iphone-12",
+    "name": "아이폰 12",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2020-10-30",
+    "releasePriceKRW": 1160000,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "Apple A14 Bionic", "displayInch": 6.1, "batteryMah": 2815, "ramGb": 4 },
+    "eol": { "policy": "애플 미공표 — iOS 26(2025) 지원 확인(A14). 역대 지원기간(6~7년) 추정", "osEndDate": "2028-09-01", "securityEndDate": "2031-09-01", "estimated": true, "source": { "label": "Apple iOS 26 호환 기종 문서", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 510000, "withCareKRW": 40000, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "battery", "officialKRW": 141000, "withCareKRW": 0, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } }
+    ],
+    "issues": [
+      { "id": "ip12-no-sound", "title": "통화 중 무음(리시버) 결함", "severity": "common", "status": "open", "summary": "2020년 10월~2021년 4월 제조분 일부에서 리시버 결함으로 통화 중 소리가 안 나는 증상. 애플이 3년 무상 수리 프로그램을 운영했으나 현재 커버 기간이 종료돼 유상 수리만 가능.", "symptoms": ["통화 중 상대 목소리가 안 들림", "리시버(수화부) 무음"], "solutions": ["중고 구매 시 통화 테스트로 리시버 정상 작동 확인", "무상 프로그램 종료로 현재는 유상 수리"], "source": { "label": "Apple 무음 서비스 프로그램", "url": "https://support.apple.com/iphone-12-and-iphone-12-pro-service-program-for-no-sound-issues", "asOf": "2021-08" } }
+    ],
+    "resale": [ { "date": "2026-05-02", "priceKRW": 448000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "iphone-12-mini",
+    "name": "아이폰 12 미니",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2020-11-20",
+    "releasePriceKRW": 1012000,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "Apple A14 Bionic", "displayInch": 5.4, "batteryMah": 2227, "ramGb": 4 },
+    "eol": { "policy": "애플 미공표 — iOS 26(2025) 지원 확인(A14). 역대 지원기간(6~7년) 추정", "osEndDate": "2028-09-01", "securityEndDate": "2031-09-01", "estimated": true, "source": { "label": "Apple iOS 26 호환 기종 문서", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 417000, "withCareKRW": 40000, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "battery", "officialKRW": 141000, "withCareKRW": 0, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-06-20", "priceKRW": 240000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "iphone-12-pro",
+    "name": "아이폰 12 프로",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2020-10-30",
+    "releasePriceKRW": 1350000,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "Apple A14 Bionic", "displayInch": 6.1, "batteryMah": 2815, "ramGb": 6 },
+    "eol": { "policy": "애플 미공표 — iOS 26(2025) 지원 확인(A14). 역대 지원기간(6~7년) 추정", "osEndDate": "2028-09-01", "securityEndDate": "2031-09-01", "estimated": true, "source": { "label": "Apple iOS 26 호환 기종 문서", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 510000, "withCareKRW": 40000, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "battery", "officialKRW": 141000, "withCareKRW": 0, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } }
+    ],
+    "issues": [
+      { "id": "ip12pro-no-sound", "title": "통화 중 무음(리시버) 결함", "severity": "common", "status": "open", "summary": "2020년 10월~2021년 4월 제조분 일부에서 리시버 결함으로 통화 중 소리가 안 나는 증상. 애플이 3년 무상 수리 프로그램을 운영했으나 현재 커버 기간이 종료돼 유상 수리만 가능.", "symptoms": ["통화 중 상대 목소리가 안 들림", "리시버(수화부) 무음"], "solutions": ["중고 구매 시 통화 테스트로 리시버 정상 작동 확인", "무상 프로그램 종료로 현재는 유상 수리"], "source": { "label": "Apple 무음 서비스 프로그램", "url": "https://support.apple.com/iphone-12-and-iphone-12-pro-service-program-for-no-sound-issues", "asOf": "2021-08" } }
+    ],
+    "resale": [ { "date": "2026-06-25", "priceKRW": 579000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "iphone-11",
+    "name": "아이폰 11",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2019-10-25",
+    "releasePriceKRW": 1060000,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "Apple A13 Bionic", "displayInch": 6.1, "batteryMah": 3110, "ramGb": 4 },
+    "eol": { "policy": "애플 미공표 — iOS 26(2025) 지원(A13, 지원 막바지). iOS 27에서 A13 제외 가능성으로 OS 지원 종료 임박 추정", "osEndDate": "2026-09-01", "securityEndDate": "2029-09-01", "estimated": true, "source": { "label": "Apple iOS 26 호환 기종 문서", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 349000, "withCareKRW": 40000, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "battery", "officialKRW": 141000, "withCareKRW": 0, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } }
+    ],
+    "issues": [
+      { "id": "ip11-touch-defect", "title": "디스플레이 모듈 터치 미반응 결함", "severity": "common", "status": "open", "summary": "2019년 11월~2020년 5월 제조분 일부에서 터치가 반응하지 않는 디스플레이 모듈 결함. 애플이 2년 무상 교체를 운영했으나 현재 커버 기간이 종료됨. 아이폰 11 일반형만 해당.", "symptoms": ["화면 터치가 반응하지 않음", "특정 영역 터치 무반응"], "solutions": ["중고 구매 시 화면 전체를 터치해 반응 확인", "무상 프로그램 종료로 현재는 유상 수리"], "source": { "label": "Apple 서비스 프로그램", "url": "https://support.apple.com/service-programs/status", "asOf": "2020-01" } }
+    ],
+    "resale": [ { "date": "2026-06-03", "priceKRW": 291000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "iphone-11-pro",
+    "name": "아이폰 11 프로",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2019-10-25",
+    "releasePriceKRW": 1390000,
+    "storageBase": "64GB",
+    "specSummary": { "chipset": "Apple A13 Bionic", "displayInch": 5.8, "batteryMah": 3046, "ramGb": 4 },
+    "eol": { "policy": "애플 미공표 — iOS 26(2025) 지원(A13, 지원 막바지). iOS 27에서 A13 제외 가능성으로 OS 지원 종료 임박 추정", "osEndDate": "2026-09-01", "securityEndDate": "2029-09-01", "estimated": true, "source": { "label": "Apple iOS 26 호환 기종 문서", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 574000, "withCareKRW": 40000, "source": { "label": "큐에이드(공인 서비스) 가격표 (11 Pro 미표기 → 동일 OLED 티어 11 Pro Max 값)", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "battery", "officialKRW": 141000, "withCareKRW": 0, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-06-27", "priceKRW": 409000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "iphone-11-pro-max",
+    "name": "아이폰 11 프로 맥스",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2019-10-25",
+    "releasePriceKRW": 1550000,
+    "storageBase": "64GB",
+    "specSummary": { "chipset": "Apple A13 Bionic", "displayInch": 6.5, "batteryMah": 3969, "ramGb": 4 },
+    "eol": { "policy": "애플 미공표 — iOS 26(2025) 지원(A13, 지원 막바지). iOS 27에서 A13 제외 가능성으로 OS 지원 종료 임박 추정", "osEndDate": "2026-09-01", "securityEndDate": "2029-09-01", "estimated": true, "source": { "label": "Apple iOS 26 호환 기종 문서", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 574000, "withCareKRW": 40000, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "battery", "officialKRW": 141000, "withCareKRW": 0, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-01", "priceKRW": 330000, "source": "bunjang(추정)" } ]
+  },
+  {
+    "slug": "iphone-se-2",
+    "name": "아이폰 SE 2세대",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2020-05-06",
+    "releasePriceKRW": 550000,
+    "storageBase": "64GB",
+    "specSummary": { "chipset": "Apple A13 Bionic", "displayInch": 4.7, "batteryMah": 1821, "ramGb": 3 },
+    "eol": { "policy": "애플 미공표 — iOS 26(2025) 지원(A13, 지원 막바지). 2020년 출시로 아이폰 11보다 소폭 여유 추정", "osEndDate": "2027-09-01", "securityEndDate": "2029-09-01", "estimated": true, "source": { "label": "Apple iOS 26 호환 기종 문서", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 253000, "withCareKRW": 40000, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "battery", "officialKRW": 113000, "withCareKRW": 0, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-06-15", "priceKRW": 133000, "source": "cetizen-bunjang" } ]
+  }
+]

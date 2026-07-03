@@ -1,0 +1,103 @@
+{
+  "slug": "iphone-air",
+  "name": "아이폰 에어",
+  "brand": "apple",
+  "series": "아이폰",
+  "releaseDate": "2025-09-19",
+  "releasePriceKRW": 1590000,
+  "storageBase": "256GB",
+  "specSummary": {
+    "chipset": "Apple A19 Pro",
+    "displayInch": 6.5,
+    "batteryMah": 3149,
+    "ramGb": 12
+  },
+  "eol": {
+    "policy": "애플 미공표 — 역대 아이폰 지원기간(메이저 iOS 6~7년 + 보안 7~8년) 기반 추정",
+    "osEndDate": "2032-09-01",
+    "securityEndDate": "2034-09-01",
+    "estimated": true,
+    "source": {
+      "label": "Apple 과거 iOS 지원 이력 기반 추정",
+      "url": "https://support.apple.com/iphone/repair",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 499900,
+      "source": {
+        "label": "전자신문 아이폰 17 수리비 공개 (에어 화면가 미표기 — 기본형 동급 추정)",
+        "url": "https://www.etnews.com/20250915000264",
+        "asOf": "2025-09"
+      },
+      "withCareKRW": 40000
+    },
+    {
+      "part": "battery",
+      "officialKRW": 179000,
+      "source": {
+        "label": "전자신문 아이폰 17 수리비 공개",
+        "url": "https://www.etnews.com/20250915000264",
+        "asOf": "2025-09"
+      },
+      "withCareKRW": 0
+    }
+  ],
+  "issues": [
+    {
+      "id": "ipair-esim-only",
+      "title": "한국 최초 eSIM 전용 모델",
+      "severity": "common",
+      "status": "open",
+      "summary": "아이폰 에어는 국내 출시 아이폰 최초의 eSIM 전용(물리 SIM 슬롯 없음) 모델로, eSIM 재발급 수수료·일부 알뜰폰 미지원 등 사용 편의 이슈가 지적됨.",
+      "symptoms": [
+        "물리 SIM 사용 불가",
+        "eSIM 재발급 수수료",
+        "일부 알뜰폰 eSIM 미지원"
+      ],
+      "solutions": [
+        "eSIM 지원 통신사 선택",
+        "개통 전 통신사 eSIM 정책 확인"
+      ],
+      "source": {
+        "label": "문화일보",
+        "url": "https://www.munhwa.com/article/11532133",
+        "asOf": "2025-09"
+      }
+    },
+    {
+      "id": "ipair-small-battery",
+      "title": "초슬림 설계에 따른 소용량 배터리",
+      "severity": "info",
+      "status": "open",
+      "summary": "두께 5.6mm 초슬림 구조로 배터리 용량이 3,149mAh에 그쳐 라인업 중 가장 작아 사용시간 우려가 제기됨.",
+      "symptoms": [
+        "상대적으로 짧은 사용시간"
+      ],
+      "solutions": [
+        "전용 MagSafe 배터리팩 사용"
+      ],
+      "source": {
+        "label": "MacRumors",
+        "url": "https://www.macrumors.com/2025/09/10/iphone-17-pro-iphone-air-specs-battery-ram/",
+        "asOf": "2025-09"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EC%95%84%EC%9D%B4%ED%8F%B0%20%EC%97%90%EC%96%B4%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EC%95%84%EC%9D%B4%ED%8F%B0%20%EC%97%90%EC%96%B4",
+    "subsidyNote": "아이폰은 공시지원금이 적게 걸려 선택약정 25% 할인이 기본 선택지입니다. 프로 라인은 애플케어+ 가입 여부가 수리비 리스크를 좌우합니다.",
+    "mvnoNote": "감가 방어가 좋아 자급제 신품 구매 후 2~3년 뒤 되파는 전략의 2년 총비용이 낮은 축입니다. 요금제는 모요·스마트초이스 참고.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 1150000,
+      "source": "cetizen-bunjang"
+    }
+  ]
+}

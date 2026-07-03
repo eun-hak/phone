@@ -1,0 +1,101 @@
+[
+  {
+    "slug": "galaxy-a53",
+    "name": "갤럭시 A53",
+    "brand": "samsung",
+    "series": "갤럭시 A",
+    "releaseDate": "2022-03-25",
+    "releasePriceKRW": 599500,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "삼성 엑시노스 1280", "displayInch": 6.5, "batteryMah": 5000, "ramGb": 6 },
+    "eol": { "policy": "OS 4회 업그레이드 + 보안 5년 (2022 출시). 현재 지원 중.", "osEndDate": "2026-03-25", "securityEndDate": "2027-03-25", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 113500, "source": { "label": "삼성전자서비스 고지가 기반 (반납 기준)", "url": "https://dailyfun.kr/554", "asOf": "2022-11" } },
+      { "part": "battery", "officialKRW": 51000, "source": { "label": "삼성전자서비스 고지가 기반", "url": "https://dailyfun.kr/554", "asOf": "2022-11" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-03", "priceKRW": 150000, "source": "danawa-중고(추정)" } ]
+  },
+  {
+    "slug": "galaxy-a33",
+    "name": "갤럭시 A33",
+    "brand": "samsung",
+    "series": "갤럭시 A",
+    "releaseDate": "2022-07-29",
+    "releasePriceKRW": 499400,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "삼성 엑시노스 1280", "displayInch": 6.4, "batteryMah": 5000, "ramGb": 6 },
+    "eol": { "policy": "OS 4회 업그레이드 + 보안 5년 (2022 출시). 현재 지원 중.", "osEndDate": "2026-07-29", "securityEndDate": "2027-07-29", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 110000, "source": { "label": "삼성전자서비스 고지가 기반 (반납 기준)", "url": "https://dailyfun.kr/424", "asOf": "2022-08" } },
+      { "part": "battery", "officialKRW": 47000, "source": { "label": "삼성전자서비스 고지가 기반", "url": "https://dailyfun.kr/424", "asOf": "2022-08" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-03", "priceKRW": 138900, "source": "danawa-중고(추정)" } ]
+  },
+  {
+    "slug": "galaxy-a15",
+    "name": "갤럭시 A15",
+    "brand": "samsung",
+    "series": "갤럭시 A",
+    "releaseDate": "2024-03-18",
+    "releasePriceKRW": 319000,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "미디어텍 Helio G99", "displayInch": 6.5, "batteryMah": 5000, "ramGb": 6 },
+    "eol": { "policy": "A1x 최초로 OS 4회 업그레이드 + 보안 5년 (2024 출시). 현재 지원 중.", "osEndDate": "2028-03-18", "securityEndDate": "2029-03-18", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 69000, "source": { "label": "삼성전자서비스 고지가 기반 (반납 기준)", "url": "https://well.makemelife.com/", "asOf": "2024" } },
+      { "part": "battery", "officialKRW": 39500, "source": { "label": "삼성전자서비스 고지가 기반", "url": "https://well.makemelife.com/", "asOf": "2024" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-03", "priceKRW": 110000, "source": "danawa-중고(추정)" } ]
+  },
+  {
+    "slug": "galaxy-a52s",
+    "name": "갤럭시 A52s",
+    "brand": "samsung",
+    "series": "갤럭시 A",
+    "releaseDate": "2021-09-03",
+    "releasePriceKRW": 599500,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "퀄컴 스냅드래곤 778G", "displayInch": 6.5, "batteryMah": 4500, "ramGb": 6 },
+    "eol": { "policy": "OS 3회 업그레이드(안드로이드 11→14) + 보안 약 4년 (2021 출시). 보안 지원 종료.", "osEndDate": "2024-01-31", "securityEndDate": "2025-09-03", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 110000, "source": { "label": "삼성전자서비스 고지가 기반 (반납 기준)", "url": "https://well.makemelife.com/", "asOf": "2024" } },
+      { "part": "battery", "officialKRW": 55000, "source": { "label": "삼성전자서비스 고지가 기반", "url": "https://well.makemelife.com/", "asOf": "2024" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-03", "priceKRW": 120920, "source": "danawa-중고(추정)" } ]
+  },
+  {
+    "slug": "galaxy-quantum5",
+    "name": "갤럭시 퀀텀5",
+    "brand": "samsung",
+    "series": "갤럭시 A",
+    "releaseDate": "2024-08-28",
+    "releasePriceKRW": 618200,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "삼성 엑시노스 1480", "displayInch": 6.6, "batteryMah": 5000, "ramGb": 8 },
+    "eol": { "policy": "SKT 전용(갤럭시 A55 기반). A55 정책 준용: OS 4회 업그레이드 + 보안 5년 (2024 출시). 현재 지원 중.", "osEndDate": "2028-08-28", "securityEndDate": "2029-08-28", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [],
+    "issues": [],
+    "resale": [ { "date": "2026-07-03", "priceKRW": 379110, "source": "danawa-중고(추정)" } ]
+  },
+  {
+    "slug": "galaxy-s10-plus",
+    "name": "갤럭시 S10+",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2019-03-08",
+    "releasePriceKRW": 1155000,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "삼성 엑시노스 9820", "displayInch": 6.4, "batteryMah": 4100, "ramGb": 8 },
+    "eol": { "policy": "OS 3회 업그레이드(안드로이드 9→12, One UI 4.1) + 보안 종료. 지원 종료됨(마지막 보안 패치 2023-04).", "osEndDate": "2022-05-31", "securityEndDate": "2023-04-27", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 237000, "source": { "label": "삼성전자서비스 고지가 기반 (반납 기준, 부품 단종 가능)", "url": "https://cash.makemelife.com/", "asOf": "2023" } },
+      { "part": "battery", "officialKRW": 51500, "source": { "label": "삼성전자서비스 고지가 기반 (부품 단종 가능)", "url": "https://cash.makemelife.com/", "asOf": "2023" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-03", "priceKRW": 150000, "source": "danawa-중고(추정)" } ]
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "slug": "galaxy-note9",
+  "name": "갤럭시 노트9",
+  "brand": "samsung",
+  "series": "갤럭시 노트",
+  "releaseDate": "2018-08-24",
+  "releasePriceKRW": 1094500,
+  "storageBase": "128GB",
+  "specSummary": {
+    "chipset": "삼성 엑시노스 9810",
+    "displayInch": 6.4,
+    "batteryMah": 4000,
+    "ramGb": 6
+  },
+  "eol": {
+    "policy": "OS 2회 업그레이드(안드로이드 10까지) + 보안 약 4년. 2023년 초 보안 패치를 끝으로 정기 지원 종료됨.",
+    "osEndDate": "2020-05-31",
+    "securityEndDate": "2023-02-28",
+    "estimated": false,
+    "source": {
+      "label": "삼성 모바일 보안 업데이트 정책",
+      "url": "https://security.samsungmobile.com/workScope.smsb",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 215000,
+      "source": {
+        "label": "삼성전자서비스 고지가 (반납 기준 · 부품 단종 가능)",
+        "url": "https://mokdol.com/samsung-galaxy-repair-cost/",
+        "asOf": "2026-07"
+      }
+    },
+    {
+      "part": "battery",
+      "officialKRW": 48000,
+      "source": {
+        "label": "삼성전자서비스 고지가 (부품 단종 가능)",
+        "url": "https://mokdol.com/samsung-galaxy-repair-cost/",
+        "asOf": "2026-07"
+      }
+    }
+  ],
+  "issues": [],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20%EB%85%B8%ED%8A%B89%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20%EB%85%B8%ED%8A%B89",
+    "subsidyNote": "공시지원금과 선택약정 25% 할인을 월 요금 × 약정 개월 + 기기값의 2년 총비용으로 비교하세요. 성지 시세는 변동이 크니 총비용 계산 없이 계약하지 마세요.",
+    "mvnoNote": "신품가가 내려간 시점이라면 자급제 + 알뜰폰 조합의 가성비가 좋습니다. 중고 A급 시세와 신품 최저가 차이를 먼저 확인하세요.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 95000,
+      "source": "cetizen-bunjang(추정)"
+    }
+  ]
+}

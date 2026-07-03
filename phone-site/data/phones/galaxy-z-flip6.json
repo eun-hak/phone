@@ -1,0 +1,135 @@
+{
+  "slug": "galaxy-z-flip6",
+  "name": "갤럭시 Z 플립6",
+  "brand": "samsung",
+  "series": "갤럭시 Z",
+  "releaseDate": "2024-07-24",
+  "releasePriceKRW": 1485000,
+  "storageBase": "256GB",
+  "specSummary": {
+    "chipset": "스냅드래곤 8 Gen 3 for Galaxy",
+    "displayInch": 6.7,
+    "batteryMah": 4000,
+    "ramGb": 12
+  },
+  "eol": {
+    "policy": "OS 업그레이드 7회 + 보안 업데이트 7년 (삼성 공식 정책)",
+    "osEndDate": "2031-07-24",
+    "securityEndDate": "2031-07-24",
+    "estimated": false,
+    "source": {
+      "label": "삼성 모바일 보안 업데이트 정책",
+      "url": "https://security.samsungmobile.com/workScope.smsb",
+      "asOf": "2026-06-15"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 378000,
+      "withCareKRW": 113400,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계 (메인 화면·부품 반납 기준, 미반납 시 542,000원 · 커버 화면은 반납 118,000원 별도)",
+        "url": "https://mokdol.com/samsung-galaxy-repair-cost/",
+        "asOf": "2026-02"
+      }
+    },
+    {
+      "part": "battery",
+      "officialKRW": 134500,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계",
+        "url": "https://mokdol.com/samsung-galaxy-repair-cost/",
+        "asOf": "2026-02"
+      }
+    },
+    {
+      "part": "back-glass",
+      "officialKRW": 40000,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계 (단일 출처)",
+        "url": "https://mokdol.com/samsung-galaxy-repair-cost/",
+        "asOf": "2026-02"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "zflip6-inner-blackscreen",
+      "title": "내부 메인 화면 무반응·블랙스크린",
+      "severity": "critical",
+      "status": "open",
+      "summary": "펼쳤을 때 내부 화면이 먹통이 되거나 깨진 것처럼 표시되는 사례가 다수 보고됨. 소프트웨어 조치로 해결되지 않는 경우가 많아 하드웨어 수리가 필요하며, 공식 리콜이나 일괄 무상수리 프로그램은 없음.",
+      "symptoms": [
+        "내부 화면이 검게 꺼지고 커버 화면만 작동",
+        "터치 무반응 또는 화면 깨짐(스크램블) 표시",
+        "업데이트 직후 증상이 시작되는 사례"
+      ],
+      "solutions": [
+        "강제 재부팅·캐시 삭제 후에도 지속되면 서비스센터 점검",
+        "외관 파손이 없다면 보증 무상수리 판정 요구",
+        "수리 전 데이터 백업"
+      ],
+      "source": {
+        "label": "Android Authority",
+        "url": "https://www.androidauthority.com/samsung-galaxy-z-flip-6-problems-fixes-3479715/",
+        "asOf": "2025-08"
+      }
+    },
+    {
+      "id": "zflip6-hinge-popping",
+      "title": "힌지 팝핑·크런치 소음",
+      "severity": "common",
+      "status": "open",
+      "summary": "개폐 시 힌지에서 뚝뚝거리는 소음이 난다는 보고가 이어짐. 마모나 이물질 유입 가능성이 있어 점검이 권장되며, 공식 수정 프로그램은 확인되지 않음.",
+      "symptoms": [
+        "접고 펼 때 뚝뚝거리는 소음",
+        "힌지 개폐감이 뻑뻑해짐"
+      ],
+      "solutions": [
+        "이물질이 끼지 않도록 힌지 부위 청결 유지",
+        "소음이 심해지면 서비스센터에서 힌지 점검",
+        "보증 기간 내 무상수리 가능 여부 확인"
+      ],
+      "source": {
+        "label": "Android Authority",
+        "url": "https://www.androidauthority.com/samsung-galaxy-z-flip-6-problems-fixes-3479715/",
+        "asOf": "2025-08"
+      }
+    },
+    {
+      "id": "zflip6-oneui7-halt",
+      "title": "One UI 7 배포 일시 중단 사태",
+      "severity": "info",
+      "status": "patched",
+      "summary": "2025년 4월 One UI 7 배포 중 잠금 해제 불가 등 심각한 버그가 발견돼 삼성이 Z 플립6 포함 배포를 일시 중단했다가, 수정 후 재개해 해결된 사안.",
+      "symptoms": [
+        "업데이트 후 일부 기기에서 잠금 해제 불가",
+        "업데이트 알림이 중단·지연됨"
+      ],
+      "solutions": [
+        "수정 버전으로 재개된 최신 업데이트 설치",
+        "대규모 업데이트 직후에는 며칠 상황을 보고 설치"
+      ],
+      "source": {
+        "label": "Sammy Fans",
+        "url": "https://www.sammyfans.com/2025/04/14/samsung-halts-one-ui-7-0-release-for-galaxy-z-flip-6-fold-6/",
+        "asOf": "2025-04"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20Z%20%ED%94%8C%EB%A6%BD6%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20Z%20%ED%94%8C%EB%A6%BD6",
+    "subsidyNote": "폴더블은 공시지원금이 크게 걸리는 대표 기종군. 다만 감가도 빨라 2년 뒤 잔존가치까지 계산하면 지원금 매력이 상쇄되는 경우가 많음.",
+    "mvnoNote": "중고 구매 시 힌지·필름 상태 확인이 가격보다 중요. 대면 거래로 개폐 상태를 직접 확인 권장.",
+    "asOf": "2026-06-15"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 420000,
+      "source": "cetizen-bunjang-mintit"
+    }
+  ]
+}

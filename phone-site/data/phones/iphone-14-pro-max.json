@@ -1,0 +1,83 @@
+{
+  "slug": "iphone-14-pro-max",
+  "name": "아이폰 14 프로 맥스",
+  "brand": "apple",
+  "series": "아이폰",
+  "releaseDate": "2022-10-07",
+  "releasePriceKRW": 1750000,
+  "storageBase": "128GB",
+  "specSummary": {
+    "chipset": "Apple A16 Bionic",
+    "displayInch": 6.7,
+    "batteryMah": 4323,
+    "ramGb": 6
+  },
+  "eol": {
+    "policy": "애플 미공표 — iOS 26(2025) 지원 확인, 역대 지원기간(6~7년) 추정",
+    "osEndDate": "2029-09-30",
+    "securityEndDate": "2031-09-30",
+    "estimated": true,
+    "source": {
+      "label": "Apple iOS 26 호환 기종 문서",
+      "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 668000,
+      "source": {
+        "label": "큐에이드(공인 서비스) 애플 수리 가격표",
+        "url": "https://www.q-aid.co.kr/appleService/price",
+        "asOf": "2026-06"
+      },
+      "withCareKRW": 40000
+    },
+    {
+      "part": "battery",
+      "officialKRW": 158000,
+      "source": {
+        "label": "큐에이드(공인 서비스) 애플 수리 가격표",
+        "url": "https://www.q-aid.co.kr/appleService/price",
+        "asOf": "2026-06"
+      },
+      "withCareKRW": 0
+    }
+  ],
+  "issues": [
+    {
+      "id": "ip14promax-camera-shake",
+      "title": "출시 초기 서드파티 앱 카메라 흔들림",
+      "severity": "common",
+      "status": "patched",
+      "summary": "출시 직후 틱톡·인스타그램·스냅챗 등에서 후면 카메라 OIS가 물리적으로 흔들리는 현상. 기본 카메라 앱은 정상이며 iOS 16.0.2에서 수정됨.",
+      "symptoms": [
+        "서드파티 앱에서 카메라 프리뷰 심하게 흔들림",
+        "카메라에서 진동·소음"
+      ],
+      "solutions": [
+        "iOS 16.0.2 이상으로 업데이트"
+      ],
+      "source": {
+        "label": "AppleInsider",
+        "url": "https://appleinsider.com/articles/22/09/22/iphone-14-pro-camera-shake-fix-now-available-with-ios-1602",
+        "asOf": "2022-09"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EC%95%84%EC%9D%B4%ED%8F%B0%2014%20%ED%94%84%EB%A1%9C%20%EB%A7%A5%EC%8A%A4%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EC%95%84%EC%9D%B4%ED%8F%B0%2014%20%ED%94%84%EB%A1%9C%20%EB%A7%A5%EC%8A%A4",
+    "subsidyNote": "아이폰은 공시지원금이 적게 걸려 선택약정 25% 할인이 기본 선택지입니다. 프로 라인은 애플케어+ 가입 여부가 수리비 리스크를 좌우합니다.",
+    "mvnoNote": "감가 방어가 좋아 자급제 신품 구매 후 2~3년 뒤 되파는 전략의 2년 총비용이 낮은 축입니다. 요금제는 모요·스마트초이스 참고.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 730000,
+      "source": "cetizen-bunjang"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "slug": "iphone-16-pro-max",
+  "name": "아이폰 16 프로 맥스",
+  "brand": "apple",
+  "series": "아이폰",
+  "releaseDate": "2024-09-20",
+  "releasePriceKRW": 1900000,
+  "storageBase": "256GB",
+  "specSummary": {
+    "chipset": "Apple A18 Pro",
+    "displayInch": 6.9,
+    "batteryMah": 4685,
+    "ramGb": 8
+  },
+  "eol": {
+    "policy": "애플 미공표 — iOS 26(2025) 지원 확인, 역대 지원기간(6~7년) 추정",
+    "osEndDate": "2031-09-30",
+    "securityEndDate": "2033-09-30",
+    "estimated": true,
+    "source": {
+      "label": "Apple iOS 26 호환 기종 문서",
+      "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 712000,
+      "withCareKRW": 40000,
+      "source": {
+        "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표 (VAT 포함)",
+        "url": "https://www.q-aid.co.kr/appleService/price",
+        "asOf": "2026-06"
+      }
+    },
+    {
+      "part": "battery",
+      "officialKRW": 195000,
+      "withCareKRW": 0,
+      "source": {
+        "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표 (VAT 포함)",
+        "url": "https://www.q-aid.co.kr/appleService/price",
+        "asOf": "2026-06"
+      }
+    },
+    {
+      "part": "back-glass",
+      "officialKRW": 359000,
+      "withCareKRW": 120000,
+      "source": {
+        "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표 (VAT 포함)",
+        "url": "https://www.q-aid.co.kr/appleService/price",
+        "asOf": "2026-06"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "ip16promax-touch-unresponsive",
+      "title": "출시 초기 터치스크린 반응 불량",
+      "severity": "common",
+      "status": "patched",
+      "summary": "출시 직후 일부 기기에서 스크롤·터치 입력이 간헐적으로 인식되지 않는 문제가 보고됨. iOS 18.0.1 업데이트로 수정.",
+      "symptoms": [
+        "화면 가장자리 터치 미인식",
+        "스크롤 중 입력 끊김"
+      ],
+      "solutions": [
+        "iOS 18.0.1 이상으로 업데이트"
+      ],
+      "source": {
+        "label": "Apple iOS 18.0.1 릴리스 노트",
+        "url": "https://support.apple.com/en-us/121032",
+        "asOf": "2024-10"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EC%95%84%EC%9D%B4%ED%8F%B0%2016%20%ED%94%84%EB%A1%9C%20%EB%A7%A5%EC%8A%A4%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EC%95%84%EC%9D%B4%ED%8F%B0%2016%20%ED%94%84%EB%A1%9C%20%EB%A7%A5%EC%8A%A4",
+    "subsidyNote": "아이폰은 공시지원금이 적게 걸려 선택약정 25% 할인이 기본 선택지입니다. 프로 라인은 애플케어+ 가입 여부가 수리비 리스크를 좌우합니다.",
+    "mvnoNote": "감가 방어가 좋아 자급제 신품 구매 후 2~3년 뒤 되파는 전략의 2년 총비용이 낮은 축입니다. 요금제는 모요·스마트초이스 참고.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 1050000,
+      "source": "cetizen-bunjang-mintit"
+    }
+  ]
+}

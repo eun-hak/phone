@@ -1,0 +1,74 @@
+{
+  "slug": "galaxy-s10",
+  "name": "갤럭시 S10",
+  "brand": "samsung",
+  "series": "갤럭시 S",
+  "releaseDate": "2019-03-08",
+  "releasePriceKRW": 1056000,
+  "storageBase": "128GB",
+  "specSummary": {
+    "chipset": "삼성 엑시노스 9820",
+    "displayInch": 6.1,
+    "batteryMah": 3400,
+    "ramGb": 8
+  },
+  "eol": {
+    "policy": "OS 3회 업그레이드(안드로이드 12까지) + 보안 약 4년. 2023년 4월 보안 패치를 끝으로 정기 지원 종료됨.",
+    "osEndDate": "2022-03-31",
+    "securityEndDate": "2023-04-30",
+    "estimated": false,
+    "source": {
+      "label": "삼성 모바일 보안 업데이트 정책",
+      "url": "https://security.samsungmobile.com/workScope.smsb",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 217000,
+      "source": {
+        "label": "삼성전자서비스 고지가 (반납 기준, 배터리 일체형 동시 교체 · 부품 단종 가능)",
+        "url": "https://well.makemelife.com/",
+        "asOf": "2026-07"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "s10-green-line",
+      "title": "화면 세로 녹색 줄(그린라인)",
+      "severity": "common",
+      "status": "open",
+      "summary": "AMOLED 패널 노후화·일부 업데이트 이후 화면에 세로 녹색 줄이 나타나는 현상. 삼성은 인도 등에서 S21/S22 계열에 한해 무상 교체를 진행했으나 국내 S10에 대한 공식 무상수리 지침은 없음.",
+      "symptoms": [
+        "화면에 얇은 세로 녹색 줄 1~여러 줄",
+        "시간이 지날수록 줄 개수 증가"
+      ],
+      "solutions": [
+        "보증기간 내라면 서비스센터 무상 점검 요청",
+        "보증 종료 시 유상 교체(반납 기준 약 21만원)",
+        "중고 구매 시 흰 배경으로 세로줄 필수 확인"
+      ],
+      "source": {
+        "label": "비즈니스포스트 — 화면 녹색 줄 품질문제",
+        "url": "https://www.businesspost.co.kr/BP?command=article_view&num=371249",
+        "asOf": "2026-07"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20S10%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20S10",
+    "subsidyNote": "공시지원금과 선택약정 25% 할인을 월 요금 × 약정 개월 + 기기값의 2년 총비용으로 비교하세요. 성지 시세는 변동이 크니 총비용 계산 없이 계약하지 마세요.",
+    "mvnoNote": "신품가가 내려간 시점이라면 자급제 + 알뜰폰 조합의 가성비가 좋습니다. 중고 A급 시세와 신품 최저가 차이를 먼저 확인하세요.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 110000,
+      "source": "cetizen-bunjang(추정)"
+    }
+  ]
+}

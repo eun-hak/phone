@@ -1,0 +1,102 @@
+{
+  "slug": "iphone-17-pro",
+  "name": "아이폰 17 프로",
+  "brand": "apple",
+  "series": "아이폰",
+  "releaseDate": "2025-09-19",
+  "releasePriceKRW": 1790000,
+  "storageBase": "256GB",
+  "specSummary": {
+    "chipset": "Apple A19 Pro",
+    "displayInch": 6.3,
+    "batteryMah": 3988,
+    "ramGb": 12
+  },
+  "eol": {
+    "policy": "애플 미공표 — 역대 프로 모델 지원기간(메이저 iOS 6~7년 + 보안 7~8년) 기반 추정",
+    "osEndDate": "2032-09-01",
+    "securityEndDate": "2034-09-01",
+    "estimated": true,
+    "source": {
+      "label": "Apple 과거 iOS 지원 이력 기반 추정",
+      "url": "https://support.apple.com/iphone/repair",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 499900,
+      "source": {
+        "label": "전자신문 아이폰 17 수리비 공개",
+        "url": "https://www.etnews.com/20250915000264",
+        "asOf": "2025-09"
+      },
+      "withCareKRW": 40000
+    },
+    {
+      "part": "battery",
+      "officialKRW": 179000,
+      "source": {
+        "label": "전자신문 아이폰 17 수리비 공개",
+        "url": "https://www.etnews.com/20250915000264",
+        "asOf": "2025-09"
+      },
+      "withCareKRW": 0
+    }
+  ],
+  "issues": [
+    {
+      "id": "ip17pro-camera-scratch",
+      "title": "카메라부 스크래치·코팅 벗겨짐 논란",
+      "severity": "critical",
+      "status": "open",
+      "summary": "출시 당일 전시품에서부터 카메라 플래토 모서리 긁힘이 발견되며 논란. 알루미늄 바디 아노다이징층이 모서리에서 균일하지 않아 스크래치에 취약하다는 분석.",
+      "symptoms": [
+        "카메라 돌출부 모서리 긁힘",
+        "코팅(아노다이징) 벗겨짐"
+      ],
+      "solutions": [
+        "케이스 사용",
+        "구입 시 외관 확인"
+      ],
+      "source": {
+        "label": "전자신문",
+        "url": "https://www.etnews.com/20250924000377",
+        "asOf": "2025-09"
+      }
+    },
+    {
+      "id": "ip17pro-discolor",
+      "title": "알루미늄 바디 변색 논란",
+      "severity": "common",
+      "status": "open",
+      "summary": "라인업 최초 적용된 알루미늄 소재 바디가 공기 중 산소·수분과 반응해 변색됐을 가능성이 제기됨.",
+      "symptoms": [
+        "프레임 색상 변색"
+      ],
+      "solutions": [
+        "Apple 서비스 문의"
+      ],
+      "source": {
+        "label": "KNN",
+        "url": "https://news.knn.co.kr/news/article_sns/520",
+        "asOf": "2025-09"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EC%95%84%EC%9D%B4%ED%8F%B0%2017%20%ED%94%84%EB%A1%9C%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EC%95%84%EC%9D%B4%ED%8F%B0%2017%20%ED%94%84%EB%A1%9C",
+    "subsidyNote": "아이폰은 공시지원금이 적게 걸려 선택약정 25% 할인이 기본 선택지입니다. 프로 라인은 애플케어+ 가입 여부가 수리비 리스크를 좌우합니다.",
+    "mvnoNote": "감가 방어가 좋아 자급제 신품 구매 후 2~3년 뒤 되파는 전략의 2년 총비용이 낮은 축입니다. 요금제는 모요·스마트초이스 참고.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-03-04",
+      "priceKRW": 1631000,
+      "source": "cetizen"
+    }
+  ]
+}

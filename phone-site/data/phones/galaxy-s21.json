@@ -1,0 +1,93 @@
+{
+  "slug": "galaxy-s21",
+  "name": "갤럭시 S21",
+  "brand": "samsung",
+  "series": "갤럭시 S",
+  "releaseDate": "2021-01-29",
+  "releasePriceKRW": 999900,
+  "storageBase": "256GB",
+  "specSummary": {
+    "chipset": "엑시노스 2100 (한국 모델)",
+    "displayInch": 6.2,
+    "batteryMah": 4000,
+    "ramGb": 8
+  },
+  "eol": {
+    "policy": "OS 4회 업그레이드 + 보안 5년. 2026년 1월 5년 보안 지원 완료로 정기 업데이트 종료.",
+    "osEndDate": "2025-01-29",
+    "securityEndDate": "2026-01-29",
+    "estimated": false,
+    "source": {
+      "label": "삼성 모바일 보안 업데이트 정책",
+      "url": "https://security.samsungmobile.com/workScope.smsb",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 213000,
+      "source": {
+        "label": "삼성전자서비스 고지가 (부품 반납 기준)",
+        "url": "https://well.makemelife.com/entry/S21-액정-교체",
+        "asOf": "2024-01"
+      },
+      "withCareKRW": 53250
+    },
+    {
+      "part": "battery",
+      "officialKRW": 55000,
+      "source": {
+        "label": "삼성전자서비스 고지가",
+        "url": "https://well.makemelife.com/entry/S21-액정-교체",
+        "asOf": "2024-01"
+      }
+    },
+    {
+      "part": "back-glass",
+      "officialKRW": 32000,
+      "source": {
+        "label": "삼성전자서비스 고지가 (후면 케이스)",
+        "url": "https://well.makemelife.com/entry/S21-액정-교체",
+        "asOf": "2024-01"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "s21-green-line",
+      "title": "디스플레이 세로 녹색선(그린라인)",
+      "severity": "common",
+      "status": "free-repair",
+      "summary": "소프트웨어 업데이트·발열 이후 화면에 세로 녹색선이 나타나는 현상이 S21 시리즈에서 다수 보고됨. 인도 등 일부 지역은 무상 화면 교체 프로그램을 운영, 한국은 사례별 AS 대응.",
+      "symptoms": [
+        "화면 세로 녹색 선",
+        "업데이트 후 선 발생",
+        "발열 시 선 증가"
+      ],
+      "solutions": [
+        "삼성전자서비스에서 무상수리 대상 여부 확인",
+        "중고 구매 시 세로선 여부 필수 확인"
+      ],
+      "source": {
+        "label": "삼성 멤버스 — 그린라인 무상교체 연장",
+        "url": "https://r1.community.samsung.com/t5/갤럭시-s/td-p/32762904",
+        "asOf": "2025-04"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20S21%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20S21",
+    "subsidyNote": "공시지원금과 선택약정 25% 할인을 월 요금 × 약정 개월 + 기기값의 2년 총비용으로 비교하세요. 성지 시세는 변동이 크니 총비용 계산 없이 계약하지 마세요.",
+    "mvnoNote": "신품가가 내려간 시점이라면 자급제 + 알뜰폰 조합의 가성비가 좋습니다. 중고 A급 시세와 신품 최저가 차이를 먼저 확인하세요.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 200000,
+      "source": "cetizen-bunjang"
+    }
+  ]
+}

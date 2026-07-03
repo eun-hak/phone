@@ -1,0 +1,124 @@
+[
+  {
+    "slug": "galaxy-s26-plus",
+    "name": "갤럭시 S26+",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2026-03-11",
+    "releasePriceKRW": 1452000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "엑시노스 2600 (한국 모델)", "displayInch": 6.7, "batteryMah": 4900, "ramGb": 12 },
+    "eol": { "policy": "OS 업그레이드 7회 + 보안 업데이트 7년 (S24 이후 정책)", "osEndDate": "2033-03-11", "securityEndDate": "2033-03-11", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 258000, "withCareKRW": 64500, "source": { "label": "삼성전자서비스 요금 기반 집계", "url": "https://techtown.co.kr/", "asOf": "2026-03" } },
+      { "part": "battery", "officialKRW": 79000, "source": { "label": "삼성전자서비스 요금 기반 집계", "url": "https://techtown.co.kr/", "asOf": "2026-03" } },
+      { "part": "back-glass", "officialKRW": 70500, "source": { "label": "삼성전자서비스 요금 기반 집계 (후면 케이스)", "url": "https://techtown.co.kr/", "asOf": "2026-03" } }
+    ],
+    "issues": [
+      { "id": "s26-plus-3x-blur", "title": "3배 망원(3x) 줌 촬영 이미지 흐림", "severity": "common", "status": "open", "summary": "S26 시리즈 사용자들이 3배 망원 카메라로 촬영한 사진이 흐리게 나온다고 보고. 삼성이 문제를 인정하고 개선을 예고했으나 2026년 4월 업데이트에는 실질적 수정이 반영되지 않았다.", "symptoms": ["3배 줌으로 촬영 시 사진이 흐릿하게 나옴"], "solutions": ["삼성 소프트웨어 업데이트 대기 (개선 예정 안내)"], "source": { "label": "SamMobile", "url": "https://www.sammobile.com/news/galaxy-s26-april-2026-software-update-camera-improvements-released/", "asOf": "2026-04" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 1050000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "galaxy-s22",
+    "name": "갤럭시 S22",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2022-02-25",
+    "releasePriceKRW": 999900,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "엑시노스 2200 (한국 모델)", "displayInch": 6.1, "batteryMah": 3700, "ramGb": 8 },
+    "eol": { "policy": "OS 4회 업그레이드 + 보안 5년. 출시 4년 경과로 분기별 보안 트랙으로 전환됨.", "osEndDate": "2026-02-25", "securityEndDate": "2027-02-25", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 198000, "withCareKRW": 49500, "source": { "label": "삼성전자서비스 고지가 (부품 반납 기준)", "url": "https://well.makemelife.com/entry/S22-액정-수리비", "asOf": "2024-01" } },
+      { "part": "battery", "officialKRW": 42500, "source": { "label": "삼성전자서비스 고지가", "url": "https://well.makemelife.com/entry/S22-액정-수리비", "asOf": "2024-01" } },
+      { "part": "back-glass", "officialKRW": 48000, "source": { "label": "삼성전자서비스 고지가 (후면 케이스)", "url": "https://well.makemelife.com/entry/S22-액정-수리비", "asOf": "2024-01" } }
+    ],
+    "issues": [
+      { "id": "s22-gos", "title": "GOS 게임 성능 제한 논란", "severity": "common", "status": "patched", "summary": "출시 직후 기본 탑재된 GOS가 고사양 앱에서 해상도·GPU를 강제로 낮춰 실성능을 제한하면서 벤치마크 앱은 예외 처리해 성능을 부풀린 사실이 드러나 논란이 됐다. 삼성이 One UI 업데이트로 '성능 우선 모드'를 추가해 제한 해제를 지원함.", "symptoms": ["게임·고사양 앱에서 프레임 저하", "벤치마크 대비 실사용 성능 괴리"], "solutions": ["One UI 4.1 업데이트 후 게임 설정에서 '성능 우선 모드' 활성화"], "source": { "label": "한국일보 — 갤럭시 GOS 사건", "url": "https://m.hankookilbo.com/News/Read/A2022030409370000146", "asOf": "2022-03" } },
+      { "id": "s22-green-line", "title": "디스플레이 세로 녹색선(그린라인)", "severity": "info", "status": "free-repair", "summary": "일부 S21·S22 시리즈에서 사용 중 화면에 세로 녹색 선이 나타나는 결함이 보고됨. 삼성은 인도 등 일부 국가에서 무상 화면 교체 기간을 연장했으나 지역별 적용이 달라 한국은 서비스센터 확인 필요.", "symptoms": ["디스플레이에 세로 방향 녹색 선", "OS 업데이트 직후 발생 사례"], "solutions": ["삼성전자서비스에서 무상수리 대상 여부 확인", "중고 구매 시 세로선 여부 필수 확인"], "source": { "label": "삼성 멤버스 — 그린라인 무상교체 연장 안내", "url": "https://r1.community.samsung.com/t5/갤럭시-s/td-p/32762904", "asOf": "2025-04" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 250000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "galaxy-s22-plus",
+    "name": "갤럭시 S22+",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2022-02-25",
+    "releasePriceKRW": 1199000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "엑시노스 2200 (한국 모델)", "displayInch": 6.6, "batteryMah": 4500, "ramGb": 8 },
+    "eol": { "policy": "OS 4회 업그레이드 + 보안 5년. 출시 4년 경과로 분기별 보안 트랙으로 전환됨.", "osEndDate": "2026-02-25", "securityEndDate": "2027-02-25", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 213000, "withCareKRW": 53250, "source": { "label": "삼성전자서비스 고지가 (부품 반납 기준)", "url": "https://cash.makemelife.com/entry/S22-플러스-액정", "asOf": "2024-01" } },
+      { "part": "battery", "officialKRW": 46000, "source": { "label": "삼성전자서비스 고지가", "url": "https://cash.makemelife.com/entry/S22-플러스-액정", "asOf": "2024-01" } },
+      { "part": "back-glass", "officialKRW": 47000, "source": { "label": "삼성전자서비스 고지가 (후면 케이스)", "url": "https://cash.makemelife.com/entry/S22-플러스-액정", "asOf": "2024-01" } }
+    ],
+    "issues": [
+      { "id": "s22-plus-gos", "title": "GOS 게임 성능 제한 논란", "severity": "common", "status": "patched", "summary": "S22 시리즈 공통. 기본 탑재 GOS가 고사양 앱에서 성능을 강제 하향하면서 벤치마크 앱은 예외 처리해 성능을 부풀린 논란. 삼성이 One UI 업데이트로 '성능 우선 모드'를 추가해 해제를 지원함.", "symptoms": ["게임·고사양 앱에서 프레임 저하", "벤치마크 대비 실사용 성능 괴리"], "solutions": ["One UI 4.1 업데이트 후 게임 설정에서 '성능 우선 모드' 활성화"], "source": { "label": "한국일보 — 갤럭시 GOS 사건", "url": "https://m.hankookilbo.com/News/Read/A2022030409370000146", "asOf": "2022-03" } },
+      { "id": "s22-plus-green-line", "title": "디스플레이 세로 녹색선(그린라인)", "severity": "info", "status": "free-repair", "summary": "S21·S22 시리즈 일부에서 사용 중 화면에 세로 녹색 선이 나타나는 결함이 보고됨. 지역별 무상수리 적용이 달라 한국은 서비스센터 확인 필요.", "symptoms": ["디스플레이에 세로 방향 녹색 선", "OS 업데이트·사용 중 무작위 발생"], "solutions": ["삼성전자서비스에서 무상수리 대상 여부 확인", "중고 구매 시 세로선 여부 필수 확인"], "source": { "label": "삼성 멤버스 — 그린라인 무상교체 연장 안내", "url": "https://r1.community.samsung.com/t5/갤럭시-s/td-p/32762904", "asOf": "2025-04" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 290000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "galaxy-s21",
+    "name": "갤럭시 S21",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2021-01-29",
+    "releasePriceKRW": 999900,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "엑시노스 2100 (한국 모델)", "displayInch": 6.2, "batteryMah": 4000, "ramGb": 8 },
+    "eol": { "policy": "OS 4회 업그레이드 + 보안 5년. 2026년 1월 5년 보안 지원 완료로 정기 업데이트 종료.", "osEndDate": "2025-01-29", "securityEndDate": "2026-01-29", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 213000, "withCareKRW": 53250, "source": { "label": "삼성전자서비스 고지가 (부품 반납 기준)", "url": "https://well.makemelife.com/entry/S21-액정-교체", "asOf": "2024-01" } },
+      { "part": "battery", "officialKRW": 55000, "source": { "label": "삼성전자서비스 고지가", "url": "https://well.makemelife.com/entry/S21-액정-교체", "asOf": "2024-01" } },
+      { "part": "back-glass", "officialKRW": 32000, "source": { "label": "삼성전자서비스 고지가 (후면 케이스)", "url": "https://well.makemelife.com/entry/S21-액정-교체", "asOf": "2024-01" } }
+    ],
+    "issues": [
+      { "id": "s21-green-line", "title": "디스플레이 세로 녹색선(그린라인)", "severity": "common", "status": "free-repair", "summary": "소프트웨어 업데이트·발열 이후 화면에 세로 녹색선이 나타나는 현상이 S21 시리즈에서 다수 보고됨. 인도 등 일부 지역은 무상 화면 교체 프로그램을 운영, 한국은 사례별 AS 대응.", "symptoms": ["화면 세로 녹색 선", "업데이트 후 선 발생", "발열 시 선 증가"], "solutions": ["삼성전자서비스에서 무상수리 대상 여부 확인", "중고 구매 시 세로선 여부 필수 확인"], "source": { "label": "삼성 멤버스 — 그린라인 무상교체 연장", "url": "https://r1.community.samsung.com/t5/갤럭시-s/td-p/32762904", "asOf": "2025-04" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 200000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "galaxy-s21-plus",
+    "name": "갤럭시 S21+",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2021-01-29",
+    "releasePriceKRW": 1199000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "엑시노스 2100 (한국 모델)", "displayInch": 6.7, "batteryMah": 4800, "ramGb": 8 },
+    "eol": { "policy": "OS 4회 업그레이드 + 보안 5년. 2026년 1월 5년 보안 지원 완료로 정기 업데이트 종료.", "osEndDate": "2025-01-29", "securityEndDate": "2026-01-29", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 219000, "withCareKRW": 54750, "source": { "label": "삼성전자서비스 고지가 (부품 반납 기준)", "url": "https://www.makemelife.com/entry/S21-플러스-액정", "asOf": "2024-01" } },
+      { "part": "battery", "officialKRW": 47000, "source": { "label": "삼성전자서비스 고지가", "url": "https://www.makemelife.com/entry/S21-플러스-액정", "asOf": "2024-01" } },
+      { "part": "back-glass", "officialKRW": 50000, "source": { "label": "삼성전자서비스 고지가 (후면 케이스)", "url": "https://www.makemelife.com/entry/S21-플러스-액정", "asOf": "2024-01" } }
+    ],
+    "issues": [
+      { "id": "s21-plus-green-line", "title": "디스플레이 세로 녹색선(그린라인)", "severity": "common", "status": "free-repair", "summary": "소프트웨어 업데이트·발열 이후 화면에 세로 녹색선이 나타나는 현상이 S21 시리즈 전반에서 보고됨. 지역별 무상수리 적용이 달라 한국은 사례별 AS 대응.", "symptoms": ["화면 세로 녹색 선", "업데이트 후 선 발생", "발열 시 선 증가"], "solutions": ["삼성전자서비스에서 무상수리 대상 여부 확인", "중고 구매 시 세로선 여부 필수 확인"], "source": { "label": "삼성 멤버스 — 그린라인 무상교체 연장", "url": "https://r1.community.samsung.com/t5/갤럭시-s/td-p/32762904", "asOf": "2025-04" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 260000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "galaxy-s21-ultra",
+    "name": "갤럭시 S21 울트라",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2021-01-29",
+    "releasePriceKRW": 1452000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "엑시노스 2100 (한국 모델)", "displayInch": 6.8, "batteryMah": 5000, "ramGb": 12 },
+    "eol": { "policy": "OS 4회 업그레이드 + 보안 5년. 2026년 1월 5년 보안 지원 완료로 정기 업데이트 종료.", "osEndDate": "2025-01-29", "securityEndDate": "2026-01-29", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 270000, "withCareKRW": 67500, "source": { "label": "삼성전자서비스 고지가 (부품 반납 기준)", "url": "https://0muwon.com/", "asOf": "2024-01" } },
+      { "part": "battery", "officialKRW": 49500, "source": { "label": "삼성전자서비스 고지가", "url": "https://0muwon.com/", "asOf": "2024-01" } },
+      { "part": "back-glass", "officialKRW": 62000, "source": { "label": "삼성전자서비스 고지가 (후면 케이스)", "url": "https://0muwon.com/", "asOf": "2024-01" } }
+    ],
+    "issues": [
+      { "id": "s21-ultra-green-line", "title": "디스플레이 세로 녹색선(그린라인)", "severity": "common", "status": "free-repair", "summary": "S21 울트라·S22 울트라 등에서 소프트웨어 업데이트·발열 후 화면에 세로 녹색선이 나타나는 현상이 뉴스로 확인됨(플렉스 케이블 접착 문제 추정). 지역별 무상수리 적용이 달라 한국은 사례별 AS 대응.", "symptoms": ["화면 세로 녹색 선", "업데이트 후 선 발생", "발열 시 선 증가"], "solutions": ["삼성전자서비스에서 무상수리 대상 여부 확인", "중고 구매 시 세로선 여부 필수 확인"], "source": { "label": "삼성 멤버스 — S21·S22 울트라 무상 화면 교체 연장", "url": "https://r1.community.samsung.com/t5/갤럭시-s/td-p/32762904", "asOf": "2025-04" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 420000, "source": "cetizen-bunjang" } ]
+  }
+]

@@ -1,0 +1,103 @@
+{
+  "slug": "galaxy-z-fold4",
+  "name": "갤럭시 Z 폴드4",
+  "brand": "samsung",
+  "series": "갤럭시 Z",
+  "releaseDate": "2022-08-26",
+  "releasePriceKRW": 1998700,
+  "storageBase": "256GB",
+  "specSummary": {
+    "chipset": "스냅드래곤 8+ Gen 1",
+    "displayInch": 7.6,
+    "batteryMah": 4400,
+    "ramGb": 12
+  },
+  "eol": {
+    "policy": "2022년 폴더블 정책: OS 4회 업그레이드 + 보안 5년.",
+    "osEndDate": "2026-08-26",
+    "securityEndDate": "2027-08-26",
+    "estimated": false,
+    "source": {
+      "label": "삼성 모바일 보안 업데이트 정책",
+      "url": "https://security.samsungmobile.com/workScope.smsb",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 690000,
+      "source": {
+        "label": "삼성전자서비스 고지가 (메인 화면 반납 기준) · 케어플러스 폴더블 30%",
+        "url": "https://www.makemelife.com/",
+        "asOf": "2026-07"
+      },
+      "withCareKRW": 207000
+    },
+    {
+      "part": "battery",
+      "officialKRW": 87500,
+      "source": {
+        "label": "삼성전자서비스 고지가",
+        "url": "https://www.makemelife.com/",
+        "asOf": "2026-07"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "zfold4-inner-film",
+      "title": "내부 보호필름 들뜸",
+      "severity": "common",
+      "status": "free-repair",
+      "summary": "폴딩부 내부 보호필름이 시간이 지나면 들뜨거나 갈라지는 현상이 다수 보고됨. 삼성전자서비스는 폴딩부 들뜸에 한해 구입 후 90일 내 1회 무상 재부착을 제공하나, 외부 요인 손상은 제외.",
+      "symptoms": [
+        "내부 화면 접힘부 보호필름 떠오름",
+        "필름 가장자리 들뜸·갈라짐"
+      ],
+      "solutions": [
+        "삼성전자서비스 폴딩부 들뜸 무상 재부착(90일 1회)",
+        "필름 임의 제거 금지"
+      ],
+      "source": {
+        "label": "삼성전자서비스 — 폴드4 정품 보호필름 안내",
+        "url": "https://www.samsungsvc.co.kr/solution/1080629",
+        "asOf": "2026-07"
+      }
+    },
+    {
+      "id": "zfold4-hinge",
+      "title": "힌지 유격·화면 안펴짐",
+      "severity": "common",
+      "status": "open",
+      "summary": "장기 사용 시 힌지 유격·소음, 화면이 완전히 펴지지 않는 사례가 커뮤니티에 보고됨. 외관 기스·찍힘이 있으면 무상수리가 거부되는 경우가 많음.",
+      "symptoms": [
+        "화면이 평평하게 펴지지 않음",
+        "힌지 부위 소음·유격"
+      ],
+      "solutions": [
+        "삼성전자서비스 점검(보증·과실 여부에 따라 유·무상)",
+        "외관 파손 발생 전 조기 점검 권장"
+      ],
+      "source": {
+        "label": "삼성 멤버스 — 폴드4 안펴짐 현상",
+        "url": "https://r1.community.samsung.com/t5/갤럭시-z/td-p/23737407",
+        "asOf": "2026-07"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20Z%20%ED%8F%B4%EB%93%9C4%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20Z%20%ED%8F%B4%EB%93%9C4",
+    "subsidyNote": "폴더블은 공시지원금이 크게 걸리는 대표 기종군이지만 감가도 빨라, 2년 뒤 잔존가치까지 계산하면 지원금 매력이 상쇄되는 경우가 많습니다.",
+    "mvnoNote": "중고 구매 시 힌지·필름 상태 확인이 가격보다 중요합니다. 대면 거래로 개폐 상태를 직접 확인하세요.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 520000,
+      "source": "cetizen-bunjang"
+    }
+  ]
+}

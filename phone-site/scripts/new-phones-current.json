@@ -1,0 +1,175 @@
+[
+  {
+    "slug": "iphone-17",
+    "name": "아이폰 17",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2025-09-19",
+    "releasePriceKRW": 1290000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "Apple A19", "displayInch": 6.3, "batteryMah": 3692, "ramGb": 8 },
+    "eol": { "policy": "애플 미공표 — 역대 아이폰 지원기간(메이저 iOS 6~7년 + 보안 7~8년) 기반 추정", "osEndDate": "2032-09-01", "securityEndDate": "2034-09-01", "estimated": true, "source": { "label": "Apple 과거 iOS 지원 이력 기반 추정", "url": "https://support.apple.com/iphone/repair", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 499900, "withCareKRW": 40000, "source": { "label": "전자신문 아이폰 17 수리비 공개", "url": "https://www.etnews.com/20250915000264", "asOf": "2025-09" } },
+      { "part": "battery", "officialKRW": 146000, "withCareKRW": 0, "source": { "label": "전자신문 아이폰 17 수리비 공개", "url": "https://www.etnews.com/20250915000264", "asOf": "2025-09" } }
+    ],
+    "issues": [
+      { "id": "ip17-frame-scratch", "title": "알루미늄 프레임·카메라부 스크래치 논란", "severity": "common", "status": "open", "summary": "17 시리즈 공통 논란으로, 카메라 플래토 모서리의 아노다이징 코팅이 약해 긁힘·코팅 벗겨짐이 초기부터 보고됨.", "symptoms": ["카메라 돌출부 모서리 긁힘", "프레임 코팅 벗겨짐"], "solutions": ["케이스·범퍼 사용", "구입 시 외관 확인"], "source": { "label": "전자신문", "url": "https://www.etnews.com/20250924000377", "asOf": "2025-09" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 1050000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "iphone-air",
+    "name": "아이폰 에어",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2025-09-19",
+    "releasePriceKRW": 1590000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "Apple A19 Pro", "displayInch": 6.5, "batteryMah": 3149, "ramGb": 12 },
+    "eol": { "policy": "애플 미공표 — 역대 아이폰 지원기간(메이저 iOS 6~7년 + 보안 7~8년) 기반 추정", "osEndDate": "2032-09-01", "securityEndDate": "2034-09-01", "estimated": true, "source": { "label": "Apple 과거 iOS 지원 이력 기반 추정", "url": "https://support.apple.com/iphone/repair", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 499900, "withCareKRW": 40000, "source": { "label": "전자신문 아이폰 17 수리비 공개 (에어 화면가 미표기 — 기본형 동급 추정)", "url": "https://www.etnews.com/20250915000264", "asOf": "2025-09" } },
+      { "part": "battery", "officialKRW": 179000, "withCareKRW": 0, "source": { "label": "전자신문 아이폰 17 수리비 공개", "url": "https://www.etnews.com/20250915000264", "asOf": "2025-09" } }
+    ],
+    "issues": [
+      { "id": "ipair-esim-only", "title": "한국 최초 eSIM 전용 모델", "severity": "common", "status": "open", "summary": "아이폰 에어는 국내 출시 아이폰 최초의 eSIM 전용(물리 SIM 슬롯 없음) 모델로, eSIM 재발급 수수료·일부 알뜰폰 미지원 등 사용 편의 이슈가 지적됨.", "symptoms": ["물리 SIM 사용 불가", "eSIM 재발급 수수료", "일부 알뜰폰 eSIM 미지원"], "solutions": ["eSIM 지원 통신사 선택", "개통 전 통신사 eSIM 정책 확인"], "source": { "label": "문화일보", "url": "https://www.munhwa.com/article/11532133", "asOf": "2025-09" } },
+      { "id": "ipair-small-battery", "title": "초슬림 설계에 따른 소용량 배터리", "severity": "info", "status": "open", "summary": "두께 5.6mm 초슬림 구조로 배터리 용량이 3,149mAh에 그쳐 라인업 중 가장 작아 사용시간 우려가 제기됨.", "symptoms": ["상대적으로 짧은 사용시간"], "solutions": ["전용 MagSafe 배터리팩 사용"], "source": { "label": "MacRumors", "url": "https://www.macrumors.com/2025/09/10/iphone-17-pro-iphone-air-specs-battery-ram/", "asOf": "2025-09" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 1150000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "iphone-17-pro",
+    "name": "아이폰 17 프로",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2025-09-19",
+    "releasePriceKRW": 1790000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "Apple A19 Pro", "displayInch": 6.3, "batteryMah": 3988, "ramGb": 12 },
+    "eol": { "policy": "애플 미공표 — 역대 프로 모델 지원기간(메이저 iOS 6~7년 + 보안 7~8년) 기반 추정", "osEndDate": "2032-09-01", "securityEndDate": "2034-09-01", "estimated": true, "source": { "label": "Apple 과거 iOS 지원 이력 기반 추정", "url": "https://support.apple.com/iphone/repair", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 499900, "withCareKRW": 40000, "source": { "label": "전자신문 아이폰 17 수리비 공개", "url": "https://www.etnews.com/20250915000264", "asOf": "2025-09" } },
+      { "part": "battery", "officialKRW": 179000, "withCareKRW": 0, "source": { "label": "전자신문 아이폰 17 수리비 공개", "url": "https://www.etnews.com/20250915000264", "asOf": "2025-09" } }
+    ],
+    "issues": [
+      { "id": "ip17pro-camera-scratch", "title": "카메라부 스크래치·코팅 벗겨짐 논란", "severity": "critical", "status": "open", "summary": "출시 당일 전시품에서부터 카메라 플래토 모서리 긁힘이 발견되며 논란. 알루미늄 바디 아노다이징층이 모서리에서 균일하지 않아 스크래치에 취약하다는 분석.", "symptoms": ["카메라 돌출부 모서리 긁힘", "코팅(아노다이징) 벗겨짐"], "solutions": ["케이스 사용", "구입 시 외관 확인"], "source": { "label": "전자신문", "url": "https://www.etnews.com/20250924000377", "asOf": "2025-09" } },
+      { "id": "ip17pro-discolor", "title": "알루미늄 바디 변색 논란", "severity": "common", "status": "open", "summary": "라인업 최초 적용된 알루미늄 소재 바디가 공기 중 산소·수분과 반응해 변색됐을 가능성이 제기됨.", "symptoms": ["프레임 색상 변색"], "solutions": ["Apple 서비스 문의"], "source": { "label": "KNN", "url": "https://news.knn.co.kr/news/article_sns/520", "asOf": "2025-09" } }
+    ],
+    "resale": [ { "date": "2026-03-04", "priceKRW": 1631000, "source": "cetizen" } ]
+  },
+  {
+    "slug": "iphone-17-pro-max",
+    "name": "아이폰 17 프로 맥스",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2025-09-19",
+    "releasePriceKRW": 1990000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "Apple A19 Pro", "displayInch": 6.9, "batteryMah": 4823, "ramGb": 12 },
+    "eol": { "policy": "애플 미공표 — 역대 프로 맥스 모델 지원기간(메이저 iOS 6~7년 + 보안 7~8년) 기반 추정", "osEndDate": "2032-09-01", "securityEndDate": "2034-09-01", "estimated": true, "source": { "label": "Apple 과거 iOS 지원 이력 기반 추정", "url": "https://support.apple.com/iphone/repair", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 559000, "withCareKRW": 40000, "source": { "label": "전자신문 아이폰 17 수리비 공개", "url": "https://www.etnews.com/20250915000264", "asOf": "2025-09" } },
+      { "part": "battery", "officialKRW": 179000, "withCareKRW": 0, "source": { "label": "전자신문 아이폰 17 수리비 공개", "url": "https://www.etnews.com/20250915000264", "asOf": "2025-09" } }
+    ],
+    "issues": [
+      { "id": "ip17promax-camera-scratch", "title": "카메라부 스크래치·후면 유리 흠집 논란", "severity": "critical", "status": "open", "summary": "프로와 동일한 알루미늄 바디 논란. 카메라 플래토 모서리 아노다이징이 약해 긁힘 보고 다수. 후면 유리도 전작보다 흠집에 취약하다는 지적.", "symptoms": ["카메라 돌출부 모서리 긁힘", "후면 유리 흠집", "코팅 벗겨짐"], "solutions": ["케이스·후면 보호필름 사용", "구입 시 외관 확인"], "source": { "label": "전자신문", "url": "https://www.etnews.com/20250924000377", "asOf": "2025-09" } },
+      { "id": "ip17promax-discolor", "title": "알루미늄 바디 변색 논란", "severity": "common", "status": "open", "summary": "알루미늄 바디가 산화 반응으로 변색됐을 가능성이 제기됨(프로와 공용 이슈).", "symptoms": ["프레임 색상 변색"], "solutions": ["Apple 서비스 문의"], "source": { "label": "KNN", "url": "https://news.knn.co.kr/news/article_sns/520", "asOf": "2025-09" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 1800000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "galaxy-s26",
+    "name": "갤럭시 S26",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2026-03-11",
+    "releasePriceKRW": 1215000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "엑시노스 2600 (한국 내수판)", "displayInch": 6.3, "batteryMah": 4300, "ramGb": 12 },
+    "eol": { "policy": "OS 업그레이드 7회 + 보안 업데이트 7년 (S24 세대부터 정책), 2026-03 출시 기준 약 2033년까지", "osEndDate": "2033-03-01", "securityEndDate": "2033-03-01", "estimated": false, "source": { "label": "삼성전자 갤럭시 S26 제품 페이지 (7 OS/7년 보안)", "url": "https://www.samsung.com/sec/smartphones/galaxy-s26/", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 196000, "source": { "label": "삼성전자서비스 요금 기반 집계 (회수동의가)", "url": "https://techtown.co.kr/", "asOf": "2026-07" } },
+      { "part": "battery", "officialKRW": 79000, "source": { "label": "삼성전자서비스 요금 기반 집계", "url": "https://techtown.co.kr/", "asOf": "2026-07" } }
+    ],
+    "issues": [
+      { "id": "s26-price-cut", "title": "출시 2개월 만의 대규모 할인 논란", "severity": "info", "status": "open", "summary": "S26 시리즈는 전작보다 출고가가 올랐고, 출시 두 달 만에 이마트 등에서 사실상 대폭 할인 판매가 이뤄지며 사전예약 구매자 불만이 컸다.", "symptoms": ["전작 대비 상승한 출고가", "출시 직후 급격한 실구매가 하락"], "solutions": ["구독/반납 프로그램 활용", "성지·자급제 가격 비교 후 구매"], "source": { "label": "머니투데이", "url": "https://www.mt.co.kr/tech/2026/05/05/2026050411224283676", "asOf": "2026-05" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 900000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "galaxy-s26-ultra",
+    "name": "갤럭시 S26 울트라",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2026-03-11",
+    "releasePriceKRW": 1797400,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "스냅드래곤 8 Elite 5세대 for Galaxy", "displayInch": 6.9, "batteryMah": 5000, "ramGb": 12 },
+    "eol": { "policy": "OS 업그레이드 7회 + 보안 업데이트 7년 (S24 세대부터 정책), 2026-03 출시 기준 약 2033년까지", "osEndDate": "2033-03-01", "securityEndDate": "2033-03-01", "estimated": false, "source": { "label": "삼성전자 갤럭시 S26 울트라 제품 페이지 (7 OS/7년 보안)", "url": "https://www.samsung.com/sec/smartphones/galaxy-s26-ultra-s948/", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 338000, "source": { "label": "삼성전자서비스 요금 기반 집계 (회수동의가)", "url": "https://techtown.co.kr/", "asOf": "2026-07" } },
+      { "part": "battery", "officialKRW": 92000, "source": { "label": "삼성전자서비스 요금 기반 집계", "url": "https://techtown.co.kr/", "asOf": "2026-07" } }
+    ],
+    "issues": [
+      { "id": "s26u-privacy-display", "title": "프라이버시 디스플레이로 인한 화질 저하 논란", "severity": "common", "status": "open", "summary": "S26 울트라 전용 프라이버시 디스플레이 소자 구조 한계로 선예도·시야각·반사방지 성능이 전작 S25 울트라 및 하위 모델 S26+보다 떨어진다는 지적이 제기됐다.", "symptoms": ["측면 시야각 저하", "선예도 저하", "반사방지 성능 저하"], "solutions": ["밝기·화면 설정 조정", "소프트웨어 업데이트 대기"], "source": { "label": "나무위키 — 갤럭시 S26 시리즈 논란", "url": "https://namu.wiki/w/갤럭시 S26 시리즈/논란 및 문제점", "asOf": "2026-07" } },
+      { "id": "s26u-condensation", "title": "카메라부 결로(습기 응결) 현상", "severity": "common", "status": "open", "summary": "따뜻한 곳에서 추운 외부로 이동 후 카메라를 많이 사용할 때 렌즈/내부에 일시적 결로가 발생. 테스트에서 S26 울트라는 높은 재현률을 보인 반면 S25 울트라는 재현되지 않았다.", "symptoms": ["온도차 환경에서 카메라 결로", "렌즈 뿌옇게 흐려짐"], "solutions": ["온도 적응 후 사용", "제습·건조 후 재사용"], "source": { "label": "갤럭시 커뮤니티 결로 테스트 보고", "url": "https://m.dcinside.com/board/galaxy/2167171", "asOf": "2026-07" } },
+      { "id": "s26u-heat", "title": "카메라·고부하 사용 시 발열", "severity": "common", "status": "open", "summary": "5배 줌 등 고해상도 촬영이나 일부 일반 사용에서도 발열이 심하다는 사용자 보고가 다수 커뮤니티에 올라왔다.", "symptoms": ["카메라 사용 시 발열", "고부하 앱에서 온도 상승"], "solutions": ["소프트웨어 업데이트", "장시간 촬영 자제"], "source": { "label": "삼성 멤버스 커뮤니티", "url": "https://r1.community.samsung.com/", "asOf": "2026-07" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 1350000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "galaxy-z-fold7",
+    "name": "갤럭시 Z 폴드7",
+    "brand": "samsung",
+    "series": "갤럭시 Z",
+    "releaseDate": "2025-07-25",
+    "releasePriceKRW": 2379300,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "스냅드래곤 8 엘리트 for Galaxy", "displayInch": 8.0, "batteryMah": 4400, "ramGb": 12 },
+    "eol": { "policy": "OS 업그레이드 7회 + 보안 업데이트 7년 (S24/Z6 세대부터 정책). 출시(2025-07) 기준 약 2032-07까지", "osEndDate": "2032-07-01", "securityEndDate": "2032-07-01", "estimated": false, "source": { "label": "디지털포커스 — 폴드7 7년 안드로이드 업데이트", "url": "https://www.digitalfocus.news/news/articleView.html?idxno=12692", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 764000, "withCareKRW": 152800, "source": { "label": "삼성전자서비스 고지가 집계 (메인 화면 반납가)", "url": "https://korea7news.com/215", "asOf": "2026-07" } },
+      { "part": "battery", "officialKRW": 118500, "source": { "label": "삼성전자서비스 고지가 집계", "url": "https://korea7news.com/215", "asOf": "2026-07" } }
+    ],
+    "issues": [
+      { "id": "zfold7-hinge-open", "title": "출시 초기 힌지 완전 개방 논란", "severity": "info", "status": "patched", "summary": "출시 직후 일부 전시/체험 기기가 완전히 펼쳐지지 않는다는 논란이 있었으나, 구조적 결함이 아니라 폴더블 접착제 특성에 따른 일시적 현상으로 사용 시 각도가 안정적으로 복원되는 것으로 확인됨.", "symptoms": ["화면이 완전히 평평하게 펴지지 않음", "힌지가 뻣뻣하게 느껴짐"], "solutions": ["실사용 시간이 지나며 자연 복원", "이상 지속 시 삼성전자서비스 점검"], "source": { "label": "디지털포커스", "url": "https://www.digitalfocus.news/news/articleView.html?idxno=13003", "asOf": "2025-07" } },
+      { "id": "zfold7-horizontal-line", "title": "가로선 디스플레이 결함 제보", "severity": "info", "status": "open", "summary": "기존 세로 그린라인에 이어 폴드7에서 가로선 형태의 디스플레이 결함이 처음 보고됨. 다만 현재까지는 일부 데모 기기에 한정되며 정식 판매 제품에서의 재현 보고는 확인되지 않음.", "symptoms": ["메인 디스플레이에 가로선 표시"], "solutions": ["증상 발생 시 삼성전자서비스 무상 점검/수리 요청"], "source": { "label": "ABC뉴스", "url": "https://www.abcn.kr/news/articleView.html?idxno=83286", "asOf": "2025-08" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 1550000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "galaxy-z-flip7",
+    "name": "갤럭시 Z 플립7",
+    "brand": "samsung",
+    "series": "갤럭시 Z",
+    "releaseDate": "2025-07-25",
+    "releasePriceKRW": 1485000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "엑시노스 2500", "displayInch": 6.9, "batteryMah": 4300, "ramGb": 12 },
+    "eol": { "policy": "OS 업그레이드 7회 + 보안 업데이트 7년 (S24/Z6 세대부터 정책). 출시(2025-07) 기준 약 2032-07까지", "osEndDate": "2032-07-01", "securityEndDate": "2032-07-01", "estimated": false, "source": { "label": "디지털포커스 — 플립7 7년 안드로이드 업데이트", "url": "https://www.digitalfocus.news/news/articleView.html?idxno=12692", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 378000, "withCareKRW": 75600, "source": { "label": "삼성전자서비스 고지가 집계 (메인 화면 반납가)", "url": "https://itatoz11.com/", "asOf": "2026-07" } },
+      { "part": "battery", "officialKRW": 134500, "source": { "label": "삼성전자서비스 고지가 집계", "url": "https://itatoz11.com/", "asOf": "2026-07" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 950000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "galaxy-s25-fe",
+    "name": "갤럭시 S25 FE",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2025-09-19",
+    "releasePriceKRW": 946000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "엑시노스 2400", "displayInch": 6.7, "batteryMah": 4900, "ramGb": 8 },
+    "eol": { "policy": "OS 업그레이드 7회 + 보안 업데이트 7년 (FE 포함 정책). 출시(2025-09) 기준 약 2032-09까지", "osEndDate": "2032-09-01", "securityEndDate": "2032-09-01", "estimated": false, "source": { "label": "삼성 7년 지원 정책 (S25 FE 적용)", "url": "https://www.samsung.com/sec/smartphones/galaxy-s25-fe/", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 200000, "withCareKRW": 50000, "source": { "label": "삼성전자서비스 (추정 — S25 일반형·S24 FE 반납가 기준 환산)", "url": "https://www.samsungsvc.co.kr/", "asOf": "2026-07" } },
+      { "part": "battery", "officialKRW": 60500, "withCareKRW": 20000, "source": { "label": "삼성전자서비스 (추정) · 케어플러스 파손+ 배터리 2만원", "url": "https://www.samsungcareplus.co.kr/", "asOf": "2026-07" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 650000, "source": "cetizen-bunjang" } ]
+  }
+]

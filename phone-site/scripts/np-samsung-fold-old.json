@@ -1,0 +1,139 @@
+[
+  {
+    "slug": "galaxy-z-fold5",
+    "name": "갤럭시 Z 폴드5",
+    "brand": "samsung",
+    "series": "갤럭시 Z",
+    "releaseDate": "2023-08-11",
+    "releasePriceKRW": 2097700,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "스냅드래곤 8 Gen 2 for Galaxy", "displayInch": 7.6, "batteryMah": 4400, "ramGb": 12 },
+    "eol": { "policy": "2023년 폴더블 정책: OS 4회 업그레이드 + 보안 5년.", "osEndDate": "2027-08-11", "securityEndDate": "2028-08-11", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 688000, "withCareKRW": 207000, "source": { "label": "삼성전자서비스 고지가 (메인 화면 반납 기준) · 케어플러스 폴더블 30%", "url": "https://well.makemelife.com/", "asOf": "2025-10" } },
+      { "part": "battery", "officialKRW": 83000, "source": { "label": "삼성전자서비스 고지가", "url": "https://well.makemelife.com/", "asOf": "2025-10" } }
+    ],
+    "issues": [
+      { "id": "zfold5-inner-film", "title": "내부 메인 화면 보호필름 들뜸/박리", "severity": "common", "status": "free-repair", "summary": "폴더블 특성상 접힘부에서 공장 부착 내부 보호필름이 시간이 지나며 들뜨거나 박리되는 현상이 광범위하게 보고됨. 삼성은 구매 후 90일 내 폴딩부 들뜸에 한해 1회 무상 재부착을 제공.", "symptoms": ["메인 화면 접힘부 필름 들뜸", "기포 발생 및 필름 가장자리 박리"], "solutions": ["삼성 서비스센터에서 무상 재부착(구매 후 90일·폴딩부 한정 1회)", "필름 임의 제거 금지 — 패널 손상 위험"], "source": { "label": "삼성전자서비스 — 폴드5 정품 보호필름 안내", "url": "https://www.samsungsvc.co.kr/solution/1524174", "asOf": "2026-07" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 950000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "galaxy-z-fold4",
+    "name": "갤럭시 Z 폴드4",
+    "brand": "samsung",
+    "series": "갤럭시 Z",
+    "releaseDate": "2022-08-26",
+    "releasePriceKRW": 1998700,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "스냅드래곤 8+ Gen 1", "displayInch": 7.6, "batteryMah": 4400, "ramGb": 12 },
+    "eol": { "policy": "2022년 폴더블 정책: OS 4회 업그레이드 + 보안 5년.", "osEndDate": "2026-08-26", "securityEndDate": "2027-08-26", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 690000, "withCareKRW": 207000, "source": { "label": "삼성전자서비스 고지가 (메인 화면 반납 기준) · 케어플러스 폴더블 30%", "url": "https://www.makemelife.com/", "asOf": "2026-07" } },
+      { "part": "battery", "officialKRW": 87500, "source": { "label": "삼성전자서비스 고지가", "url": "https://www.makemelife.com/", "asOf": "2026-07" } }
+    ],
+    "issues": [
+      { "id": "zfold4-inner-film", "title": "내부 보호필름 들뜸", "severity": "common", "status": "free-repair", "summary": "폴딩부 내부 보호필름이 시간이 지나면 들뜨거나 갈라지는 현상이 다수 보고됨. 삼성전자서비스는 폴딩부 들뜸에 한해 구입 후 90일 내 1회 무상 재부착을 제공하나, 외부 요인 손상은 제외.", "symptoms": ["내부 화면 접힘부 보호필름 떠오름", "필름 가장자리 들뜸·갈라짐"], "solutions": ["삼성전자서비스 폴딩부 들뜸 무상 재부착(90일 1회)", "필름 임의 제거 금지"], "source": { "label": "삼성전자서비스 — 폴드4 정품 보호필름 안내", "url": "https://www.samsungsvc.co.kr/solution/1080629", "asOf": "2026-07" } },
+      { "id": "zfold4-hinge", "title": "힌지 유격·화면 안펴짐", "severity": "common", "status": "open", "summary": "장기 사용 시 힌지 유격·소음, 화면이 완전히 펴지지 않는 사례가 커뮤니티에 보고됨. 외관 기스·찍힘이 있으면 무상수리가 거부되는 경우가 많음.", "symptoms": ["화면이 평평하게 펴지지 않음", "힌지 부위 소음·유격"], "solutions": ["삼성전자서비스 점검(보증·과실 여부에 따라 유·무상)", "외관 파손 발생 전 조기 점검 권장"], "source": { "label": "삼성 멤버스 — 폴드4 안펴짐 현상", "url": "https://r1.community.samsung.com/t5/갤럭시-z/td-p/23737407", "asOf": "2026-07" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 520000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "galaxy-z-fold3",
+    "name": "갤럭시 Z 폴드3",
+    "brand": "samsung",
+    "series": "갤럭시 Z",
+    "releaseDate": "2021-08-27",
+    "releasePriceKRW": 1998700,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "스냅드래곤 888", "displayInch": 7.6, "batteryMah": 4400, "ramGb": 12 },
+    "eol": { "policy": "2021년 폴더블 정책: OS 4회 업그레이드 + 보안 5년. OS는 One UI 7(2025-04) 마지막, 보안은 2026년 하반기 종료 예정(현재 분기별 지원 중).", "osEndDate": "2025-04-29", "securityEndDate": "2026-08-27", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 655000, "withCareKRW": 196500, "source": { "label": "삼성전자서비스 고지가 (메인 화면 반납 기준, 미반납 772,000원) · 케어플러스 폴더블 30%", "url": "https://www.samsungsvc.co.kr/notice/3031587", "asOf": "2025-06" } },
+      { "part": "battery", "officialKRW": 101000, "source": { "label": "삼성전자서비스 고지가 (이중 배터리)", "url": "https://cash.makemelife.com/", "asOf": "2025-06" } }
+    ],
+    "issues": [
+      { "id": "zfold3-inner-film", "title": "내부 보호필름 들뜸/기포", "severity": "common", "status": "open", "summary": "장기 사용 시 내부 보호필름과 패널 사이에 이격·기포·들뜸이 발생. 삼성은 보호필름을 소모품으로 간주. 폴딩부 들뜸에 한해 90일 내 1회 무상, 그 외 유상 교체.", "symptoms": ["내부 화면 보호필름과 패널 사이 기포", "접힘부 들뜸", "'쩍' 소리 후 필름 이격"], "solutions": ["보호필름 임의 제거 금지", "서비스센터에서 필름 교체(폴딩부 90일 내 1회 무상)"], "source": { "label": "삼성 멤버스 — 액정필름 들뜸 문제", "url": "https://r1.community.samsung.com/t5/갤럭시-z/td-p/18398153", "asOf": "2026-07" } },
+      { "id": "zfold3-hinge-cable", "title": "힌지 연결 케이블 내구성 결함", "severity": "critical", "status": "open", "summary": "내부 화면 사용 시마다 힌지 좌우를 잇는 케이블이 반복 굴곡되며, 1~2년 사용 후 손상돼 내부 화면 이상(줄·터치 불량·미표시)이 발생하는 사례가 보고됨.", "symptoms": ["내부 화면 세로 줄/얼룩", "접힘부 화면 미표시·터치 불량", "특정 각도에서 화면 깜빡임"], "solutions": ["서비스센터 점검 및 메인 화면/케이블 유상 수리", "중고 구매 시 내부 화면 전체를 펼쳐 이상 여부 확인"], "source": { "label": "클리앙 — 폴드 내구도 문제", "url": "https://www.clien.net/service/board/lecture/18395554", "asOf": "2026-07" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 320000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "galaxy-z-flip4",
+    "name": "갤럭시 Z 플립4",
+    "brand": "samsung",
+    "series": "갤럭시 Z",
+    "releaseDate": "2022-08-26",
+    "releasePriceKRW": 1353000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "스냅드래곤 8+ Gen 1", "displayInch": 6.7, "batteryMah": 3700, "ramGb": 8 },
+    "eol": { "policy": "2022년 폴더블 정책: OS 4회 업그레이드 + 보안 5년.", "osEndDate": "2026-08-26", "securityEndDate": "2027-08-26", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 364500, "withCareKRW": 109350, "source": { "label": "삼성전자서비스 고지가 (메인 화면 반납 기준) · 케어플러스 폴더블 30%", "url": "https://ggudol.com/1414", "asOf": "2026-07" } },
+      { "part": "battery", "officialKRW": 94000, "source": { "label": "삼성전자서비스 고지가", "url": "https://ggudol.com/1414", "asOf": "2026-07" } }
+    ],
+    "issues": [
+      { "id": "zflip4-inner-film", "title": "내부 보호필름 폴딩부 들뜸", "severity": "common", "status": "free-repair", "summary": "내부 보호필름이 접힘부에서 들뜨는 현상. 폴딩부 들뜸은 구매 후 90일 내 1회 무상 재부착, 그 외 증상은 7일 내 1회 무상.", "symptoms": ["화면 중앙 접힘부 필름 들뜸", "필름 가장자리 박리·기포"], "solutions": ["서비스센터에서 폴딩부 들뜸 90일 내 1회 무상 재부착", "그 외 증상은 7일 내 1회 무상 부착 신청"], "source": { "label": "삼성전자서비스 — 스크린 프로텍터 부착 안내", "url": "https://www.samsungsvc.co.kr/solution/1332622", "asOf": "2026-07" } },
+      { "id": "zflip4-hinge", "title": "힌지 불량·접합부 액정 고장", "severity": "critical", "status": "open", "summary": "힌지 부위를 중심으로 내부 액정이 먹통되거나 힌지 유격/파손이 발생. 보증 2년 내 과실 없으면 무상 대상이나, 미세 스크래치를 이유로 유상 판정되는 분쟁 사례가 다수.", "symptoms": ["힌지 중심 내부 액정 세로줄/먹통", "힌지 유격·이물감", "접합부 파손"], "solutions": ["보증 2년 내·충격/침수 흔적 없으면 무상수리 요청", "유상 판정 시 다른 서비스센터 재점검", "중고 구매 시 접힘부 액정 상태 필수 확인"], "source": { "label": "소비자가만드는신문 — 플립 접합부 고장 논란", "url": "https://www.consumernews.co.kr/news/articleView.html?idxno=691878", "asOf": "2026-07" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 220000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "galaxy-z-flip3",
+    "name": "갤럭시 Z 플립3",
+    "brand": "samsung",
+    "series": "갤럭시 Z",
+    "releaseDate": "2021-08-27",
+    "releasePriceKRW": 1254000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "스냅드래곤 888", "displayInch": 6.7, "batteryMah": 3300, "ramGb": 8 },
+    "eol": { "policy": "2021년 폴더블 정책: OS 4회 업그레이드 + 보안 5년. OS는 One UI 7(2025-04) 마지막, 보안은 2026년 하반기 종료 예정.", "osEndDate": "2025-04-29", "securityEndDate": "2026-08-27", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 403000, "withCareKRW": 120900, "source": { "label": "삼성전자서비스 고지가 (메인 화면 반납 기준, 미반납 529,000원) · 케어플러스 폴더블 30%", "url": "https://www.samsungsvc.co.kr/info/fee", "asOf": "2026-07" } },
+      { "part": "battery", "officialKRW": 85000, "source": { "label": "삼성전자서비스 고지가", "url": "https://www.samsungsvc.co.kr/info/fee", "asOf": "2026-07" } }
+    ],
+    "issues": [
+      { "id": "zflip3-inner-film", "title": "내부 보호필름 들뜸/벗겨짐", "severity": "common", "status": "free-repair", "summary": "메인 화면 정품 보호필름이 접힘부를 중심으로 들뜨거나 벗겨지는 광범위한 불만. 무상 교체 후에도 수개월 내 재발 사례가 많음.", "symptoms": ["접히는 중앙부 필름 들뜸", "필름 가장자리 벗겨짐·기포", "교체 후 수개월 내 재발"], "solutions": ["폴딩부 들뜸은 90일 내 1회 무상(그 외 7일 내 1회)", "필름 임의 제거 금지"], "source": { "label": "삼성전자서비스 — 스크린 프로텍터 안내", "url": "https://www.samsungsvc.co.kr/solution/1332622", "asOf": "2026-07" } },
+      { "id": "zflip3-hinge-crack", "title": "힌지 접합부 뒤틀림·메인 화면 균열", "severity": "critical", "status": "open", "summary": "낙하·충격 시 힌지가 미세하게 뒤틀리며 접합부 균열이 발생하고, 심하면 메인 화면이 터지는 사례. 무상/정상판정 기준을 놓고 분쟁이 보도됨.", "symptoms": ["접히는 부분 액정 세로 줄/균열", "힌지 뒤틀림·유격", "화면 일부 터치·표시 불량"], "solutions": ["충격 이력 없으면 무상수리 요청(개별 판정)", "케어플러스 가입 시 자기부담 30%", "중고 구매 시 접힘부 상태 필수 확인"], "source": { "label": "소비자가만드는신문 — 플립 접합부 고장 논란", "url": "https://www.consumernews.co.kr/news/articleView.html?idxno=691878", "asOf": "2026-07" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 135000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "galaxy-note10-plus",
+    "name": "갤럭시 노트10+",
+    "brand": "samsung",
+    "series": "갤럭시 노트",
+    "releaseDate": "2019-08-23",
+    "releasePriceKRW": 1397000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "엑시노스 9825", "displayInch": 6.8, "batteryMah": 4300, "ramGb": 12 },
+    "eol": { "policy": "OS 3회 업그레이드(안드로이드 12까지) + 보안 약 4년. 2023년 8월 보안 패치를 끝으로 지원 종료됨.", "osEndDate": "2022-01-01", "securityEndDate": "2023-08-28", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 275000, "source": { "label": "삼성전자서비스 고지가 (반납 기준, 미반납 395,000원 · 부품 단종 가능)", "url": "https://cash.makemelife.com/", "asOf": "2024-01" } },
+      { "part": "battery", "officialKRW": 54000, "source": { "label": "삼성전자서비스 고지가 (부품 단종 가능)", "url": "https://cash.makemelife.com/", "asOf": "2024-01" } }
+    ],
+    "issues": [
+      { "id": "note10plus-ghost-touch", "title": "고스트터치(유령 터치) 현상", "severity": "common", "status": "open", "summary": "노트10 시리즈에서 사용 기간이 길어지면 화면을 만지지 않아도 저절로 터치가 입력되는 고스트터치가 보고됨. 공식 리콜/무상수리 대상은 아니며, 일체형 디스플레이 특성상 발생 시 액정 교체가 필요할 수 있음.", "symptoms": ["화면을 터치하지 않아도 임의로 입력됨", "자판/버튼이 마음대로 눌림", "터치 오작동으로 조작 불가"], "solutions": ["보호필름/케이스 제거 후 확인, 재부팅 시도", "증상 지속 시 서비스센터 디스플레이 점검·교체", "중고 구매 시 터치 오작동 여부 필수 확인"], "source": { "label": "삼성 멤버스 — 고스트터치 문의", "url": "https://r1.community.samsung.com/t5/갤럭시-a-j-노트/td-p/15322010", "asOf": "2026-07" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 200000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "galaxy-s10-5g",
+    "name": "갤럭시 S10 5G",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2019-04-05",
+    "releasePriceKRW": 1397000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "엑시노스 9820", "displayInch": 6.7, "batteryMah": 4500, "ramGb": 8 },
+    "eol": { "policy": "OS 3회 업그레이드(안드로이드 12까지) + 보안 약 4년. 국내 SM-G977N 보안 패치는 2023-04를 끝으로 종료됨.", "osEndDate": null, "securityEndDate": "2023-04-27", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 255000, "source": { "label": "삼성전자서비스 고지가 (반납 기준, 미반납 403,000원 · 부품 단종 가능)", "url": "https://extrememanual.net/32767", "asOf": "2019-10" } },
+      { "part": "battery", "officialKRW": 47000, "source": { "label": "삼성전자서비스 고지가 (부품 단종 가능)", "url": "https://extrememanual.net/32767", "asOf": "2019-10" } }
+    ],
+    "issues": [
+      { "id": "s10-5g-battery-swelling", "title": "배터리 스웰링(부풀음)", "severity": "common", "status": "open", "summary": "출시 후 수년이 지난 노후 기기에서 배터리가 부풀어 후면 커버가 들뜨거나 분리되는 스웰링 사례가 다수 보고됨. 별도 리콜/무상 프로그램은 없으며 보증 경과 후 유상 교체.", "symptoms": ["배터리 부풀음으로 뒷판 들뜸/분리", "배터리 지속시간 급감·발열", "기기 두께 증가"], "solutions": ["서비스센터에서 배터리 유상 교체", "스웰링 확인 시 즉시 사용 중단·점검", "중고 구매 시 뒷판 들뜸·부풀음 필수 확인"], "source": { "label": "삼성 멤버스 — S10 5G 배터리 교체", "url": "https://r1.community.samsung.com/t5/갤럭시-s/td-p/29280645", "asOf": "2026-07" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 150000, "source": "cetizen-bunjang" } ]
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "slug": "galaxy-a53",
+  "name": "갤럭시 A53",
+  "brand": "samsung",
+  "series": "갤럭시 A",
+  "releaseDate": "2022-03-25",
+  "releasePriceKRW": 599500,
+  "storageBase": "128GB",
+  "specSummary": {
+    "chipset": "삼성 엑시노스 1280",
+    "displayInch": 6.5,
+    "batteryMah": 5000,
+    "ramGb": 6
+  },
+  "eol": {
+    "policy": "OS 4회 업그레이드 + 보안 5년 (2022 출시). 현재 지원 중.",
+    "osEndDate": "2026-03-25",
+    "securityEndDate": "2027-03-25",
+    "estimated": false,
+    "source": {
+      "label": "삼성 모바일 보안 업데이트 정책",
+      "url": "https://security.samsungmobile.com/workScope.smsb",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 113500,
+      "source": {
+        "label": "삼성전자서비스 고지가 기반 (반납 기준)",
+        "url": "https://dailyfun.kr/554",
+        "asOf": "2022-11"
+      }
+    },
+    {
+      "part": "battery",
+      "officialKRW": 51000,
+      "source": {
+        "label": "삼성전자서비스 고지가 기반",
+        "url": "https://dailyfun.kr/554",
+        "asOf": "2022-11"
+      }
+    }
+  ],
+  "issues": [],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20A53%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20A53",
+    "subsidyNote": "보급형은 공시지원금으로 실구매가가 크게 내려가지만, 고가 요금제 유지 조건의 2년 총비용을 반드시 계산하세요.",
+    "mvnoNote": "출고가가 낮아 자급제 + 알뜰폰 최저 요금제 조합이 통신비 최소화의 정석입니다.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-07-03",
+      "priceKRW": 150000,
+      "source": "danawa-중고(추정)"
+    }
+  ]
+}

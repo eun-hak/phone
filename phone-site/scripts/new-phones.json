@@ -1,0 +1,158 @@
+[
+  {
+    "slug": "iphone-16-pro-max",
+    "name": "아이폰 16 프로 맥스",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2024-09-20",
+    "releasePriceKRW": 1900000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "Apple A18 Pro", "displayInch": 6.9, "batteryMah": 4685, "ramGb": 8 },
+    "eol": {
+      "policy": "애플 미공표 — iOS 26(2025) 지원 확인, 역대 지원기간(6~7년) 추정",
+      "osEndDate": "2031-09-30",
+      "securityEndDate": "2033-09-30",
+      "estimated": true,
+      "source": { "label": "Apple iOS 26 호환 기종 문서", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" }
+    },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 712000, "withCareKRW": 40000, "source": { "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표 (VAT 포함)", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "battery", "officialKRW": 195000, "withCareKRW": 0, "source": { "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표 (VAT 포함)", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "back-glass", "officialKRW": 359000, "withCareKRW": 120000, "source": { "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표 (VAT 포함)", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } }
+    ],
+    "issues": [
+      { "id": "ip16promax-touch-unresponsive", "title": "출시 초기 터치스크린 반응 불량", "severity": "common", "status": "patched", "summary": "출시 직후 일부 기기에서 스크롤·터치 입력이 간헐적으로 인식되지 않는 문제가 보고됨. iOS 18.0.1 업데이트로 수정.", "symptoms": ["화면 가장자리 터치 미인식", "스크롤 중 입력 끊김"], "solutions": ["iOS 18.0.1 이상으로 업데이트"], "source": { "label": "Apple iOS 18.0.1 릴리스 노트", "url": "https://support.apple.com/en-us/121032", "asOf": "2024-10" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 1050000, "source": "cetizen-bunjang-mintit" } ]
+  },
+  {
+    "slug": "iphone-15-pro",
+    "name": "아이폰 15 프로",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2023-10-13",
+    "releasePriceKRW": 1550000,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "Apple A17 Pro", "displayInch": 6.1, "batteryMah": 3274, "ramGb": 8 },
+    "eol": {
+      "policy": "애플 미공표 — iOS 26(2025) 지원 확인. 아이폰 15 라인은 애플이 '최소 5년' 보안 업데이트 공식 문서화. 역대 지원기간(6~7년) 추정",
+      "osEndDate": "2030-09-30",
+      "securityEndDate": "2031-09-30",
+      "estimated": true,
+      "source": { "label": "Apple iOS 26 호환 기종 문서", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" }
+    },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 606000, "withCareKRW": 40000, "source": { "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표 (VAT 포함)", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "battery", "officialKRW": 158000, "withCareKRW": 0, "source": { "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표 (VAT 포함)", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "back-glass", "officialKRW": 348000, "withCareKRW": 120000, "source": { "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표 (VAT 포함)", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } }
+    ],
+    "issues": [
+      { "id": "ip15pro-overheating", "title": "출시 초기 발열 문제", "severity": "common", "status": "patched", "summary": "출시 직후 게임·충전·설정 중 본체 과열이 다수 보고됨. 애플이 소프트웨어 원인으로 확인, iOS 17.0.3 업데이트로 수정.", "symptoms": ["장시간 사용 시 프레임 과열", "충전 중 발열", "일시적 성능 저하"], "solutions": ["iOS 17.0.3 이상으로 업데이트"], "source": { "label": "Apple iOS 17.0.3 릴리스 노트", "url": "https://support.apple.com/en-us/111829", "asOf": "2023-10" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 850000, "source": "cetizen-bunjang-mintit" } ]
+  },
+  {
+    "slug": "iphone-15-pro-max",
+    "name": "아이폰 15 프로 맥스",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2023-10-13",
+    "releasePriceKRW": 1900000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "Apple A17 Pro", "displayInch": 6.7, "batteryMah": 4422, "ramGb": 8 },
+    "eol": {
+      "policy": "애플 미공표 — iOS 26(2025) 지원 확인. 아이폰 15 라인은 애플이 '최소 5년' 보안 업데이트 공식 문서화. 역대 지원기간(6~7년) 추정",
+      "osEndDate": "2030-09-30",
+      "securityEndDate": "2031-09-30",
+      "estimated": true,
+      "source": { "label": "Apple iOS 26 호환 기종 문서", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" }
+    },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 668000, "withCareKRW": 40000, "source": { "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표 (VAT 포함)", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "battery", "officialKRW": 158000, "withCareKRW": 0, "source": { "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표 (VAT 포함)", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "back-glass", "officialKRW": 359000, "withCareKRW": 120000, "source": { "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표 (VAT 포함)", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } }
+    ],
+    "issues": [
+      { "id": "ip15promax-overheating", "title": "출시 초기 발열 문제", "severity": "common", "status": "patched", "summary": "출시 직후 A17 Pro 탑재 프로 모델 전반에서 과열이 보고됨. 애플이 소프트웨어·일부 앱 원인으로 확인, iOS 17.0.3 업데이트로 수정.", "symptoms": ["장시간 사용·충전 중 프레임 과열", "일시적 성능 저하"], "solutions": ["iOS 17.0.3 이상으로 업데이트"], "source": { "label": "Apple iOS 17.0.3 릴리스 노트", "url": "https://support.apple.com/en-us/111830", "asOf": "2023-10" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 1100000, "source": "cetizen-bunjang-mintit" } ]
+  },
+  {
+    "slug": "iphone-14-pro",
+    "name": "아이폰 14 프로",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2022-10-07",
+    "releasePriceKRW": 1550000,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "Apple A16 Bionic", "displayInch": 6.1, "batteryMah": 3200, "ramGb": 6 },
+    "eol": {
+      "policy": "애플 미공표 — iOS 26(2025) 지원 확인(Apple Intelligence는 미지원). 역대 지원기간(6~7년) 추정",
+      "osEndDate": "2029-09-30",
+      "securityEndDate": "2031-09-30",
+      "estimated": true,
+      "source": { "label": "Apple iOS 26 호환 기종 문서", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" }
+    },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 606000, "withCareKRW": 40000, "source": { "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표 (보증 외·VAT 포함)", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-07" } },
+      { "part": "battery", "officialKRW": 158000, "withCareKRW": 0, "source": { "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표 (배터리 80% 미만 시 케어 무상)", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-07" } },
+      { "part": "back-glass", "officialKRW": 370000, "withCareKRW": 120000, "source": { "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표 (후면 시스템 수리)", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-07" } }
+    ],
+    "issues": [
+      { "id": "ip14pro-camera-shake", "title": "출시 초기 서드파티 앱 카메라 흔들림", "severity": "common", "status": "patched", "summary": "일부 SNS/카메라 앱에서 광학식 손떨림 보정(OIS)이 오작동해 카메라가 물리적으로 진동하는 현상. iOS 16.0.2 업데이트로 수정됨.", "symptoms": ["인스타그램·틱톡 등에서 카메라 프리뷰가 심하게 흔들림", "카메라에서 진동·소음"], "solutions": ["iOS 16.0.2 이상으로 업데이트"], "source": { "label": "나무위키 — iPhone 14 시리즈 논란 및 문제점", "url": "https://namu.wiki/w/iPhone%2014%20%EC%8B%9C%EB%A6%AC%EC%A6%88", "asOf": "2022-09" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 600000, "source": "cetizen-bunjang-mintit" } ]
+  },
+  {
+    "slug": "iphone-13",
+    "name": "아이폰 13",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2021-10-08",
+    "releasePriceKRW": 1090000,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "Apple A15 Bionic", "displayInch": 6.1, "batteryMah": 3240, "ramGb": 4 },
+    "eol": {
+      "policy": "애플 미공표 — iOS 26(2025) 지원 확인. 역대 지원기간(6~7년) 추정",
+      "osEndDate": "2028-09-30",
+      "securityEndDate": "2030-09-30",
+      "estimated": true,
+      "source": { "label": "Apple iOS 26 호환 기종 문서", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" }
+    },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 511000, "withCareKRW": 40000, "source": { "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표 (보증 외·VAT 포함)", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-07" } },
+      { "part": "battery", "officialKRW": 141000, "withCareKRW": 0, "source": { "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표 (배터리 80% 미만 시 케어 무상)", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-07" } },
+      { "part": "back-glass", "officialKRW": 304000, "withCareKRW": 120000, "source": { "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-07" } }
+    ],
+    "issues": [
+      { "id": "ip13-faceid-lockout", "title": "사설 화면 교체 시 Face ID 비활성화", "severity": "common", "status": "patched", "summary": "화면에 연동된 마이크로컨트롤러 때문에 비공식 수리점에서 화면 교체 시 Face ID가 비활성화되던 문제. 애플이 이후 소프트웨어 업데이트로 제한을 해제함.", "symptoms": ["사설 화면 교체 후 'Face ID를 활성화할 수 없음' 표시", "얼굴 인식 사용 불가"], "solutions": ["최신 iOS로 업데이트하면 제한 해제", "중고 구매 시 화면 교체 이력과 Face ID 정상 작동을 반드시 확인"], "source": { "label": "블로터 — 사설 수리 페이스ID 제한 풀린다", "url": "https://www.bloter.net/news/articleView.html?idxno=42078", "asOf": "2021-11" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 300000, "source": "cetizen-bunjang-mintit" } ]
+  },
+  {
+    "slug": "iphone-13-pro",
+    "name": "아이폰 13 프로",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2021-10-08",
+    "releasePriceKRW": 1350000,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "Apple A15 Bionic", "displayInch": 6.1, "batteryMah": 3095, "ramGb": 6 },
+    "eol": {
+      "policy": "애플 미공표 — iOS 26(2025) 지원 확인. 역대 지원기간(6~7년) 추정",
+      "osEndDate": "2028-09-30",
+      "securityEndDate": "2030-09-30",
+      "estimated": true,
+      "source": { "label": "Apple iOS 26 호환 기종 문서", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" }
+    },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 511000, "withCareKRW": 40000, "source": { "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표 (보증 외·VAT 포함)", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-07" } },
+      { "part": "battery", "officialKRW": 141000, "withCareKRW": 0, "source": { "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표 (배터리 80% 미만 시 케어 무상)", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-07" } },
+      { "part": "back-glass", "officialKRW": 330000, "withCareKRW": 120000, "source": { "label": "큐에이드(Q-AID) Apple 공인 서비스 수리비용표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-07" } }
+    ],
+    "issues": [
+      { "id": "ip13pro-faceid-lockout", "title": "사설 화면 교체 시 Face ID 비활성화", "severity": "common", "status": "patched", "summary": "13 시리즈 공통 이슈. 화면 마이크로컨트롤러 연동으로 비공식 화면 교체 시 Face ID가 비활성화되던 문제로, 애플이 소프트웨어 업데이트로 제한을 해제함.", "symptoms": ["사설 화면 교체 후 'Face ID를 활성화할 수 없음' 표시", "얼굴 인식 사용 불가"], "solutions": ["최신 iOS로 업데이트하면 제한 해제", "중고 구매 시 화면 교체 이력과 Face ID 정상 작동을 반드시 확인"], "source": { "label": "블로터 — 사설 수리 페이스ID 제한 풀린다", "url": "https://www.bloter.net/news/articleView.html?idxno=42078", "asOf": "2021-11" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 400000, "source": "cetizen-bunjang-mintit" } ]
+  }
+]

@@ -1,0 +1,115 @@
+{
+  "slug": "galaxy-s23",
+  "name": "갤럭시 S23",
+  "brand": "samsung",
+  "series": "갤럭시 S",
+  "releaseDate": "2023-02-17",
+  "releasePriceKRW": 1155000,
+  "storageBase": "256GB",
+  "specSummary": {
+    "chipset": "스냅드래곤 8 Gen 2 for Galaxy",
+    "displayInch": 6.1,
+    "batteryMah": 3900,
+    "ramGb": 8
+  },
+  "eol": {
+    "policy": "OS 업그레이드 4회 + 보안 업데이트 5년 (삼성 공식 정책)",
+    "osEndDate": "2027-02-17",
+    "securityEndDate": "2028-02-17",
+    "estimated": false,
+    "source": {
+      "label": "삼성 모바일 보안 업데이트 정책",
+      "url": "https://security.samsungmobile.com/workScope.smsb",
+      "asOf": "2026-06-15"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 182000,
+      "withCareKRW": 45500,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계 (파손 부품 반납 기준 · 수리 방식에 따라 편차 존재)",
+        "url": "https://mokdol.com/samsung-galaxy-repair-cost/",
+        "asOf": "2026-02"
+      }
+    },
+    {
+      "part": "battery",
+      "officialKRW": 58000,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계",
+        "url": "https://mokdol.com/samsung-galaxy-repair-cost/",
+        "asOf": "2026-02"
+      }
+    },
+    {
+      "part": "back-glass",
+      "officialKRW": 54000,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계",
+        "url": "https://mokdol.com/samsung-galaxy-repair-cost/",
+        "asOf": "2026-02"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "s23-green-line",
+      "title": "그린라인(화면 세로줄) 결함",
+      "severity": "critical",
+      "status": "open",
+      "summary": "소프트웨어 업데이트 후 초록색 세로줄이 생기는 결함이 S23 시리즈 포함 구형 기종에서 다수 보고됨. 삼성은 인도에서만 무상 교체 프로그램을 운영했고(수차례 연장 후 종료 수순), 한국은 보증 상태에 따라 개별 대응이라 사실상 미해결.",
+      "symptoms": [
+        "화면에 초록색 세로줄 표시",
+        "주로 소프트웨어 업데이트 직후 발생",
+        "시간이 지나며 줄이 늘어나는 사례"
+      ],
+      "solutions": [
+        "삼성 서비스센터에서 무상 수리 대상 여부 확인 (지역·기한·기기 상태 조건 있음)",
+        "물리적·액체 손상이 없는 상태로 구매 증빙과 함께 접수",
+        "보증 기간 내라면 일반 보증 수리 요청"
+      ],
+      "source": {
+        "label": "Android Police",
+        "url": "https://www.androidpolice.com/galaxy-s23-green-line-free-fix-limited-time/",
+        "asOf": "2025-08"
+      }
+    },
+    {
+      "id": "s23-oneui61-touch",
+      "title": "One UI 6.1 업데이트 후 터치 먹통",
+      "severity": "common",
+      "status": "patched",
+      "summary": "2024년 4월 One UI 6.1 업데이트 후 일부 기기에서 터치가 전혀 안 되는 문제가 보고됐고, 삼성이 구글 앱 호환성 문제로 지목. 구글 앱·펌웨어 업데이트로 해소됨.",
+      "symptoms": [
+        "업데이트 후 터치 입력 무반응",
+        "S펜만 동작하고 손가락 터치는 안 되는 사례"
+      ],
+      "solutions": [
+        "구글 앱을 최신 버전으로 업데이트",
+        "구글 앱 데이터 삭제 후 재부팅",
+        "최신 펌웨어 유지"
+      ],
+      "source": {
+        "label": "TechRadar",
+        "url": "https://www.techradar.com/phones/samsung-galaxy-phones/samsung-galaxy-s23-users-complain-of-totally-unresponsive-touchscreens-after-one-ui-61-update",
+        "asOf": "2024-04"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20S23%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20S23",
+    "subsidyNote": "신품 유통 물량이 거의 소진된 기종. 신규 구매는 중고 A급이 사실상 유일한 루트.",
+    "mvnoNote": "중고 구매 + 알뜰폰 조합 시 총비용은 낮지만, 남은 보안지원 기간(2028년 초)을 반드시 고려.",
+    "asOf": "2026-06-15"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 350000,
+      "source": "cetizen-bunjang-mintit"
+    }
+  ]
+}

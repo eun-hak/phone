@@ -1,0 +1,106 @@
+{
+  "slug": "galaxy-z-flip3",
+  "name": "갤럭시 Z 플립3",
+  "brand": "samsung",
+  "series": "갤럭시 Z",
+  "releaseDate": "2021-08-27",
+  "releasePriceKRW": 1254000,
+  "storageBase": "256GB",
+  "specSummary": {
+    "chipset": "스냅드래곤 888",
+    "displayInch": 6.7,
+    "batteryMah": 3300,
+    "ramGb": 8
+  },
+  "eol": {
+    "policy": "2021년 폴더블 정책: OS 4회 업그레이드 + 보안 5년. OS는 One UI 7(2025-04) 마지막, 보안은 2026년 하반기 종료 예정.",
+    "osEndDate": "2025-04-29",
+    "securityEndDate": "2026-08-27",
+    "estimated": false,
+    "source": {
+      "label": "삼성 모바일 보안 업데이트 정책",
+      "url": "https://security.samsungmobile.com/workScope.smsb",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 403000,
+      "source": {
+        "label": "삼성전자서비스 고지가 (메인 화면 반납 기준, 미반납 529,000원) · 케어플러스 폴더블 30%",
+        "url": "https://www.samsungsvc.co.kr/info/fee",
+        "asOf": "2026-07"
+      },
+      "withCareKRW": 120900
+    },
+    {
+      "part": "battery",
+      "officialKRW": 85000,
+      "source": {
+        "label": "삼성전자서비스 고지가",
+        "url": "https://www.samsungsvc.co.kr/info/fee",
+        "asOf": "2026-07"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "zflip3-inner-film",
+      "title": "내부 보호필름 들뜸/벗겨짐",
+      "severity": "common",
+      "status": "free-repair",
+      "summary": "메인 화면 정품 보호필름이 접힘부를 중심으로 들뜨거나 벗겨지는 광범위한 불만. 무상 교체 후에도 수개월 내 재발 사례가 많음.",
+      "symptoms": [
+        "접히는 중앙부 필름 들뜸",
+        "필름 가장자리 벗겨짐·기포",
+        "교체 후 수개월 내 재발"
+      ],
+      "solutions": [
+        "폴딩부 들뜸은 90일 내 1회 무상(그 외 7일 내 1회)",
+        "필름 임의 제거 금지"
+      ],
+      "source": {
+        "label": "삼성전자서비스 — 스크린 프로텍터 안내",
+        "url": "https://www.samsungsvc.co.kr/solution/1332622",
+        "asOf": "2026-07"
+      }
+    },
+    {
+      "id": "zflip3-hinge-crack",
+      "title": "힌지 접합부 뒤틀림·메인 화면 균열",
+      "severity": "critical",
+      "status": "open",
+      "summary": "낙하·충격 시 힌지가 미세하게 뒤틀리며 접합부 균열이 발생하고, 심하면 메인 화면이 터지는 사례. 무상/정상판정 기준을 놓고 분쟁이 보도됨.",
+      "symptoms": [
+        "접히는 부분 액정 세로 줄/균열",
+        "힌지 뒤틀림·유격",
+        "화면 일부 터치·표시 불량"
+      ],
+      "solutions": [
+        "충격 이력 없으면 무상수리 요청(개별 판정)",
+        "케어플러스 가입 시 자기부담 30%",
+        "중고 구매 시 접힘부 상태 필수 확인"
+      ],
+      "source": {
+        "label": "소비자가만드는신문 — 플립 접합부 고장 논란",
+        "url": "https://www.consumernews.co.kr/news/articleView.html?idxno=691878",
+        "asOf": "2026-07"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20Z%20%ED%94%8C%EB%A6%BD3%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20Z%20%ED%94%8C%EB%A6%BD3",
+    "subsidyNote": "폴더블은 공시지원금이 크게 걸리는 대표 기종군이지만 감가도 빨라, 2년 뒤 잔존가치까지 계산하면 지원금 매력이 상쇄되는 경우가 많습니다.",
+    "mvnoNote": "중고 구매 시 힌지·필름 상태 확인이 가격보다 중요합니다. 대면 거래로 개폐 상태를 직접 확인하세요.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 135000,
+      "source": "cetizen-bunjang"
+    }
+  ]
+}

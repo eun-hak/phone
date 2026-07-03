@@ -1,0 +1,132 @@
+[
+  {
+    "slug": "iphone-16-plus",
+    "name": "아이폰 16 플러스",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2024-09-20",
+    "releasePriceKRW": 1350000,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "Apple A18", "displayInch": 6.7, "batteryMah": 4674, "ramGb": 8 },
+    "eol": { "policy": "애플 미공표 — iOS 26(2025) 지원 확인, 역대 지원기간(6~7년) 추정", "osEndDate": "2031-09-30", "securityEndDate": "2033-09-30", "estimated": true, "source": { "label": "Apple iOS 26 호환 기종 문서", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 639000, "withCareKRW": 40000, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "battery", "officialKRW": 158000, "withCareKRW": 0, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "back-glass", "officialKRW": 359000, "withCareKRW": 120000, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 800000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "iphone-15-plus",
+    "name": "아이폰 15 플러스",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2023-10-13",
+    "releasePriceKRW": 1350000,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "Apple A16 Bionic", "displayInch": 6.7, "batteryMah": 4383, "ramGb": 6 },
+    "eol": { "policy": "애플 미공표 — iOS 26(2025) 지원 확인, 역대 지원기간(6~7년) 추정", "osEndDate": "2030-09-30", "securityEndDate": "2032-09-30", "estimated": true, "source": { "label": "Apple iOS 26 호환 기종 문서", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 606000, "withCareKRW": 40000, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "battery", "officialKRW": 158000, "withCareKRW": 0, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "back-glass", "officialKRW": 359000, "withCareKRW": 120000, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } }
+    ],
+    "issues": [
+      { "id": "ip15plus-overheating", "title": "출시 초기 발열", "severity": "common", "status": "patched", "summary": "2023년 9월 출시 직후 iOS 17 버그·일부 서드파티 앱(인스타그램·우버)으로 인한 발열 이슈. 하드웨어 결함은 아니며 iOS 17.0.3에서 수정됨.", "symptoms": ["충전·사용 중 본체 발열", "특정 앱 사용 시 과열"], "solutions": ["iOS 17.0.3 이상으로 업데이트"], "source": { "label": "Macworld", "url": "https://www.macworld.com/article/2095278/iphone-15-ios-17-0-3-thermal-tests-overheating.html", "asOf": "2023-10" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 700000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "iphone-14-plus",
+    "name": "아이폰 14 플러스",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2022-10-07",
+    "releasePriceKRW": 1350000,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "Apple A15 Bionic", "displayInch": 6.7, "batteryMah": 4325, "ramGb": 6 },
+    "eol": { "policy": "애플 미공표 — iOS 26(2025) 지원 확인, 역대 지원기간(6~7년) 추정", "osEndDate": "2029-09-30", "securityEndDate": "2031-09-30", "estimated": true, "source": { "label": "Apple iOS 26 호환 기종 문서", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 606000, "withCareKRW": 40000, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "battery", "officialKRW": 158000, "withCareKRW": 0, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "back-glass", "officialKRW": 350000, "withCareKRW": 120000, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 550000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "iphone-14-pro-max",
+    "name": "아이폰 14 프로 맥스",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2022-10-07",
+    "releasePriceKRW": 1750000,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "Apple A16 Bionic", "displayInch": 6.7, "batteryMah": 4323, "ramGb": 6 },
+    "eol": { "policy": "애플 미공표 — iOS 26(2025) 지원 확인, 역대 지원기간(6~7년) 추정", "osEndDate": "2029-09-30", "securityEndDate": "2031-09-30", "estimated": true, "source": { "label": "Apple iOS 26 호환 기종 문서", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 668000, "withCareKRW": 40000, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "battery", "officialKRW": 158000, "withCareKRW": 0, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } }
+    ],
+    "issues": [
+      { "id": "ip14promax-camera-shake", "title": "출시 초기 서드파티 앱 카메라 흔들림", "severity": "common", "status": "patched", "summary": "출시 직후 틱톡·인스타그램·스냅챗 등에서 후면 카메라 OIS가 물리적으로 흔들리는 현상. 기본 카메라 앱은 정상이며 iOS 16.0.2에서 수정됨.", "symptoms": ["서드파티 앱에서 카메라 프리뷰 심하게 흔들림", "카메라에서 진동·소음"], "solutions": ["iOS 16.0.2 이상으로 업데이트"], "source": { "label": "AppleInsider", "url": "https://appleinsider.com/articles/22/09/22/iphone-14-pro-camera-shake-fix-now-available-with-ios-1602", "asOf": "2022-09" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 730000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "iphone-13-pro-max",
+    "name": "아이폰 13 프로 맥스",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2021-10-08",
+    "releasePriceKRW": 1474000,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "Apple A15 Bionic", "displayInch": 6.7, "batteryMah": 4352, "ramGb": 6 },
+    "eol": { "policy": "애플 미공표 — iOS 26(2025) 지원 확인, 역대 지원기간(6~7년) 추정", "osEndDate": "2028-09-30", "securityEndDate": "2030-09-30", "estimated": true, "source": { "label": "Apple iOS 26 호환 기종 문서", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 574000, "withCareKRW": 40000, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "battery", "officialKRW": 141000, "withCareKRW": 0, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } }
+    ],
+    "issues": [
+      { "id": "ip13promax-watch-unlock", "title": "Apple Watch 잠금 해제 버그 (출시 초기)", "severity": "info", "status": "patched", "summary": "출시 초기 iOS 15.0에서 마스크 착용 시 Apple Watch로 아이폰 잠금 해제가 안 되는 버그. 소프트웨어 이슈로 iOS 15.0.1에서 수정됨.", "symptoms": ["마스크 착용 시 Apple Watch 잠금 해제 실패", "'Apple Watch와 통신 불가' 메시지"], "solutions": ["iOS 15.0.1 이상으로 업데이트"], "source": { "label": "9to5Mac", "url": "https://9to5mac.com/2021/10/01/ios-15-0-1-release-now-rolling-out-apple-watch/", "asOf": "2021-10" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 710000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "iphone-13-mini",
+    "name": "아이폰 13 미니",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2021-10-08",
+    "releasePriceKRW": 946000,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "Apple A15 Bionic", "displayInch": 5.4, "batteryMah": 2438, "ramGb": 4 },
+    "eol": { "policy": "애플 미공표 — iOS 26(2025) 지원 확인, 역대 지원기간(6~7년) 추정", "osEndDate": "2028-09-30", "securityEndDate": "2030-09-30", "estimated": true, "source": { "label": "Apple iOS 26 호환 기종 문서", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 417000, "withCareKRW": 40000, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "battery", "officialKRW": 141000, "withCareKRW": 0, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 300000, "source": "cetizen-bunjang" } ]
+  },
+  {
+    "slug": "iphone-12-pro-max",
+    "name": "아이폰 12 프로 맥스",
+    "brand": "apple",
+    "series": "아이폰",
+    "releaseDate": "2020-11-20",
+    "releasePriceKRW": 1474000,
+    "storageBase": "128GB",
+    "specSummary": { "chipset": "Apple A14 Bionic", "displayInch": 6.7, "batteryMah": 3687, "ramGb": 6 },
+    "eol": { "policy": "애플 미공표 — iOS 26(2025) 지원 확인(iOS 26 지원 기종 중 최고령 축, A14). 역대 지원기간(6~7년) 추정", "osEndDate": "2027-09-30", "securityEndDate": "2029-09-30", "estimated": true, "source": { "label": "Apple iOS 26 호환 기종 문서", "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 574000, "withCareKRW": 40000, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } },
+      { "part": "battery", "officialKRW": 141000, "withCareKRW": 0, "source": { "label": "큐에이드(공인 서비스) 애플 수리 가격표", "url": "https://www.q-aid.co.kr/appleService/price", "asOf": "2026-06" } }
+    ],
+    "issues": [
+      { "id": "ip12promax-green-tint", "title": "그린 틴트(녹색 색조) 디스플레이", "severity": "common", "status": "patched", "summary": "출시 초기 일부 기기에서 저조도 화면에 녹색 색조가 나타나는 현상. iOS 14.5에서 소프트웨어로 완화됐고, 심한 경우 디스플레이 교체 대상이었음.", "symptoms": ["어두운 화면·저조도에서 녹색 색조", "화면 균일성 저하"], "solutions": ["최신 iOS로 업데이트(14.5에서 완화)", "심하면 서비스센터 패널 점검", "중고 구매 시 어두운 회색 화면으로 색조 확인"], "source": { "label": "Forbes", "url": "https://www.forbes.com/sites/gordonkelly/2021/02/20/apple-iphone-12-pro-max-display-problem/", "asOf": "2021-02" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 520000, "source": "cetizen-bunjang" } ]
+  }
+]

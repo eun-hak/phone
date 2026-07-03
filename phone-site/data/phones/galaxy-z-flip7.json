@@ -1,0 +1,62 @@
+{
+  "slug": "galaxy-z-flip7",
+  "name": "갤럭시 Z 플립7",
+  "brand": "samsung",
+  "series": "갤럭시 Z",
+  "releaseDate": "2025-07-25",
+  "releasePriceKRW": 1485000,
+  "storageBase": "256GB",
+  "specSummary": {
+    "chipset": "엑시노스 2500",
+    "displayInch": 6.9,
+    "batteryMah": 4300,
+    "ramGb": 12
+  },
+  "eol": {
+    "policy": "OS 업그레이드 7회 + 보안 업데이트 7년 (S24/Z6 세대부터 정책). 출시(2025-07) 기준 약 2032-07까지",
+    "osEndDate": "2032-07-01",
+    "securityEndDate": "2032-07-01",
+    "estimated": false,
+    "source": {
+      "label": "디지털포커스 — 플립7 7년 안드로이드 업데이트",
+      "url": "https://www.digitalfocus.news/news/articleView.html?idxno=12692",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 378000,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계 (메인 화면 반납가)",
+        "url": "https://itatoz11.com/",
+        "asOf": "2026-07"
+      },
+      "withCareKRW": 75600
+    },
+    {
+      "part": "battery",
+      "officialKRW": 134500,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계",
+        "url": "https://itatoz11.com/",
+        "asOf": "2026-07"
+      }
+    }
+  ],
+  "issues": [],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20Z%20%ED%94%8C%EB%A6%BD7%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20Z%20%ED%94%8C%EB%A6%BD7",
+    "subsidyNote": "폴더블은 공시지원금이 크게 걸리는 대표 기종군이지만 감가도 빨라, 2년 뒤 잔존가치까지 계산하면 지원금 매력이 상쇄되는 경우가 많습니다.",
+    "mvnoNote": "중고 구매 시 힌지·필름 상태 확인이 가격보다 중요합니다. 대면 거래로 개폐 상태를 직접 확인하세요.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 950000,
+      "source": "cetizen-bunjang"
+    }
+  ]
+}

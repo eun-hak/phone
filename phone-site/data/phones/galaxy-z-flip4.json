@@ -1,0 +1,105 @@
+{
+  "slug": "galaxy-z-flip4",
+  "name": "갤럭시 Z 플립4",
+  "brand": "samsung",
+  "series": "갤럭시 Z",
+  "releaseDate": "2022-08-26",
+  "releasePriceKRW": 1353000,
+  "storageBase": "256GB",
+  "specSummary": {
+    "chipset": "스냅드래곤 8+ Gen 1",
+    "displayInch": 6.7,
+    "batteryMah": 3700,
+    "ramGb": 8
+  },
+  "eol": {
+    "policy": "2022년 폴더블 정책: OS 4회 업그레이드 + 보안 5년.",
+    "osEndDate": "2026-08-26",
+    "securityEndDate": "2027-08-26",
+    "estimated": false,
+    "source": {
+      "label": "삼성 모바일 보안 업데이트 정책",
+      "url": "https://security.samsungmobile.com/workScope.smsb",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 364500,
+      "source": {
+        "label": "삼성전자서비스 고지가 (메인 화면 반납 기준) · 케어플러스 폴더블 30%",
+        "url": "https://ggudol.com/1414",
+        "asOf": "2026-07"
+      },
+      "withCareKRW": 109350
+    },
+    {
+      "part": "battery",
+      "officialKRW": 94000,
+      "source": {
+        "label": "삼성전자서비스 고지가",
+        "url": "https://ggudol.com/1414",
+        "asOf": "2026-07"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "zflip4-inner-film",
+      "title": "내부 보호필름 폴딩부 들뜸",
+      "severity": "common",
+      "status": "free-repair",
+      "summary": "내부 보호필름이 접힘부에서 들뜨는 현상. 폴딩부 들뜸은 구매 후 90일 내 1회 무상 재부착, 그 외 증상은 7일 내 1회 무상.",
+      "symptoms": [
+        "화면 중앙 접힘부 필름 들뜸",
+        "필름 가장자리 박리·기포"
+      ],
+      "solutions": [
+        "서비스센터에서 폴딩부 들뜸 90일 내 1회 무상 재부착",
+        "그 외 증상은 7일 내 1회 무상 부착 신청"
+      ],
+      "source": {
+        "label": "삼성전자서비스 — 스크린 프로텍터 부착 안내",
+        "url": "https://www.samsungsvc.co.kr/solution/1332622",
+        "asOf": "2026-07"
+      }
+    },
+    {
+      "id": "zflip4-hinge",
+      "title": "힌지 불량·접합부 액정 고장",
+      "severity": "critical",
+      "status": "open",
+      "summary": "힌지 부위를 중심으로 내부 액정이 먹통되거나 힌지 유격/파손이 발생. 보증 2년 내 과실 없으면 무상 대상이나, 미세 스크래치를 이유로 유상 판정되는 분쟁 사례가 다수.",
+      "symptoms": [
+        "힌지 중심 내부 액정 세로줄/먹통",
+        "힌지 유격·이물감",
+        "접합부 파손"
+      ],
+      "solutions": [
+        "보증 2년 내·충격/침수 흔적 없으면 무상수리 요청",
+        "유상 판정 시 다른 서비스센터 재점검",
+        "중고 구매 시 접힘부 액정 상태 필수 확인"
+      ],
+      "source": {
+        "label": "소비자가만드는신문 — 플립 접합부 고장 논란",
+        "url": "https://www.consumernews.co.kr/news/articleView.html?idxno=691878",
+        "asOf": "2026-07"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20Z%20%ED%94%8C%EB%A6%BD4%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20Z%20%ED%94%8C%EB%A6%BD4",
+    "subsidyNote": "폴더블은 공시지원금이 크게 걸리는 대표 기종군이지만 감가도 빨라, 2년 뒤 잔존가치까지 계산하면 지원금 매력이 상쇄되는 경우가 많습니다.",
+    "mvnoNote": "중고 구매 시 힌지·필름 상태 확인이 가격보다 중요합니다. 대면 거래로 개폐 상태를 직접 확인하세요.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 220000,
+      "source": "cetizen-bunjang"
+    }
+  ]
+}

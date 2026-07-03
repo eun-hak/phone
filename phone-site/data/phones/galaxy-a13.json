@@ -1,0 +1,42 @@
+{
+  "slug": "galaxy-a13",
+  "name": "갤럭시 A13",
+  "brand": "samsung",
+  "series": "갤럭시 A",
+  "releaseDate": "2022-07-22",
+  "releasePriceKRW": 297000,
+  "storageBase": "64GB",
+  "specSummary": {
+    "chipset": "삼성 엑시노스 850",
+    "displayInch": 6.6,
+    "batteryMah": 5000,
+    "ramGb": 4
+  },
+  "eol": {
+    "policy": "OS 2회 업그레이드(안드로이드 14까지) + 보안 4년. 2026년 5월 소프트웨어 지원 종료(A13·A23·M23 일괄 제외).",
+    "osEndDate": "2024-06-30",
+    "securityEndDate": "2026-05-31",
+    "estimated": false,
+    "source": {
+      "label": "삼성 모바일 보안 업데이트 정책",
+      "url": "https://security.samsungmobile.com/workScope.smsb",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [],
+  "issues": [],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20A13%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20A13",
+    "subsidyNote": "보급형은 공시지원금으로 실구매가가 크게 내려가지만, 고가 요금제 유지 조건의 2년 총비용을 반드시 계산하세요.",
+    "mvnoNote": "출고가가 낮아 자급제 + 알뜰폰 최저 요금제 조합이 통신비 최소화의 정석입니다.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 75000,
+      "source": "cetizen-bunjang(추정)"
+    }
+  ]
+}

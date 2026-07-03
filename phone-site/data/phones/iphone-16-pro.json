@@ -1,0 +1,139 @@
+{
+  "slug": "iphone-16-pro",
+  "name": "아이폰 16 프로",
+  "brand": "apple",
+  "series": "아이폰",
+  "releaseDate": "2024-09-20",
+  "releasePriceKRW": 1550000,
+  "storageBase": "128GB",
+  "specSummary": {
+    "chipset": "A18 Pro",
+    "displayInch": 6.3,
+    "batteryMah": 3582,
+    "ramGb": 8
+  },
+  "eol": {
+    "policy": "애플 미공표 — iOS 26(2025) 지원 확인. A18 Pro 탑재로 역대 지원 기간(메이저 iOS 6~7년 + 구버전 보안 패치 1~2년) 기반 추정",
+    "osEndDate": "2031-09-01",
+    "securityEndDate": "2033-09-01",
+    "estimated": true,
+    "source": {
+      "label": "Apple iOS 26 호환 기종 문서 (추정 근거)",
+      "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios",
+      "asOf": "2026-07-01"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 499000,
+      "withCareKRW": 40000,
+      "source": {
+        "label": "Apple 공식 수리 비용 (보증 외·VAT 포함, 공인 서비스 제공업체는 자체 요금으로 더 높을 수 있음)",
+        "url": "https://support.apple.com/ko-kr/iphone/repair",
+        "asOf": "2026-07-02"
+      }
+    },
+    {
+      "part": "battery",
+      "officialKRW": 179000,
+      "withCareKRW": 0,
+      "source": {
+        "label": "Apple 공식 수리 비용 (보증 외·VAT 포함)",
+        "url": "https://support.apple.com/ko-kr/iphone/repair",
+        "asOf": "2026-07-02"
+      }
+    },
+    {
+      "part": "back-glass",
+      "officialKRW": 240000,
+      "withCareKRW": 40000,
+      "source": {
+        "label": "Apple 공식 수리 비용 (보증 외·VAT 포함)",
+        "url": "https://support.apple.com/ko-kr/iphone/repair",
+        "asOf": "2026-07-02"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "ip16pro-touch-freeze",
+      "title": "터치스크린 프리즈·무반응 버그",
+      "severity": "common",
+      "status": "patched",
+      "summary": "출시 초기 터치가 일시적으로 먹통이 되는 문제가 집중 보고됐고, 하드웨어가 아닌 소프트웨어 버그로 확인돼 2024년 10월 iOS 18.0.1에서 수정됨.",
+      "symptoms": [
+        "화면 전체가 일시적으로 터치 무반응",
+        "탭·스크롤 입력 누락",
+        "카메라 컨트롤 인접 영역 오터치 시 화면 잠김"
+      ],
+      "solutions": [
+        "iOS 18.0.1 이상으로 업데이트",
+        "증상 지속 시 강제 재시동",
+        "그래도 지속되면 애플 지원 문의"
+      ],
+      "source": {
+        "label": "Tom's Guide",
+        "url": "https://www.tomsguide.com/phones/iphones/apple-issues-update-to-fix-iphone-16-touchscreen-bug-what-you-need-to-know",
+        "asOf": "2024-10"
+      }
+    },
+    {
+      "id": "ip16pro-camera-freeze",
+      "title": "카메라 프리징·앱 충돌",
+      "severity": "common",
+      "status": "patched",
+      "summary": "초광각 4K 매크로 녹화 시 카메라가 멈추는 버그(iOS 18.0.1 릴리스 노트 명시)와 카메라 앱 충돌·UI 프리징이 출시 초기 다수 보고됐고, 이후 업데이트로 대부분 해소됨.",
+      "symptoms": [
+        "카메라 앱 실행 지연·검은 화면·촬영 중 멈춤",
+        "초광각 4K 매크로 녹화 중 프리즈",
+        "UI 멈춤·예기치 않은 재부팅"
+      ],
+      "solutions": [
+        "iOS 18.0.1 이상 최신 버전으로 업데이트",
+        "카메라 앱 완전 종료 후 재실행 또는 기기 재시동",
+        "증상 지속 시 애플 진단 접수"
+      ],
+      "source": {
+        "label": "Digital Trends",
+        "url": "https://www.digitaltrends.com/phones/apple-iphone-16-pro-user-reports-freeze-app-camera-glitch-issue-ios-18/",
+        "asOf": "2024-10"
+      }
+    },
+    {
+      "id": "ip16pro-battery-drain",
+      "title": "배터리 급속 소모(드레인)",
+      "severity": "common",
+      "status": "open",
+      "summary": "iOS 18 초기부터 배터리 지속시간 급감 보고가 이어졌고, iOS 26.5에서도 일부 보고가 있어 애플이 배터리 최적화 업데이트로 관리 중인 진행형 이슈.",
+      "symptoms": [
+        "완충 후 짧은 사용에도 급격한 배터리 감소",
+        "대기(스탠바이) 중 배터리 소모"
+      ],
+      "solutions": [
+        "최신 iOS 업데이트 적용",
+        "배터리 설정에서 과소모 앱 점검·백그라운드 활동 제한",
+        "개선 없으면 애플 지원에서 배터리 진단"
+      ],
+      "source": {
+        "label": "BGR",
+        "url": "https://www.bgr.com/tech/iphone-16-battery-drain-issue-affecting-users-for-reasons-unknown/",
+        "asOf": "2024-10"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EC%95%84%EC%9D%B4%ED%8F%B0%2016%20%ED%94%84%EB%A1%9C%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EC%95%84%EC%9D%B4%ED%8F%B0%2016%20%ED%94%84%EB%A1%9C",
+    "subsidyNote": "프로 라인은 지원금이 거의 없고 선택약정이 표준. 애플케어+ 가입 여부가 수리비 리스크를 좌우.",
+    "mvnoNote": "잔존가치가 전 기종군 최상위 — 자급제 구매 후 되파는 사이클의 총비용이 가장 낮은 축.",
+    "asOf": "2026-06-15"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 950000,
+      "source": "cetizen-bunjang-mintit"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "slug": "galaxy-s25-ultra",
+  "name": "갤럭시 S25 울트라",
+  "brand": "samsung",
+  "series": "갤럭시 S",
+  "releaseDate": "2025-02-07",
+  "releasePriceKRW": 1698400,
+  "storageBase": "256GB",
+  "specSummary": {
+    "chipset": "스냅드래곤 8 엘리트",
+    "displayInch": 6.9,
+    "batteryMah": 5000,
+    "ramGb": 12
+  },
+  "eol": {
+    "policy": "OS 업그레이드 7회 + 보안 업데이트 7년 (삼성 공식 정책)",
+    "osEndDate": "2032-02-01",
+    "securityEndDate": "2032-02-01",
+    "estimated": false,
+    "source": {
+      "label": "삼성 모바일 보안 업데이트 정책",
+      "url": "https://security.samsungmobile.com/workScope.smsb",
+      "asOf": "2026-06-15"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 295000,
+      "withCareKRW": 73750,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계 (파손 부품 반납 기준, 미반납 시 약 377,000원)",
+        "url": "https://mokdol.com/samsung-galaxy-repair-cost/",
+        "asOf": "2026-02"
+      }
+    },
+    {
+      "part": "battery",
+      "officialKRW": 69500,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계",
+        "url": "https://mokdol.com/samsung-galaxy-repair-cost/",
+        "asOf": "2026-02"
+      }
+    },
+    {
+      "part": "back-glass",
+      "officialKRW": 74000,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계",
+        "url": "https://mokdol.com/samsung-galaxy-repair-cost/",
+        "asOf": "2026-02"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "s25u-oneui8-camera",
+      "title": "One UI 8 카메라 버그 (포트레이트 빛 번짐)",
+      "severity": "common",
+      "status": "patched",
+      "summary": "One UI 8 업데이트 후 포트레이트 모드 줌 전환 시 화면에 빛이 터지는 현상과 배경 흐림이 부자연스러워지는 버그가 보고됨. 삼성이 수정을 예고했고 이후 OTA와 One UI 8.5에서 해결됨.",
+      "symptoms": [
+        "포트레이트 모드 줌 전환 시 화면에 빛 번짐 발생",
+        "3x·5x 줌 인물 사진의 배경 흐림이 얼룩처럼 불균일"
+      ],
+      "solutions": [
+        "One UI 8.5 등 최신 소프트웨어로 업데이트",
+        "업데이트 전에는 포트레이트 줌 전환을 피하고 일반 촬영 모드 사용"
+      ],
+      "source": {
+        "label": "Sammy Fans",
+        "url": "https://www.sammyfans.com/2025/10/01/samsung-galaxy-s25-ultra-one-ui-8-camera-bug/",
+        "asOf": "2025-10"
+      }
+    },
+    {
+      "id": "s25u-uw-camera-shake",
+      "title": "0.6x 초광각 카메라 떨림·소음",
+      "severity": "common",
+      "status": "free-repair",
+      "summary": "초광각(0.6x) 사용 시 프리뷰가 떨리고 소음이 나며 결과물이 흐려지는 문제가 보고됨. OIS·포커스 모터 결함이 지목되며, 하드웨어 판정 시 보증 기간 내 카메라 모듈 무상 교체로 처리되는 중.",
+      "symptoms": [
+        "0.6x 전환 시 화면 떨림·깜빡임",
+        "카메라에서 달그락·클릭 소음",
+        "초광각 사진·영상 흐림"
+      ],
+      "solutions": [
+        "보증 기간 내 서비스센터에서 점검 및 카메라 모듈 교체",
+        "삼성 멤버스 앱으로 로그 첨부해 증상 신고",
+        "재부팅·초기화로는 해결되지 않으므로 하드웨어 점검 우선"
+      ],
+      "source": {
+        "label": "Sammy Fans",
+        "url": "https://www.sammyfans.com/2025/07/04/samsung-galaxy-s25-ultra-camera-flickering-reports-rising-after-software-update/",
+        "asOf": "2025-07"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20S25%20%EC%9A%B8%ED%8A%B8%EB%9D%BC%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20S25%20%EC%9A%B8%ED%8A%B8%EB%9D%BC",
+    "subsidyNote": "출고가가 높아 공시지원금보다 선택약정 25% 할인이 유리한 경우가 대부분. 성지 시세는 변동이 크니 총비용 계산 없이 계약 금지.",
+    "mvnoNote": "고가 기종일수록 자급제 + 알뜰폰의 2년 총비용 절감 폭이 커짐. 카드 제휴 할인까지 비교 필요.",
+    "asOf": "2026-06-15"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 960000,
+      "source": "cetizen-bunjang-mintit"
+    }
+  ]
+}

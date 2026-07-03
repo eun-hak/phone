@@ -1,0 +1,92 @@
+{
+  "slug": "galaxy-s22-ultra",
+  "name": "갤럭시 S22 울트라",
+  "brand": "samsung",
+  "series": "갤럭시 S",
+  "releaseDate": "2022-02-25",
+  "releasePriceKRW": 1452000,
+  "storageBase": "256GB",
+  "specSummary": {
+    "chipset": "엑시노스 2200",
+    "displayInch": 6.8,
+    "batteryMah": 5000,
+    "ramGb": 12
+  },
+  "eol": {
+    "policy": "OS 업그레이드 4회 + 보안 업데이트 5년 (S22 세대 정책), 출시 4년 경과로 분기별 보안 업데이트 전환",
+    "osEndDate": "2026-02-25",
+    "securityEndDate": "2027-02-25",
+    "estimated": false,
+    "source": {
+      "label": "삼성 모바일 보안 업데이트 정책",
+      "url": "https://security.samsungmobile.com/workScope.smsb",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 309000,
+      "withCareKRW": 77250,
+      "source": {
+        "label": "삼성전자서비스 고지가 (반납 기준, 미반납 429,000원)",
+        "url": "https://www.newsis.com/view/NISX20230530_0002321441",
+        "asOf": "2023-05"
+      }
+    },
+    {
+      "part": "battery",
+      "officialKRW": 57000,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계",
+        "url": "https://mokdol.com/samsung-galaxy-repair-cost/",
+        "asOf": "2026-02"
+      }
+    },
+    {
+      "part": "back-glass",
+      "officialKRW": 72000,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계",
+        "url": "https://mokdol.com/samsung-galaxy-repair-cost/",
+        "asOf": "2026-02"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "s22u-green-line",
+      "title": "디스플레이 녹색 세로줄(녹조) 현상",
+      "severity": "common",
+      "status": "free-repair",
+      "summary": "일부 소프트웨어 업데이트 이후 화면에 녹색 세로줄이 나타나는 결함. 삼성은 인도에서 S21·S22 울트라 대상 무상 화면 교체를 2025년까지 제공. 한국은 공식 무상 프로그램이 확인되지 않아 지역별 대응이 다름.",
+      "symptoms": [
+        "펀치홀 좌측 등 화면에 녹색 세로줄/그라데이션",
+        "특정 업데이트 이후 갑자기 발생"
+      ],
+      "solutions": [
+        "서비스센터에서 무상 수리 대상 여부 확인",
+        "물리적·액체 손상 없는 상태로 구매 증빙과 함께 접수"
+      ],
+      "source": {
+        "label": "비즈니스포스트",
+        "url": "https://www.businesspost.co.kr/BP?command=article_view&num=371249",
+        "asOf": "2025-08"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20S22%20%EC%9A%B8%ED%8A%B8%EB%9D%BC%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20S22%20%EC%9A%B8%ED%8A%B8%EB%9D%BC",
+    "subsidyNote": "공시지원금과 선택약정 25% 할인을 월 요금 × 약정 개월 + 기기값의 2년 총비용으로 비교하세요. 성지 시세는 변동이 크니 총비용 계산 없이 계약하지 마세요.",
+    "mvnoNote": "신품가가 내려간 시점이라면 자급제 + 알뜰폰 조합의 가성비가 좋습니다. 중고 A급 시세와 신품 최저가 차이를 먼저 확인하세요.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 440000,
+      "source": "cetizen-bunjang-mintit"
+    }
+  ]
+}

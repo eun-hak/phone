@@ -1,0 +1,84 @@
+{
+  "slug": "iphone-12-pro",
+  "name": "아이폰 12 프로",
+  "brand": "apple",
+  "series": "아이폰",
+  "releaseDate": "2020-10-30",
+  "releasePriceKRW": 1350000,
+  "storageBase": "128GB",
+  "specSummary": {
+    "chipset": "Apple A14 Bionic",
+    "displayInch": 6.1,
+    "batteryMah": 2815,
+    "ramGb": 6
+  },
+  "eol": {
+    "policy": "애플 미공표 — iOS 26(2025) 지원 확인(A14). 역대 지원기간(6~7년) 추정",
+    "osEndDate": "2028-09-01",
+    "securityEndDate": "2031-09-01",
+    "estimated": true,
+    "source": {
+      "label": "Apple iOS 26 호환 기종 문서",
+      "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 510000,
+      "source": {
+        "label": "큐에이드(공인 서비스) 애플 수리 가격표",
+        "url": "https://www.q-aid.co.kr/appleService/price",
+        "asOf": "2026-06"
+      },
+      "withCareKRW": 40000
+    },
+    {
+      "part": "battery",
+      "officialKRW": 141000,
+      "source": {
+        "label": "큐에이드(공인 서비스) 애플 수리 가격표",
+        "url": "https://www.q-aid.co.kr/appleService/price",
+        "asOf": "2026-06"
+      },
+      "withCareKRW": 0
+    }
+  ],
+  "issues": [
+    {
+      "id": "ip12pro-no-sound",
+      "title": "통화 중 무음(리시버) 결함",
+      "severity": "common",
+      "status": "open",
+      "summary": "2020년 10월~2021년 4월 제조분 일부에서 리시버 결함으로 통화 중 소리가 안 나는 증상. 애플이 3년 무상 수리 프로그램을 운영했으나 현재 커버 기간이 종료돼 유상 수리만 가능.",
+      "symptoms": [
+        "통화 중 상대 목소리가 안 들림",
+        "리시버(수화부) 무음"
+      ],
+      "solutions": [
+        "중고 구매 시 통화 테스트로 리시버 정상 작동 확인",
+        "무상 프로그램 종료로 현재는 유상 수리"
+      ],
+      "source": {
+        "label": "Apple 무음 서비스 프로그램",
+        "url": "https://support.apple.com/iphone-12-and-iphone-12-pro-service-program-for-no-sound-issues",
+        "asOf": "2021-08"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EC%95%84%EC%9D%B4%ED%8F%B0%2012%20%ED%94%84%EB%A1%9C%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EC%95%84%EC%9D%B4%ED%8F%B0%2012%20%ED%94%84%EB%A1%9C",
+    "subsidyNote": "아이폰은 공시지원금이 적게 걸려 선택약정 25% 할인이 기본 선택지입니다. 프로 라인은 애플케어+ 가입 여부가 수리비 리스크를 좌우합니다.",
+    "mvnoNote": "감가 방어가 좋아 자급제 신품 구매 후 2~3년 뒤 되파는 전략의 2년 총비용이 낮은 축입니다. 요금제는 모요·스마트초이스 참고.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-06-25",
+      "priceKRW": 579000,
+      "source": "cetizen-bunjang"
+    }
+  ]
+}

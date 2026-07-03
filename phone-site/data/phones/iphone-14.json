@@ -1,0 +1,115 @@
+{
+  "slug": "iphone-14",
+  "name": "아이폰 14",
+  "brand": "apple",
+  "series": "아이폰",
+  "releaseDate": "2022-10-07",
+  "releasePriceKRW": 1250000,
+  "storageBase": "128GB",
+  "specSummary": {
+    "chipset": "A15 Bionic",
+    "displayInch": 6.1,
+    "batteryMah": 3279,
+    "ramGb": 6
+  },
+  "eol": {
+    "policy": "애플 미공표 — iOS 26(2025) 지원 확인. 역대 아이폰 지원 기간(메이저 iOS 6~7년 + 구버전 보안 패치 1~2년) 기반 추정",
+    "osEndDate": "2029-09-01",
+    "securityEndDate": "2031-09-01",
+    "estimated": true,
+    "source": {
+      "label": "Apple iOS 26 호환 기종 문서 (추정 근거)",
+      "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios",
+      "asOf": "2026-07-01"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 420000,
+      "withCareKRW": 40000,
+      "source": {
+        "label": "Apple 공식 수리 비용 (보증 외·VAT 포함, 공인 서비스 제공업체는 자체 요금으로 더 높을 수 있음)",
+        "url": "https://support.apple.com/ko-kr/iphone/repair",
+        "asOf": "2026-07-02"
+      }
+    },
+    {
+      "part": "battery",
+      "officialKRW": 146000,
+      "withCareKRW": 0,
+      "source": {
+        "label": "Apple 공식 수리 비용 (보증 외·VAT 포함)",
+        "url": "https://support.apple.com/ko-kr/iphone/repair",
+        "asOf": "2026-07-02"
+      }
+    },
+    {
+      "part": "back-glass",
+      "officialKRW": 240000,
+      "withCareKRW": 40000,
+      "source": {
+        "label": "Apple 공식 수리 비용 (보증 외·VAT 포함 · 14 프로 계열은 후면 시스템 수리로 별도)",
+        "url": "https://support.apple.com/ko-kr/iphone/repair",
+        "asOf": "2026-07-02"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "ip14-battery-health",
+      "title": "배터리 성능 빠른 저하 논란",
+      "severity": "common",
+      "status": "open",
+      "summary": "구매 1년 이내에 배터리 성능 상태가 90% 아래로 떨어졌다는 보고가 2023년부터 다수 나와 외신이 보도함. 애플은 정상 노화 범위라는 입장(80% 이상은 보증 교체 비대상)이라, 중고 구매 시 배터리 성능 확인이 특히 중요한 기종.",
+      "symptoms": [
+        "1년 내 배터리 성능 상태가 90% 미만으로 하락",
+        "체감 사용 시간 감소"
+      ],
+      "solutions": [
+        "중고 구매 시 설정 > 배터리 > 성능 상태 85% 이상 확인",
+        "충전 최적화 기능 사용, 고온 환경 피하기",
+        "성능 상태 80% 미만 시 배터리 교체 비용을 시세에서 차감하고 협상"
+      ],
+      "source": {
+        "label": "Forbes",
+        "url": "https://www.forbes.com/sites/gordonkelly/2023/08/10/apple-iphone-14-pro-max-battery-life-battery-health-problem/",
+        "asOf": "2023-08"
+      }
+    },
+    {
+      "id": "ip14-sim-bug",
+      "title": "'SIM 지원 안 됨' 먹통 버그",
+      "severity": "common",
+      "status": "patched",
+      "summary": "2022년 10월 일부 기기에서 'SIM 지원 안 됨' 메시지 후 기기가 멈추는 버그를 애플이 내부 메모로 인정(소프트웨어 문제 확인). 이후 iOS 16 후속 업데이트로 추가 보고가 끊겨 해소됨.",
+      "symptoms": [
+        "'SIM 지원 안 됨' 오류 메시지 표시",
+        "오류 후 기기 멈춤(프리징)"
+      ],
+      "solutions": [
+        "최신 iOS로 업데이트 유지",
+        "오류 시 몇 분 대기, 지속되면 복원 대신 애플 서비스센터 방문"
+      ],
+      "source": {
+        "label": "MacRumors",
+        "url": "https://www.macrumors.com/2022/10/17/apple-confirms-iphone-14-sim-bug/",
+        "asOf": "2022-10"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EC%95%84%EC%9D%B4%ED%8F%B0%2014%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EC%95%84%EC%9D%B4%ED%8F%B0%2014",
+    "subsidyNote": "신품 유통이 줄어든 기종 — 신규 구매는 중고가 기본 루트.",
+    "mvnoNote": "중고 시세가 40만원대 초반으로 안정화. 배터리 상태만 확인하면 가성비 좋은 선택.",
+    "asOf": "2026-06-15"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 420000,
+      "source": "cetizen-bunjang-mintit"
+    }
+  ]
+}

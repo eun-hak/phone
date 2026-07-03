@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@theme {
+  /* ink */
+  --color-ink: #0b0b0b;
+  --color-sub: #52514e;
+  --color-mut: #898781;
+
+  /* surfaces */
+  --color-page: #fafaf8;
+  --color-card: #ffffff;
+  --color-hairline: #e7e5df;
+  --color-wash: #f4f3f0;
+
+  /* accent (categorical slot 1 family) */
+  --color-accent: #1c5cab;
+  --color-accent-strong: #2a78d6;
+  --color-accent-soft: #e9f1fb;
+
+  /* series slot 2 (compare charts) */
+  --color-series2: #1baf7a;
+
+  /* status — 항상 라벨과 병행, 시리즈 색으로 재사용 금지 */
+  --color-good: #0ca30c;
+  --color-good-deep: #1a7f1a;
+  --color-good-soft: #e9f6e9;
+  --color-warn: #8a6100;
+  --color-warn-strong: #fab219;
+  --color-warn-soft: #fdf3d7;
+  --color-serious: #b4491f;
+  --color-serious-strong: #ec835a;
+  --color-serious-soft: #fdeae2;
+  --color-crit: #b02a2a;
+  --color-crit-strong: #d03b3b;
+  --color-crit-soft: #fae3e3;
+
+  --font-sans: "Pretendard Variable", Pretendard, system-ui, -apple-system,
+    "Segoe UI", "Apple SD Gothic Neo", sans-serif;
+
+  --shadow-card: 0 1px 2px rgba(11, 11, 11, 0.04);
+  --shadow-pop: 0 8px 24px rgba(11, 11, 11, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-page);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent-strong);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* 숫자 정렬 — 표·축 눈금 컬럼에만 사용 */
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── 차트 호버 레이어: CSS만으로 crosshair + tooltip ── */
+.viz-pt .viz-tip {
+  opacity: 0;
+  transition: opacity 80ms ease;
+  pointer-events: none;
+}
+.viz-pt:hover .viz-tip,
+.viz-pt:focus-visible .viz-tip {
+  opacity: 1;
+}
+.viz-pt {
+  outline: none;
+}
+
+/* ── 표 공통 ── */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+.data-table th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--color-sub);
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--color-hairline);
+  white-space: nowrap;
+}
+.data-table td {
+  padding: 0.625rem 0.75rem;
+  border-bottom: 1px solid var(--color-hairline);
+  vertical-align: middle;
+}
+.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+.data-table tbody tr:hover {
+  background: var(--color-wash);
+}

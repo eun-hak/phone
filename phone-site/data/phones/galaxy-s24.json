@@ -1,0 +1,132 @@
+{
+  "slug": "galaxy-s24",
+  "name": "갤럭시 S24",
+  "brand": "samsung",
+  "series": "갤럭시 S",
+  "releaseDate": "2024-01-31",
+  "releasePriceKRW": 1155000,
+  "storageBase": "256GB",
+  "specSummary": {
+    "chipset": "엑시노스 2400",
+    "displayInch": 6.2,
+    "batteryMah": 4000,
+    "ramGb": 8
+  },
+  "eol": {
+    "policy": "OS 업그레이드 7회 + 보안 업데이트 7년 (삼성 공식 정책)",
+    "osEndDate": "2031-01-31",
+    "securityEndDate": "2031-01-31",
+    "estimated": false,
+    "source": {
+      "label": "삼성 모바일 보안 업데이트 정책",
+      "url": "https://security.samsungmobile.com/workScope.smsb",
+      "asOf": "2026-06-15"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 184000,
+      "withCareKRW": 46000,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계 (파손 부품 반납 기준, 미반납 시 251,000원)",
+        "url": "https://mokdol.com/samsung-galaxy-repair-cost/",
+        "asOf": "2026-02"
+      }
+    },
+    {
+      "part": "battery",
+      "officialKRW": 67500,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계",
+        "url": "https://mokdol.com/samsung-galaxy-repair-cost/",
+        "asOf": "2026-02"
+      }
+    },
+    {
+      "part": "back-glass",
+      "officialKRW": 54000,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계",
+        "url": "https://mokdol.com/samsung-galaxy-repair-cost/",
+        "asOf": "2026-02"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "s24-washed-colors",
+      "title": "화면 색감 물빠짐(워시드아웃) 논란",
+      "severity": "common",
+      "status": "patched",
+      "summary": "출시 직후 '선명한 화면' 모드에서도 채도가 낮아 색감이 물 빠진 듯하다는 불만이 제기됐고, 삼성이 2024년 2월 업데이트로 '선명도' 조절 옵션을 추가해 해결함.",
+      "symptoms": [
+        "선명한 화면 모드와 자연스러운 화면 모드의 색감 차이가 거의 없음",
+        "이전 기종(S23 등) 대비 색이 흐릿하고 채도가 낮아 보임"
+      ],
+      "solutions": [
+        "최신 소프트웨어 업데이트 설치",
+        "설정 > 디스플레이 > 화면 모드 > 선명한 화면 > 고급 설정에서 선명도 슬라이더 조절"
+      ],
+      "source": {
+        "label": "SamMobile",
+        "url": "https://www.sammobile.com/news/bring-vivid-colors-back-to-galaxy-s24-display/",
+        "asOf": "2024-02"
+      }
+    },
+    {
+      "id": "s24-oneui7-halt",
+      "title": "One UI 7 업데이트 전면 중단 사태",
+      "severity": "common",
+      "status": "patched",
+      "summary": "2025년 4월 One UI 7 배포 직후 국내 S24 사용자를 중심으로 기기 잠금 해제 불가 버그가 보고돼 삼성이 글로벌 롤아웃을 중단했다가, 수정 후 같은 달 중순 배포를 재개해 해결됨.",
+      "symptoms": [
+        "업데이트 후 잠금 화면이 풀리지 않음",
+        "업데이트 배포가 갑자기 중단되어 수신 불가"
+      ],
+      "solutions": [
+        "수정된 최신 버전의 One UI 7 이상으로 업데이트",
+        "문제 발생 시 삼성 서비스센터 문의"
+      ],
+      "source": {
+        "label": "Android Authority",
+        "url": "https://www.androidauthority.com/one-ui-7-update-halted-3544233/",
+        "asOf": "2025-04"
+      }
+    },
+    {
+      "id": "s24-lowlight-grain",
+      "title": "저휘도 그레인(입자 낀 화면) 현상",
+      "severity": "common",
+      "status": "open",
+      "summary": "낮은 밝기에서 어두운 색 표시 시 입자가 낀 듯 보이는 현상이 S24 시리즈 전반에서 보고됐으나, 삼성은 의도된 조정이라는 입장으로 S24에서는 해결되지 않음. 후속작 S25에서 개선된 것으로 보도됨.",
+      "symptoms": [
+        "저휘도에서 어두운 회색 표시 시 모래알 같은 입자감",
+        "어두운 환경에서 화면 균일성 저하"
+      ],
+      "solutions": [
+        "화면 밝기를 약간 높여 사용",
+        "증상이 심하면 서비스센터에서 패널 점검"
+      ],
+      "source": {
+        "label": "SamMobile",
+        "url": "https://www.sammobile.com/news/galaxy-s25-series-fixes-s24-grainy-display-issue/",
+        "asOf": "2025-01"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20S24%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20S24",
+    "subsidyNote": "후속작 출시 이후 공시지원금이 확대되는 대표 구간. 재고 소진 국면이라 자급제 가격 변동이 큼 — 중고 A급과의 가격차를 먼저 확인.",
+    "mvnoNote": "신품가가 내려간 시점이라 자급제 + 알뜰폰 조합의 가성비가 좋음.",
+    "asOf": "2026-06-15"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 440000,
+      "source": "cetizen-bunjang-mintit"
+    }
+  ]
+}

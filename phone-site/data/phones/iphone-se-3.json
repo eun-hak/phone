@@ -1,0 +1,85 @@
+{
+  "slug": "iphone-se-3",
+  "name": "아이폰 SE 3세대",
+  "brand": "apple",
+  "series": "아이폰",
+  "releaseDate": "2022-03-25",
+  "releasePriceKRW": 590000,
+  "storageBase": "64GB",
+  "specSummary": {
+    "chipset": "A15 Bionic",
+    "displayInch": 4.7,
+    "batteryMah": 2018,
+    "ramGb": 4
+  },
+  "eol": {
+    "policy": "애플 미공표 — iOS 26(2025) 지원 확인. A15 칩 기준 아이폰 14와 동시 종료 가능성이 높아 역대 지원 기간(6~7년)으로 추정",
+    "osEndDate": "2029-09-01",
+    "securityEndDate": "2031-09-01",
+    "estimated": true,
+    "source": {
+      "label": "Apple iOS 26 호환 기종 문서 (추정 근거)",
+      "url": "https://support.apple.com/guide/iphone/iphe3fa5df43/ios",
+      "asOf": "2026-07-01"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 189000,
+      "withCareKRW": 40000,
+      "source": {
+        "label": "Apple 공식 수리 비용 (보증 외·VAT 포함, 후면 유리 단독 수리는 미제공 — 기타 손상 459,000원으로 처리)",
+        "url": "https://support.apple.com/ko-kr/iphone/repair",
+        "asOf": "2026-07-02"
+      }
+    },
+    {
+      "part": "battery",
+      "officialKRW": 100000,
+      "withCareKRW": 0,
+      "source": {
+        "label": "Apple 공식 수리 비용 (보증 외·VAT 포함)",
+        "url": "https://support.apple.com/ko-kr/iphone/repair",
+        "asOf": "2026-07-02"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "se3-random-reboot",
+      "title": "무작위 재부팅·셧다운 현상 (초기)",
+      "severity": "common",
+      "status": "patched",
+      "summary": "출시 초기 iOS 15.4/15.4.1에서 커널 패닉으로 기기가 무작위로 멈추거나 재부팅되는 현상이 다수 보고됨. 이후 iOS 업데이트를 거치며 관련 보고가 끊겨 해소된 초기 소프트웨어 이슈로 평가됨.",
+      "symptoms": [
+        "사용 중 화면이 멈춘 뒤 재부팅",
+        "갑작스러운 전원 꺼짐"
+      ],
+      "solutions": [
+        "최신 iOS로 업데이트",
+        "지속되면 DFU 복원 후 백업 복구",
+        "반복 시 애플 서비스센터에서 점검"
+      ],
+      "source": {
+        "label": "Android Authority",
+        "url": "https://www.androidauthority.com/iphone-se-3-2022-problems-fixes-3158917/",
+        "asOf": "2022-05"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EC%95%84%EC%9D%B4%ED%8F%B0%20SE3%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EC%95%84%EC%9D%B4%ED%8F%B0%20SE%203%EC%84%B8%EB%8C%80",
+    "subsidyNote": "단종 수순의 기종으로 신품 재고가 희소. 신규 구매는 중고가 기본.",
+    "mvnoNote": "서브폰·부모님폰 용도로 중고 + 알뜰폰 최저 요금제 조합 수요가 꾸준.",
+    "asOf": "2026-06-15"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 160000,
+      "source": "cetizen-bunjang-mintit"
+    }
+  ]
+}

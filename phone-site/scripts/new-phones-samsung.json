@@ -1,0 +1,114 @@
+[
+  {
+    "slug": "galaxy-s25-plus",
+    "name": "갤럭시 S25+",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2025-02-07",
+    "releasePriceKRW": 1353000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "스냅드래곤 8 엘리트 for Galaxy", "displayInch": 6.7, "batteryMah": 4900, "ramGb": 12 },
+    "eol": { "policy": "OS 업그레이드 7회 + 보안 업데이트 7년 (S24 세대부터 확대), 월간 보안 업데이트 대상", "osEndDate": "2032-02-07", "securityEndDate": "2032-02-07", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 230000, "withCareKRW": 57500, "source": { "label": "삼성전자서비스 고지가 집계 (부품 반납 기준)", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-02" } },
+      { "part": "battery", "officialKRW": 67500, "source": { "label": "삼성전자서비스 고지가 집계", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-02" } },
+      { "part": "back-glass", "officialKRW": 63000, "source": { "label": "삼성전자서비스 고지가 집계", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-02" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 800000, "source": "cetizen-bunjang-mintit" } ]
+  },
+  {
+    "slug": "galaxy-s24-plus",
+    "name": "갤럭시 S24+",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2024-01-31",
+    "releasePriceKRW": 1353000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "엑시노스 2400", "displayInch": 6.7, "batteryMah": 4900, "ramGb": 12 },
+    "eol": { "policy": "OS 업그레이드 7회 + 보안 업데이트 7년 (S24 세대부터 확대), 월간 보안 업데이트 대상", "osEndDate": "2031-01-31", "securityEndDate": "2031-01-31", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 233000, "withCareKRW": 58000, "source": { "label": "삼성전자서비스 고지가 집계 (부품 반납 기준)", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-02" } },
+      { "part": "battery", "officialKRW": 67500, "source": { "label": "삼성전자서비스 고지가 집계", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-02" } },
+      { "part": "back-glass", "officialKRW": 54000, "source": { "label": "삼성전자서비스 고지가 집계", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-02" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 620000, "source": "cetizen-bunjang-mintit" } ]
+  },
+  {
+    "slug": "galaxy-s23-ultra",
+    "name": "갤럭시 S23 울트라",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2023-02-17",
+    "releasePriceKRW": 1599400,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "스냅드래곤 8 Gen 2 for Galaxy", "displayInch": 6.8, "batteryMah": 5000, "ramGb": 12 },
+    "eol": { "policy": "OS 업그레이드 4회 + 보안 업데이트 5년 (S23 세대 정책), 월간 보안 업데이트 대상", "osEndDate": "2027-02-17", "securityEndDate": "2028-02-17", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 282000, "withCareKRW": 70500, "source": { "label": "삼성전자서비스 고지가 집계 (부품 반납 기준)", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-02" } },
+      { "part": "battery", "officialKRW": 67500, "source": { "label": "삼성전자서비스 고지가 집계", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-02" } },
+      { "part": "back-glass", "officialKRW": 74000, "source": { "label": "삼성전자서비스 고지가 집계", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-02" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 680000, "source": "cetizen-bunjang-mintit" } ]
+  },
+  {
+    "slug": "galaxy-z-fold6",
+    "name": "갤럭시 Z 폴드6",
+    "brand": "samsung",
+    "series": "갤럭시 Z",
+    "releaseDate": "2024-07-24",
+    "releasePriceKRW": 2229700,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "스냅드래곤 8 Gen 3 for Galaxy", "displayInch": 7.6, "batteryMah": 4400, "ramGb": 12 },
+    "eol": { "policy": "OS 업그레이드 7회 + 보안 업데이트 7년 (2024년 폴더블 확대), 월간 보안 업데이트 대상", "osEndDate": "2031-07-24", "securityEndDate": "2031-07-24", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 705000, "withCareKRW": 211500, "source": { "label": "삼성전자서비스 고지가 집계 (메인 화면 반납 기준, 미반납 859,000원)", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-02" } },
+      { "part": "battery", "officialKRW": 111500, "source": { "label": "삼성전자서비스 고지가 집계", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-02" } },
+      { "part": "back-glass", "officialKRW": 72000, "source": { "label": "삼성전자서비스 고지가 집계", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-02" } }
+    ],
+    "issues": [
+      { "id": "zfold6-inner-film", "title": "내부 디스플레이 보호필름 들뜸·주름부 내구성", "severity": "info", "status": "open", "summary": "폴더블 공통 특성으로 접힘부(주름)와 기본 부착 내부 보호필름이 장기 사용 시 들뜨거나 찢어질 수 있음. 폴드6는 UTG로 개선했으나 취약성은 잔존. 리콜·무상 프로그램은 없음.", "symptoms": ["접힘부 보호필름 들뜸/찢어짐", "주름부 눌림 및 화면 손상 우려"], "solutions": ["서비스센터 내부 보호필름 재부착", "임의로 필름을 떼지 말 것 — 패널 손상 시 화면 전체 교체로 이어짐"], "source": { "label": "디지털데일리", "url": "https://m.ddaily.co.kr/page/view/2024071023352387643", "asOf": "2024-07" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 880000, "source": "cetizen-bunjang-mintit" } ]
+  },
+  {
+    "slug": "galaxy-z-flip5",
+    "name": "갤럭시 Z 플립5",
+    "brand": "samsung",
+    "series": "갤럭시 Z",
+    "releaseDate": "2023-08-11",
+    "releasePriceKRW": 1399200,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "스냅드래곤 8 Gen 2 for Galaxy", "displayInch": 6.7, "batteryMah": 3700, "ramGb": 8 },
+    "eol": { "policy": "OS 업그레이드 4회 + 보안 업데이트 5년 (2023년 폴더블 정책), 월간 보안 업데이트 대상", "osEndDate": "2027-08-11", "securityEndDate": "2028-08-11", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 366000, "withCareKRW": 109800, "source": { "label": "삼성전자서비스 고지가 집계 (메인 화면 반납 기준, 미반납 530,000원)", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-02" } },
+      { "part": "battery", "officialKRW": 81000, "source": { "label": "삼성전자서비스 고지가 집계", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-02" } },
+      { "part": "back-glass", "officialKRW": 47000, "source": { "label": "삼성전자서비스 고지가 집계", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-02" } }
+    ],
+    "issues": [],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 320000, "source": "cetizen-bunjang-mintit" } ]
+  },
+  {
+    "slug": "galaxy-s22-ultra",
+    "name": "갤럭시 S22 울트라",
+    "brand": "samsung",
+    "series": "갤럭시 S",
+    "releaseDate": "2022-02-25",
+    "releasePriceKRW": 1452000,
+    "storageBase": "256GB",
+    "specSummary": { "chipset": "엑시노스 2200", "displayInch": 6.8, "batteryMah": 5000, "ramGb": 12 },
+    "eol": { "policy": "OS 업그레이드 4회 + 보안 업데이트 5년 (S22 세대 정책), 출시 4년 경과로 분기별 보안 업데이트 전환", "osEndDate": "2026-02-25", "securityEndDate": "2027-02-25", "estimated": false, "source": { "label": "삼성 모바일 보안 업데이트 정책", "url": "https://security.samsungmobile.com/workScope.smsb", "asOf": "2026-07" } },
+    "repairCosts": [
+      { "part": "display", "officialKRW": 309000, "withCareKRW": 77250, "source": { "label": "삼성전자서비스 고지가 (반납 기준, 미반납 429,000원)", "url": "https://www.newsis.com/view/NISX20230530_0002321441", "asOf": "2023-05" } },
+      { "part": "battery", "officialKRW": 57000, "source": { "label": "삼성전자서비스 고지가 집계", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-02" } },
+      { "part": "back-glass", "officialKRW": 72000, "source": { "label": "삼성전자서비스 고지가 집계", "url": "https://mokdol.com/samsung-galaxy-repair-cost/", "asOf": "2026-02" } }
+    ],
+    "issues": [
+      { "id": "s22u-green-line", "title": "디스플레이 녹색 세로줄(녹조) 현상", "severity": "common", "status": "free-repair", "summary": "일부 소프트웨어 업데이트 이후 화면에 녹색 세로줄이 나타나는 결함. 삼성은 인도에서 S21·S22 울트라 대상 무상 화면 교체를 2025년까지 제공. 한국은 공식 무상 프로그램이 확인되지 않아 지역별 대응이 다름.", "symptoms": ["펀치홀 좌측 등 화면에 녹색 세로줄/그라데이션", "특정 업데이트 이후 갑자기 발생"], "solutions": ["서비스센터에서 무상 수리 대상 여부 확인", "물리적·액체 손상 없는 상태로 구매 증빙과 함께 접수"], "source": { "label": "비즈니스포스트", "url": "https://www.businesspost.co.kr/BP?command=article_view&num=371249", "asOf": "2025-08" } }
+    ],
+    "resale": [ { "date": "2026-07-02", "priceKRW": 440000, "source": "cetizen-bunjang-mintit" } ]
+  }
+]

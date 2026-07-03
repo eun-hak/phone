@@ -1,0 +1,83 @@
+{
+  "slug": "galaxy-z-fold5",
+  "name": "갤럭시 Z 폴드5",
+  "brand": "samsung",
+  "series": "갤럭시 Z",
+  "releaseDate": "2023-08-11",
+  "releasePriceKRW": 2097700,
+  "storageBase": "256GB",
+  "specSummary": {
+    "chipset": "스냅드래곤 8 Gen 2 for Galaxy",
+    "displayInch": 7.6,
+    "batteryMah": 4400,
+    "ramGb": 12
+  },
+  "eol": {
+    "policy": "2023년 폴더블 정책: OS 4회 업그레이드 + 보안 5년.",
+    "osEndDate": "2027-08-11",
+    "securityEndDate": "2028-08-11",
+    "estimated": false,
+    "source": {
+      "label": "삼성 모바일 보안 업데이트 정책",
+      "url": "https://security.samsungmobile.com/workScope.smsb",
+      "asOf": "2026-07"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 688000,
+      "source": {
+        "label": "삼성전자서비스 고지가 (메인 화면 반납 기준) · 케어플러스 폴더블 30%",
+        "url": "https://well.makemelife.com/",
+        "asOf": "2025-10"
+      },
+      "withCareKRW": 207000
+    },
+    {
+      "part": "battery",
+      "officialKRW": 83000,
+      "source": {
+        "label": "삼성전자서비스 고지가",
+        "url": "https://well.makemelife.com/",
+        "asOf": "2025-10"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "zfold5-inner-film",
+      "title": "내부 메인 화면 보호필름 들뜸/박리",
+      "severity": "common",
+      "status": "free-repair",
+      "summary": "폴더블 특성상 접힘부에서 공장 부착 내부 보호필름이 시간이 지나며 들뜨거나 박리되는 현상이 광범위하게 보고됨. 삼성은 구매 후 90일 내 폴딩부 들뜸에 한해 1회 무상 재부착을 제공.",
+      "symptoms": [
+        "메인 화면 접힘부 필름 들뜸",
+        "기포 발생 및 필름 가장자리 박리"
+      ],
+      "solutions": [
+        "삼성 서비스센터에서 무상 재부착(구매 후 90일·폴딩부 한정 1회)",
+        "필름 임의 제거 금지 — 패널 손상 위험"
+      ],
+      "source": {
+        "label": "삼성전자서비스 — 폴드5 정품 보호필름 안내",
+        "url": "https://www.samsungsvc.co.kr/solution/1524174",
+        "asOf": "2026-07"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20Z%20%ED%8F%B4%EB%93%9C5%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20Z%20%ED%8F%B4%EB%93%9C5",
+    "subsidyNote": "폴더블은 공시지원금이 크게 걸리는 대표 기종군이지만 감가도 빨라, 2년 뒤 잔존가치까지 계산하면 지원금 매력이 상쇄되는 경우가 많습니다.",
+    "mvnoNote": "중고 구매 시 힌지·필름 상태 확인이 가격보다 중요합니다. 대면 거래로 개폐 상태를 직접 확인하세요.",
+    "asOf": "2026-07-02"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 950000,
+      "source": "cetizen-bunjang"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "slug": "galaxy-s24-ultra",
+  "name": "갤럭시 S24 울트라",
+  "brand": "samsung",
+  "series": "갤럭시 S",
+  "releaseDate": "2024-01-31",
+  "releasePriceKRW": 1698400,
+  "storageBase": "256GB",
+  "specSummary": {
+    "chipset": "스냅드래곤 8 Gen 3",
+    "displayInch": 6.8,
+    "batteryMah": 5000,
+    "ramGb": 12
+  },
+  "eol": {
+    "policy": "OS 업그레이드 7회 + 보안 업데이트 7년 (삼성 공식 정책)",
+    "osEndDate": "2031-01-31",
+    "securityEndDate": "2031-01-31",
+    "estimated": false,
+    "source": {
+      "label": "삼성 모바일 보안 업데이트 정책",
+      "url": "https://security.samsungmobile.com/workScope.smsb",
+      "asOf": "2026-06-15"
+    }
+  },
+  "repairCosts": [
+    {
+      "part": "display",
+      "officialKRW": 295000,
+      "withCareKRW": 73750,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계 (파손 부품 반납 기준, 미반납 시 약 360,000원)",
+        "url": "https://mokdol.com/samsung-galaxy-repair-cost/",
+        "asOf": "2026-02"
+      }
+    },
+    {
+      "part": "battery",
+      "officialKRW": 69500,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계",
+        "url": "https://mokdol.com/samsung-galaxy-repair-cost/",
+        "asOf": "2026-02"
+      }
+    },
+    {
+      "part": "back-glass",
+      "officialKRW": 62000,
+      "source": {
+        "label": "삼성전자서비스 고지가 집계",
+        "url": "https://mokdol.com/samsung-galaxy-repair-cost/",
+        "asOf": "2026-02"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "s24u-green-line",
+      "title": "화면 세로줄(그린라인) 발생 보고",
+      "severity": "critical",
+      "status": "open",
+      "summary": "출시 몇 주 만에 일부 기기에서 초록색 세로줄이 나타나는 하드웨어성 결함이 보고됐고, 재부팅·초기화로 해결되지 않음. 공식 리콜은 없으며 보증 수리 대응도 일관되지 않아 개별 수리로 처리되는 중.",
+      "symptoms": [
+        "화면에 얇은 초록색 세로줄 표시",
+        "흰색 가로줄이 함께 나타나는 사례",
+        "재부팅·공장 초기화로도 사라지지 않음"
+      ],
+      "solutions": [
+        "보증 기간 내 삼성 서비스센터에서 패널 교체 요청",
+        "구매처(통신사 포함)에 교환·환불 문의",
+        "증상 발생 시 사진·영상으로 증거 확보"
+      ],
+      "source": {
+        "label": "NotebookCheck",
+        "url": "https://www.notebookcheck.net/Samsung-s-new-Galaxy-S24-Ultra-may-already-be-suffering-from-the-infamous-green-line-display-issue.799698.0.html",
+        "asOf": "2024-02"
+      }
+    },
+    {
+      "id": "s24u-washed-colors",
+      "title": "선명한 화면 모드 채도 저하(물빠짐) 논란",
+      "severity": "common",
+      "status": "patched",
+      "summary": "시리즈 중 색감 물빠짐 불만이 가장 두드러진 모델. 삼성은 '의도적 캘리브레이션'이라는 입장을 밝힌 뒤 2024년 2월 업데이트로 선명도 조절 옵션을 추가해, 현재는 원하는 채도로 조절 가능.",
+      "symptoms": [
+        "선명한 화면 모드 전환 시 채도 변화가 거의 없음",
+        "전작 대비 색감이 밋밋하게 보임"
+      ],
+      "solutions": [
+        "소프트웨어 업데이트 후 화면 모드 고급 설정에서 선명도 조절"
+      ],
+      "source": {
+        "label": "Android Police",
+        "url": "https://www.androidpolice.com/samsung-galaxy-s24-washed-out-colors-update-on-the-way/",
+        "asOf": "2024-01"
+      }
+    }
+  ],
+  "buyRoutes": {
+    "coupangUrl": "https://www.coupang.com/np/search?q=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20S24%20%EC%9A%B8%ED%8A%B8%EB%9D%BC%20%EC%9E%90%EA%B8%89%EC%A0%9C",
+    "danawaUrl": "https://search.danawa.com/dsearch.php?query=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20S24%20%EC%9A%B8%ED%8A%B8%EB%9D%BC",
+    "subsidyNote": "후속작 출시로 지원금이 확대된 구간. 신품 재고가 줄어 온라인 최저가 변동이 큼.",
+    "mvnoNote": "중고 A급 시세와 신품 최저가 차이가 줄어드는 시점 — 자급제 신품이 유리할 수 있음.",
+    "asOf": "2026-06-15"
+  },
+  "resale": [
+    {
+      "date": "2026-07-02",
+      "priceKRW": 740000,
+      "source": "cetizen-bunjang-mintit"
+    }
+  ]
+}
