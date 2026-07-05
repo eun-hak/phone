@@ -15,12 +15,12 @@
   "eol": {
     "policy": "OS 3회 업그레이드(안드로이드 11→14) + 보안 약 4년 (2021 출시). 보안 지원 종료.",
     "osEndDate": "2024-01-31",
-    "securityEndDate": "2025-09-03",
+    "securityEndDate": "2025-10-10",
     "estimated": false,
     "source": {
-      "label": "삼성 모바일 보안 업데이트 정책",
-      "url": "https://security.samsungmobile.com/workScope.smsb",
-      "asOf": "2026-07"
+      "label": "endoflife.date (samsung-mobile)",
+      "url": "https://endoflife.date/samsung-mobile",
+      "asOf": "2026-07-05"
     }
   },
   "repairCosts": [

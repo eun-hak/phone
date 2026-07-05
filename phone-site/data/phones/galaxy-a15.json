@@ -15,12 +15,12 @@
   "eol": {
     "policy": "A1x 최초로 OS 4회 업그레이드 + 보안 5년 (2024 출시). 현재 지원 중.",
     "osEndDate": "2028-03-18",
-    "securityEndDate": "2029-03-18",
+    "securityEndDate": "2028-12-11",
     "estimated": false,
     "source": {
-      "label": "삼성 모바일 보안 업데이트 정책",
-      "url": "https://security.samsungmobile.com/workScope.smsb",
-      "asOf": "2026-07"
+      "label": "endoflife.date (samsung-mobile)",
+      "url": "https://endoflife.date/samsung-mobile",
+      "asOf": "2026-07-05"
     }
   },
   "repairCosts": [

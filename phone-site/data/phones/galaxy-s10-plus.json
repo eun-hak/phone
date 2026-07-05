@@ -15,12 +15,12 @@
   "eol": {
     "policy": "OS 3회 업그레이드(안드로이드 9→12, One UI 4.1) + 보안 종료. 지원 종료됨(마지막 보안 패치 2023-04).",
     "osEndDate": "2022-05-31",
-    "securityEndDate": "2023-04-27",
+    "securityEndDate": "2023-04-01",
     "estimated": false,
     "source": {
-      "label": "삼성 모바일 보안 업데이트 정책",
-      "url": "https://security.samsungmobile.com/workScope.smsb",
-      "asOf": "2026-07"
+      "label": "endoflife.date (samsung-mobile)",
+      "url": "https://endoflife.date/samsung-mobile",
+      "asOf": "2026-07-05"
     }
   },
   "repairCosts": [

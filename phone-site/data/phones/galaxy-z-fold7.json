@@ -14,13 +14,13 @@
   },
   "eol": {
     "policy": "OS 업그레이드 7회 + 보안 업데이트 7년 (S24/Z6 세대부터 정책). 출시(2025-07) 기준 약 2032-07까지",
-    "osEndDate": "2032-07-01",
-    "securityEndDate": "2032-07-01",
+    "osEndDate": "2032-07-25",
+    "securityEndDate": "2032-07-25",
     "estimated": false,
     "source": {
-      "label": "디지털포커스 — 폴드7 7년 안드로이드 업데이트",
-      "url": "https://www.digitalfocus.news/news/articleView.html?idxno=12692",
-      "asOf": "2026-07"
+      "label": "endoflife.date (samsung-mobile)",
+      "url": "https://endoflife.date/samsung-mobile",
+      "asOf": "2026-07-05"
     }
   },
   "repairCosts": [

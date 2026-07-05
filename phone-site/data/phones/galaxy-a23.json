@@ -15,12 +15,12 @@
   "eol": {
     "policy": "OS 2회 업그레이드(안드로이드 14까지) + 보안 4년. 2026년 5월 소프트웨어 지원 종료(A13·A23·M23 일괄 제외).",
     "osEndDate": "2024-06-30",
-    "securityEndDate": "2026-05-31",
+    "securityEndDate": "2025-09-02",
     "estimated": false,
     "source": {
-      "label": "삼성 모바일 보안 업데이트 정책",
-      "url": "https://security.samsungmobile.com/workScope.smsb",
-      "asOf": "2026-07"
+      "label": "endoflife.date (samsung-mobile)",
+      "url": "https://endoflife.date/samsung-mobile",
+      "asOf": "2026-07-05"
     }
   },
   "repairCosts": [],

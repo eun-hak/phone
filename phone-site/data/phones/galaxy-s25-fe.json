@@ -14,13 +14,13 @@
   },
   "eol": {
     "policy": "OS 업그레이드 7회 + 보안 업데이트 7년 (FE 포함 정책). 출시(2025-09) 기준 약 2032-09까지",
-    "osEndDate": "2032-09-01",
-    "securityEndDate": "2032-09-01",
+    "osEndDate": "2032-09-04",
+    "securityEndDate": "2032-09-04",
     "estimated": false,
     "source": {
-      "label": "삼성 7년 지원 정책 (S25 FE 적용)",
-      "url": "https://www.samsung.com/sec/smartphones/galaxy-s25-fe/",
-      "asOf": "2026-07"
+      "label": "endoflife.date (samsung-mobile)",
+      "url": "https://endoflife.date/samsung-mobile",
+      "asOf": "2026-07-05"
     }
   },
   "repairCosts": [

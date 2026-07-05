@@ -14,13 +14,13 @@
   },
   "eol": {
     "policy": "OS 업그레이드 7회 + 보안 업데이트 7년 (S24 세대부터 확대), 월간 보안 업데이트 대상",
-    "osEndDate": "2031-01-31",
-    "securityEndDate": "2031-01-31",
+    "osEndDate": "2031-01-24",
+    "securityEndDate": "2031-01-24",
     "estimated": false,
     "source": {
-      "label": "삼성 모바일 보안 업데이트 정책",
-      "url": "https://security.samsungmobile.com/workScope.smsb",
-      "asOf": "2026-07"
+      "label": "endoflife.date (samsung-mobile)",
+      "url": "https://endoflife.date/samsung-mobile",
+      "asOf": "2026-07-05"
     }
   },
   "repairCosts": [

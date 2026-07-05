@@ -14,13 +14,13 @@
   },
   "eol": {
     "policy": "OS 업그레이드 7회 + 보안 업데이트 7년 (S24 세대부터 정책), 2026-03 출시 기준 약 2033년까지",
-    "osEndDate": "2033-03-01",
-    "securityEndDate": "2033-03-01",
+    "osEndDate": "2033-03-06",
+    "securityEndDate": "2033-03-06",
     "estimated": false,
     "source": {
-      "label": "삼성전자 갤럭시 S26 제품 페이지 (7 OS/7년 보안)",
-      "url": "https://www.samsung.com/sec/smartphones/galaxy-s26/",
-      "asOf": "2026-07"
+      "label": "endoflife.date (samsung-mobile)",
+      "url": "https://endoflife.date/samsung-mobile",
+      "asOf": "2026-07-05"
     }
   },
   "repairCosts": [

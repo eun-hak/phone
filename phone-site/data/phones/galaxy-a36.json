@@ -14,13 +14,13 @@
   },
   "eol": {
     "policy": "2025년형 A 시리즈: OS 6회 업그레이드 + 보안 6년 (One UI 7/Android 15 출시).",
-    "osEndDate": "2031-06-12",
-    "securityEndDate": "2031-06-12",
+    "osEndDate": "2031-03-28",
+    "securityEndDate": "2031-03-28",
     "estimated": false,
     "source": {
-      "label": "삼성 모바일 보안 업데이트 정책",
-      "url": "https://security.samsungmobile.com/workScope.smsb",
-      "asOf": "2026-07"
+      "label": "endoflife.date (samsung-mobile)",
+      "url": "https://endoflife.date/samsung-mobile",
+      "asOf": "2026-07-05"
     }
   },
   "repairCosts": [],

@@ -15,12 +15,12 @@
   "eol": {
     "policy": "OS 업그레이드 4회 + 보안 업데이트 5년 (삼성 공식 정책 · 글로벌 출시 2024년 3월 기준, 현재 분기별 보안 업데이트 목록)",
     "osEndDate": "2028-03-01",
-    "securityEndDate": "2029-03-01",
+    "securityEndDate": "2029-03-11",
     "estimated": false,
     "source": {
-      "label": "삼성 모바일 보안 업데이트 정책 · 삼성전자 제품 페이지",
-      "url": "https://security.samsungmobile.com/workScope.smsb",
-      "asOf": "2026-07-01"
+      "label": "endoflife.date (samsung-mobile)",
+      "url": "https://endoflife.date/samsung-mobile",
+      "asOf": "2026-07-05"
     }
   },
   "repairCosts": [

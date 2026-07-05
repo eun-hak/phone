@@ -15,12 +15,12 @@
   "eol": {
     "policy": "OS 2회 업그레이드(안드로이드 10까지) + 보안 약 4년. 2023년 초 보안 패치를 끝으로 정기 지원 종료됨.",
     "osEndDate": "2020-05-31",
-    "securityEndDate": "2023-02-28",
+    "securityEndDate": "2022-07-01",
     "estimated": false,
     "source": {
-      "label": "삼성 모바일 보안 업데이트 정책",
-      "url": "https://security.samsungmobile.com/workScope.smsb",
-      "asOf": "2026-07"
+      "label": "endoflife.date (samsung-mobile)",
+      "url": "https://endoflife.date/samsung-mobile",
+      "asOf": "2026-07-05"
     }
   },
   "repairCosts": [

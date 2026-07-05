@@ -15,12 +15,12 @@
   "eol": {
     "policy": "OS 4회 업그레이드 + 보안 5년 (2022 출시). 현재 지원 중.",
     "osEndDate": "2026-03-25",
-    "securityEndDate": "2027-03-25",
+    "securityEndDate": "2027-04-01",
     "estimated": false,
     "source": {
-      "label": "삼성 모바일 보안 업데이트 정책",
-      "url": "https://security.samsungmobile.com/workScope.smsb",
-      "asOf": "2026-07"
+      "label": "endoflife.date (samsung-mobile)",
+      "url": "https://endoflife.date/samsung-mobile",
+      "asOf": "2026-07-05"
     }
   },
   "repairCosts": [
