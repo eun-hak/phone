@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Badge, { type BadgeTone } from "@/components/ui/Badge";
+import PhoneMedia from "./PhoneMedia";
 
 /** 클라이언트에서도 쓸 수 있는 직렬화 가능한 카드 데이터 */
 export interface PhoneCardData {
@@ -31,12 +32,21 @@ export default function PhoneCard({ phone }: { phone: PhoneCardData }) {
         <Badge tone="neutral">{phone.brandLabel}</Badge>
         <span className="text-xs text-mut">{phone.releaseYm} 출시</span>
       </div>
-      <h3 className="mt-2.5 text-[17px] font-bold tracking-tight group-hover:text-accent">
-        {phone.name}
-      </h3>
-      <p className="mt-0.5 text-xs text-mut">
-        출시가 {phone.releasePriceShort}
-      </p>
+      <div className="mt-2.5 flex items-start justify-between gap-3">
+        <div className="min-w-0">
+          <h3 className="text-[17px] font-bold tracking-tight group-hover:text-accent">
+            {phone.name}
+          </h3>
+          <p className="mt-0.5 text-xs text-mut">
+            출시가 {phone.releasePriceShort}
+          </p>
+        </div>
+        <PhoneMedia
+          slug={phone.slug}
+          name={phone.name}
+          className="h-16 w-16 shrink-0 transition-transform group-hover:scale-105"
+        />
+      </div>
 
       <dl className="mt-3 grid grid-cols-3 gap-2 border-t border-hairline pt-3 text-center">
         <div>

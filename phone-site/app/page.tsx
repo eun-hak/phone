@@ -7,7 +7,7 @@ import {
   formatPct,
   formatYearMonth,
 } from "@/lib/format";
-import { DOC_TYPES } from "@/lib/site";
+import { DOC_TYPES, TOOLS } from "@/lib/site";
 import { webSiteJsonLd } from "@/lib/jsonld";
 import PhoneCard from "@/components/phone/PhoneCard";
 import Badge from "@/components/ui/Badge";
@@ -56,25 +56,31 @@ export default function Home() {
             이 폰, 사도 될까요?
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-[15px] leading-7 text-sub">
-            스펙 나열은 다른 곳에 많습니다. 폰덱스는 결정에 필요한 다섯 가지 —{" "}
+            스펙 나열은 다른 곳에 많습니다. 폰덱스는{" "}
             <strong className="font-semibold text-ink">
-              업데이트 종료일 · 공식 수리비 · 알려진 이슈 · 구매 루트 ·
-              잔존가치
-            </strong>
-            만 기종별로 정리합니다.
+              사기 전(지원종료·수리비·이슈·적정가) · 쓰는 중(총소유비용·케어
+              유불리) · 팔 때(타이밍·처분 루트)
+            </strong>{" "}
+            — 결정에 필요한 데이터만 기종별로 정리합니다.
           </p>
           <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
             <Link
-              href="/phones"
+              href="/finder"
               className="rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-card transition-colors hover:bg-accent-strong"
             >
-              기종 찾아보기
+              내게 맞는 폰 찾기
             </Link>
             <Link
-              href="/calendar"
+              href="/phones"
               className="rounded-full border border-hairline bg-card px-5 py-2.5 text-sm font-semibold text-sub transition-colors hover:border-accent-strong/40 hover:text-accent"
             >
-              지원종료 캘린더
+              기종 목록
+            </Link>
+            <Link
+              href="/best"
+              className="rounded-full border border-hairline bg-card px-5 py-2.5 text-sm font-semibold text-sub transition-colors hover:border-accent-strong/40 hover:text-accent"
+            >
+              결정 랭킹
             </Link>
           </div>
           <p className="mt-8 text-xs text-mut">
@@ -87,6 +93,33 @@ export default function Home() {
       </section>
 
       <div className="mx-auto max-w-6xl space-y-16 px-4 py-14 sm:px-6">
+        {/* 인터랙티브 도구 */}
+        <section aria-labelledby="tools">
+          <h2 id="tools" className="text-xl font-bold tracking-tight">
+            바로 쓰는 결정 도구
+          </h2>
+          <p className="mt-1 text-sm text-sub">
+            문서를 읽기 전에, 지금 고민에 바로 답하는 도구부터.
+          </p>
+          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {TOOLS.map((t) => (
+              <Link
+                key={t.href}
+                href={t.href}
+                className="group rounded-xl border border-hairline bg-card p-4 shadow-card transition-all hover:-translate-y-0.5 hover:border-accent-strong/40 hover:shadow-pop"
+              >
+                <span className="inline-flex size-9 items-center justify-center rounded-lg bg-accent-soft text-accent">
+                  <DocIcon name={t.icon} />
+                </span>
+                <p className="mt-3 text-sm font-bold group-hover:text-accent">
+                  {t.label}
+                </p>
+                <p className="mt-1 text-xs leading-5 text-sub">{t.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         {/* 지원 종료 임박 */}
         <section aria-labelledby="ending-soon">
           <div className="flex items-baseline justify-between">
@@ -205,16 +238,17 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 문서 5종 소개 */}
+        {/* 문서 8종 소개 */}
         <section aria-labelledby="doc-types">
           <h2 id="doc-types" className="text-xl font-bold tracking-tight">
-            모든 기종에 같은 다섯 문서
+            모든 기종에 같은 여덟 문서
           </h2>
           <p className="mt-1 text-sm text-sub">
-            기종마다 동일한 구조로 정리하기 때문에, 어떤 폰이든 같은 기준으로
-            비교할 수 있습니다.
+            사기 전 · 쓰는 중 · 팔 때 — 생애주기 전체를 기종마다 동일한
+            구조로 정리하기 때문에, 어떤 폰이든 같은 기준으로 비교할 수
+            있습니다.
           </p>
-          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {DOC_TYPES.map((d) => (
               <div
                 key={d.key}

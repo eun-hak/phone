@@ -18,6 +18,7 @@ import {
 import { breadcrumbJsonLd } from "@/lib/jsonld";
 import Badge from "@/components/ui/Badge";
 import CompareResaleChart from "@/components/charts/CompareResaleChart";
+import PhoneMedia from "@/components/phone/PhoneMedia";
 import JsonLd from "@/components/seo/JsonLd";
 
 export const revalidate = 86400;
@@ -238,17 +239,24 @@ export default async function ComparePage({
           <Link
             key={p.slug}
             href={`/phones/${p.slug}`}
-            className="group rounded-xl border border-hairline bg-card p-5 shadow-card transition-all hover:border-accent-strong/40"
+            className="group flex items-start gap-4 rounded-xl border border-hairline bg-card p-5 shadow-card transition-all hover:border-accent-strong/40"
           >
-            <div className="flex items-center justify-between gap-2">
-              <p className="font-bold group-hover:text-accent">{p.name}</p>
-              <Badge tone={p.metrics.verdict.tone} dot>
-                {p.metrics.verdict.label}
-              </Badge>
+            <PhoneMedia
+              slug={p.slug}
+              name={p.name}
+              className="h-16 w-16 shrink-0"
+            />
+            <div className="min-w-0 flex-1">
+              <div className="flex items-center justify-between gap-2">
+                <p className="font-bold group-hover:text-accent">{p.name}</p>
+                <Badge tone={p.metrics.verdict.tone} dot>
+                  {p.metrics.verdict.label}
+                </Badge>
+              </div>
+              <p className="mt-2 text-xs leading-5 text-sub">
+                {p.metrics.verdict.reasons[0]}
+              </p>
             </div>
-            <p className="mt-2 text-xs leading-5 text-sub">
-              {p.metrics.verdict.reasons[0]}
-            </p>
           </Link>
         ))}
       </div>

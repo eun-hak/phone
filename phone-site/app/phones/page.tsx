@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getAllPhones } from "@/lib/phones";
 import { toCardData } from "@/lib/cardData";
 import PhonesExplorer from "./PhonesExplorer";
@@ -20,8 +21,12 @@ export default function PhonesPage() {
         기종 목록
       </h1>
       <p className="mt-2 text-[15px] text-sub">
-        모든 기종은 동일한 다섯 문서(업데이트 종료 · 수리비 · 이슈 · 구매 루트
-        · 잔존가치)로 정리되어 있습니다.
+        모든 기종은 동일한 여덟 문서(업데이트 종료 · 수리비 · 이슈 · 구매 루트
+        · 잔존가치 · 총소유비용 · 케어 유불리 · 판매 타이밍)로 정리되어
+        있습니다.{" "}
+        <Link href="/series" className="font-medium text-accent hover:underline">
+          시리즈별로 보기 →
+        </Link>
       </p>
       <PhonesExplorer phones={phones} />
     </div>

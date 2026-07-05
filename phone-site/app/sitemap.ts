@@ -4,6 +4,8 @@ import {
   canonicalCompareSlug,
   getAllPhones,
 } from "@/lib/phones";
+import { RANKINGS } from "@/lib/rankings";
+import { SERIES_LIST } from "@/lib/series";
 import { DOC_TYPES } from "@/lib/site";
 import { SITE_URL } from "@/lib/site";
 
@@ -17,6 +19,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/calendar",
     "/repair-cost",
     "/compare",
+    "/best",
+    "/finder",
+    "/price-check",
+    "/issues",
+    "/series",
+    "/my",
   ].map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: now,
@@ -54,5 +62,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
   );
 
-  return [...staticRoutes, ...phoneRoutes, ...compareRoutes];
+  const rankingRoutes: MetadataRoute.Sitemap = RANKINGS.map((r) => ({
+    url: `${SITE_URL}/best/${r.slug}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: 0.7,
+  }));
+
+  const seriesRoutes: MetadataRoute.Sitemap = SERIES_LIST.map((s) => ({
+    url: `${SITE_URL}/series/${s.slug}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: 0.7,
+  }));
+
+  return [
+    ...staticRoutes,
+    ...phoneRoutes,
+    ...compareRoutes,
+    ...rankingRoutes,
+    ...seriesRoutes,
+  ];
 }

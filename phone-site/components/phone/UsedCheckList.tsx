@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import type {
   CheckPriority,
   UsedCheckSection,
 } from "@/lib/usedCheck";
+import { useLocalStorageString } from "@/lib/useLocalStorage";
 import Badge, { type BadgeTone } from "@/components/ui/Badge";
 
 const PRIORITY: Record<
@@ -26,27 +27,16 @@ export default function UsedCheckList({
   total: number;
 }) {
   const storageKey = `usedcheck:${slug}`;
-  const [checked, setChecked] = useState<Record<string, boolean>>({});
-  const [ready, setReady] = useState(false);
+  const [rawChecked, setRawChecked] = useLocalStorageString(storageKey, "{}");
 
-  useEffect(() => {
+  const checked = useMemo<Record<string, boolean>>(() => {
     try {
-      const raw = localStorage.getItem(storageKey);
-      if (raw) setChecked(JSON.parse(raw));
+      const parsed = JSON.parse(rawChecked);
+      return parsed && typeof parsed === "object" ? parsed : {};
     } catch {
-      /* localStorage 접근 불가 시 무시 */
+      return {};
     }
-    setReady(true);
-  }, [storageKey]);
-
-  useEffect(() => {
-    if (!ready) return;
-    try {
-      localStorage.setItem(storageKey, JSON.stringify(checked));
-    } catch {
-      /* 무시 */
-    }
-  }, [checked, ready, storageKey]);
+  }, [rawChecked]);
 
   const done = useMemo(
     () => Object.values(checked).filter(Boolean).length,
@@ -54,8 +44,8 @@ export default function UsedCheckList({
   );
 
   const toggle = (id: string) =>
-    setChecked((prev) => ({ ...prev, [id]: !prev[id] }));
-  const reset = () => setChecked({});
+    setRawChecked(JSON.stringify({ ...checked, [id]: !checked[id] }));
+  const reset = () => setRawChecked("{}");
 
   const pct = total > 0 ? Math.round((done / total) * 100) : 0;
 

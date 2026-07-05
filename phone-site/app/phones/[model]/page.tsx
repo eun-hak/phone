@@ -18,11 +18,14 @@ import {
   formatYearMonth,
 } from "@/lib/format";
 import { DOC_TYPES } from "@/lib/site";
+import { computeSellTiming, computeTco } from "@/lib/insights";
 import { breadcrumbJsonLd, phoneProductJsonLd } from "@/lib/jsonld";
 import Badge from "@/components/ui/Badge";
 import StatTile from "@/components/ui/StatTile";
 import DocIcon from "@/components/ui/DocIcon";
 import EolBar from "@/components/phone/EolBar";
+import PhoneMedia from "@/components/phone/PhoneMedia";
+import { getPhoneImage } from "@/lib/phoneImages";
 import JsonLd from "@/components/seo/JsonLd";
 import { buildUsedCheck } from "@/lib/usedCheck";
 
@@ -95,6 +98,27 @@ export default async function PhoneHubPage({
     resale: `현 시세 ${formatManwon(m.latestResale)} · 잔존가치 ${formatPct(m.residualPct, 0)}`,
   };
 
+  const tco = computeTco(phone, 24);
+  const tcoUsed = tco.scenarios.find((s) => s.key === "used-now");
+  docFacts.tco =
+    tcoUsed?.monthlyKRW != null
+      ? `2년 보유 시 월 ${formatManwon(tcoUsed.monthlyKRW)} 꼴 (추정)`
+      : "시세 기록이 쌓이면 월 환산 비용 계산";
+
+  const careDisplay = phone.repairCosts.find(
+    (r) => r.part === "display" && r.withCareKRW != null,
+  );
+  docFacts.care = careDisplay
+    ? `화면 파손 시 ${formatManwon(careDisplay.officialKRW)} → ${formatManwon(careDisplay.withCareKRW!)} 절감 계산`
+    : "보험료 입력형 손익분기 계산기";
+
+  const timing = computeSellTiming(phone);
+  const sixMo = timing.projections.find((x) => x.monthsAhead === 6);
+  docFacts.sell =
+    sixMo?.lossKRW != null && sixMo.lossKRW > 0
+      ? `지금 ${formatManwon(timing.nowKRW)} · 6개월 미루면 −${formatManwon(sixMo.lossKRW)} (추정)`
+      : `지금 팔면 ${formatManwon(timing.nowKRW)} · 처분 3루트 비교`;
+
   const usedCheck = buildUsedCheck(phone);
 
   const rivals = CURATED_COMPARES.filter(([a, b]) => a === model || b === model)
@@ -132,26 +156,34 @@ export default async function PhoneHubPage({
       </nav>
 
       {/* 헤더 */}
-      <header className="mt-4">
-        <div className="flex flex-wrap items-center gap-2">
-          <Badge tone="neutral">{BRAND_LABELS[phone.brand]}</Badge>
-          <Badge tone="neutral">{phone.series} 시리즈</Badge>
-          {eolMeta && (
-            <Badge tone={eolMeta.tone} dot>
-              {eolMeta.label}
-            </Badge>
-          )}
+      <header className="mt-4 flex items-start justify-between gap-4">
+        <div className="min-w-0">
+          <div className="flex flex-wrap items-center gap-2">
+            <Badge tone="neutral">{BRAND_LABELS[phone.brand]}</Badge>
+            <Badge tone="neutral">{phone.series} 시리즈</Badge>
+            {eolMeta && (
+              <Badge tone={eolMeta.tone} dot>
+                {eolMeta.label}
+              </Badge>
+            )}
+          </div>
+          <h1 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+            {phone.name}
+          </h1>
+          <p className="mt-2 text-sm text-sub">
+            {formatKoreanYearMonth(phone.releaseDate)} 출시 · 출시가{" "}
+            {formatManwon(phone.releasePriceKRW)} ({phone.storageBase}) ·{" "}
+            {phone.specSummary.chipset} · {phone.specSummary.displayInch}″ ·{" "}
+            {phone.specSummary.batteryMah.toLocaleString("ko-KR")}mAh · RAM{" "}
+            {phone.specSummary.ramGb}GB
+          </p>
         </div>
-        <h1 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
-          {phone.name}
-        </h1>
-        <p className="mt-2 text-sm text-sub">
-          {formatKoreanYearMonth(phone.releaseDate)} 출시 · 출시가{" "}
-          {formatManwon(phone.releasePriceKRW)} ({phone.storageBase}) ·{" "}
-          {phone.specSummary.chipset} · {phone.specSummary.displayInch}″ ·{" "}
-          {phone.specSummary.batteryMah.toLocaleString("ko-KR")}mAh · RAM{" "}
-          {phone.specSummary.ramGb}GB
-        </p>
+        <PhoneMedia
+          slug={phone.slug}
+          name={phone.name}
+          className="h-24 w-24 shrink-0 border border-hairline shadow-card sm:h-28 sm:w-28"
+          sizePx={224}
+        />
       </header>
 
       {/* 결정 요약 */}
@@ -319,7 +351,25 @@ export default async function PhoneHubPage({
         </section>
       )}
 
-      <p className="mt-10 text-xs leading-5 text-mut">
+      {(() => {
+        const img = getPhoneImage(phone.slug);
+        return img ? (
+          <p className="mt-10 text-xs leading-5 text-mut">
+            제품 사진:{" "}
+            <a
+              href={img.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="underline decoration-hairline underline-offset-2 hover:text-accent"
+            >
+              {img.artist}
+            </a>{" "}
+            ({img.license}), Wikimedia Commons
+          </p>
+        ) : null;
+      })()}
+
+      <p className="mt-3 text-xs leading-5 text-mut">
         스펙 상세는{" "}
         <a
           href={phone.buyRoutes.danawaUrl}

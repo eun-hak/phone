@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
+  BRAND_LABELS,
   CURATED_COMPARES,
   canonicalCompareSlug,
+  getAllPhones,
   getPhone,
 } from "@/lib/phones";
 import { formatPct } from "@/lib/format";
 import Badge from "@/components/ui/Badge";
+import CompareBuilder from "./CompareBuilder";
 
 export const revalidate = 86400;
 
@@ -39,7 +42,18 @@ export default function CompareIndexPage() {
         얼마가 드는지, 되팔 때 얼마가 남는지 — 돈과 수명으로 비교합니다.
       </p>
 
-      <div className="mt-6 grid gap-4 sm:grid-cols-2">
+      <CompareBuilder
+        options={getAllPhones().map((p) => ({
+          slug: p.slug,
+          name: p.name,
+          brandLabel: BRAND_LABELS[p.brand],
+        }))}
+      />
+
+      <h2 className="mt-10 text-lg font-bold tracking-tight">
+        많이 찾는 비교
+      </h2>
+      <div className="mt-4 grid gap-4 sm:grid-cols-2">
         {pairs.map(({ slug, a, b }) => (
           <Link
             key={slug}

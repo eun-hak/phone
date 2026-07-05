@@ -1,0 +1,54 @@
+# 폰덱스 데이터 자동 갱신
+# - 지원종료일(endoflife.date): 주 1회
+# - 중고 시세(번개장터): 월 1회 (매월 1일) — 데이터 구조가 월 1포인트
+name: data-refresh
+
+on:
+  schedule:
+    - cron: "0 21 * * 0" # 매주 월요일 06:00 KST — 지원종료일
+    - cron: "0 22 1 * *" # 매월 1일 07:00 KST — 중고 시세
+  workflow_dispatch:
+    inputs:
+      resale:
+        description: "중고 시세도 수집할지"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: phone-site
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: 지원종료일 갱신 (endoflife.date)
+        run: node scripts/update-eol.mjs --write
+
+      - name: 중고 시세 수집 (번개장터, 월 1회)
+        if: github.event.schedule == '0 22 1 * *' || inputs.resale == true
+        run: node scripts/update-resale.mjs --write
+
+      - name: 데이터 검증
+        run: node scripts/validate-data.mjs
+
+      - name: 변경 커밋
+        run: |
+          cd ..
+          git config user.name "phondex-bot"
+          git config user.email "actions@github.com"
+          git add phone-site/data/phones
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+          else
+            git commit -m "data: 자동 갱신 (지원종료일·시세) $(date -u +%F)"
+            git push
+          fi
