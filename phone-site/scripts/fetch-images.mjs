@@ -46,12 +46,32 @@ const BLOCKLIST = new Set([
   "galaxy-s10-5g",
 ]);
 
-/** 자동 이름 생성이 안 맞는 기종 수동 매핑 */
+/** 자동 이름 생성이 안 맞는 기종 수동 매핑 (Wikidata 검색어) */
 const OVERRIDES = {
   "iphone-se-2": "iPhone SE (2nd generation)",
   "iphone-se-3": "iPhone SE (3rd generation)",
   "galaxy-quantum5": "Samsung Galaxy Quantum 5",
   "galaxy-s10-5g": "Samsung Galaxy S10 5G",
+};
+
+/**
+ * Commons 파일 직접 지정 — Wikidata P18 이 오매칭이거나 비어 있어
+ * 수동 검수로 확정한 파일. BLOCKLIST 보다 우선한다(있으면 이걸로 수집).
+ */
+const COMMONS_OVERRIDES = {
+  "galaxy-note10": "Samsung Galaxy Note 10 (front).jpg",
+  "galaxy-note10-plus": "Samsung Galaxy Note 10+ (48533957676).jpg",
+  "galaxy-note20": "Samsung Galaxy Note 20 front.png",
+  "galaxy-note20-ultra": "Samsung Galaxy Note 20 Ultra Mystic Bronze.jpg",
+  "galaxy-s10": "Samsung Galaxy S10 (32233892097).jpg",
+  "galaxy-s10-5g": "SAMSUNG Galaxy S10 5G.jpg",
+  "galaxy-s9-plus": "Samsung Galaxy S9+ standby mode, full face, cropped.jpg",
+  "galaxy-s20-fe": "Samsung Galaxy S20 FE Back.jpg",
+  "galaxy-s21-plus": "GalaxyS21+.png",
+  "galaxy-z-flip3": "Samsung Galaxy Z Flip3 5G 001 (51542024598).jpg",
+  "galaxy-z-fold3": "Samsung Galaxy Z Fold3 5G 001 (51542505259).jpg",
+  "iphone-13-pro-max": "IPhone 13 Pro Max Sierra Blue 128g.jpg",
+  "iphone-14-plus": "A blue iPhone 14 Plus.jpg",
 };
 
 function englishName(slug) {
@@ -159,23 +179,26 @@ const main = async () => {
   const misses = [];
 
   for (const slug of slugs) {
-    if (BLOCKLIST.has(slug)) continue;
+    const override = COMMONS_OVERRIDES[slug];
+    if (!override && BLOCKLIST.has(slug)) continue;
     if (!FORCE && manifest[slug]) {
       ok++;
       continue;
     }
     const name = englishName(slug);
     try {
-      const ids = await searchEntities(name);
-      await sleep(900);
-      let fileName = null;
+      let fileName = override ?? null;
       let usedId = null;
-      for (const id of ids) {
-        fileName = await getImageFile(id);
+      if (!fileName) {
+        const ids = await searchEntities(name);
         await sleep(900);
-        if (fileName) {
-          usedId = id;
-          break;
+        for (const id of ids) {
+          fileName = await getImageFile(id);
+          await sleep(900);
+          if (fileName) {
+            usedId = id;
+            break;
+          }
         }
       }
       if (!fileName) {
@@ -191,7 +214,7 @@ const main = async () => {
         license: meta?.license ?? "unknown",
         artist: meta?.artist ?? "unknown",
         sourceUrl: `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(fileName.replaceAll(" ", "_"))}`,
-        entity: usedId,
+        ...(usedId ? { entity: usedId } : {}),
       };
       fs.writeFileSync(MANIFEST, JSON.stringify(manifest, null, 2) + "\n");
       ok++;

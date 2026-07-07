@@ -23,18 +23,32 @@ function monthsBetweenIso(fromIso: string, toIso: string): number {
 /**
  * 월평균 하락액(절대값) 선형 외삽. 바닥은 출시가의 7%
  * (구형도 부품·수집 가치로 0원이 되지는 않는 경험적 하한).
- * 기록 2개 미만이면 null.
+ *
+ * 하락액 산정:
+ *  - 시세 추적 포인트가 2개 이상이면 추적 구간의 월 하락액을 사용.
+ *  - 1개뿐이면 출시가→현 시세의 '생애 평균 감가'로 대체(추적 데이터가
+ *    쌓이기 전에도 계산 가능). 신형은 초기 감가가 가팔라 과대추정될 수
+ *    있으므로 월 하락액을 현 시세의 2.5%로 상한(guard)한다.
  */
 export function projectResale(
   p: PhoneWithMetrics,
   monthsAhead: number,
-): number | null {
+): number {
   const sorted = [...p.resale].sort((a, b) => a.date.localeCompare(b.date));
-  if (sorted.length < 2) return null;
-  const first = sorted[0];
   const last = sorted[sorted.length - 1];
-  const span = Math.max(1, monthsBetweenIso(first.date, last.date));
-  const dropPerMonth = Math.max(0, (first.priceKRW - last.priceKRW) / span);
+
+  let dropPerMonth: number;
+  if (sorted.length >= 2) {
+    const first = sorted[0];
+    const span = Math.max(1, monthsBetweenIso(first.date, last.date));
+    dropPerMonth = (first.priceKRW - last.priceKRW) / span;
+  } else {
+    const age = Math.max(1, monthsBetweenIso(p.releaseDate, last.date));
+    dropPerMonth = (p.releasePriceKRW - last.priceKRW) / age;
+  }
+  // 음수(가치 상승) 방지 + 현 시세의 월 2.5% 초과 하락 방지
+  dropPerMonth = Math.max(0, Math.min(dropPerMonth, last.priceKRW * 0.025));
+
   const floor = Math.round(p.releasePriceKRW * 0.07);
   return Math.max(
     floor,
@@ -122,7 +136,7 @@ export function computeTco(
     supportCoversHorizon,
     batteryAddonKRW: battery?.officialKRW ?? null,
     assumptions: [
-      "매도가는 현재까지의 월평균 하락액을 선형 외삽한 추정치 (하한: 출시가의 7%)",
+      "매도가는 출시가 대비 현 시세의 평균 감가(시세 추적이 쌓이면 월별 하락액)를 월 2.5% 상한으로 선형 외삽한 추정치 (하한: 출시가의 7%)",
       "요금제·액세서리·보험은 제외한 기기값 기준",
       "중고 구매·매도 모두 상태 A급 개인거래 시세 기준",
     ],

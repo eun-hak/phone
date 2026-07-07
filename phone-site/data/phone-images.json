@@ -542,5 +542,96 @@
     "artist": "DoerNoc",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S9.png",
     "entity": "Q50102300"
+  },
+  "galaxy-note10-plus": {
+    "file": "galaxy-note10-plus.jpg",
+    "commonsFile": "Samsung Galaxy Note 10+ (48533957676).jpg",
+    "license": "CC BY 2.0",
+    "artist": "Kārlis Dambrāns",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Note_10%2B_(48533957676).jpg"
+  },
+  "galaxy-note10": {
+    "file": "galaxy-note10.jpg",
+    "commonsFile": "Samsung Galaxy Note 10 (front).jpg",
+    "license": "CC BY 3.0",
+    "artist": "嘉傑",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Note_10_(front).jpg"
+  },
+  "galaxy-note20": {
+    "file": "galaxy-note20.png",
+    "commonsFile": "Samsung Galaxy Note 20 front.png",
+    "license": "CC BY-SA 4.0",
+    "artist": "Marcusph",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Note_20_front.png"
+  },
+  "galaxy-s10-5g": {
+    "file": "galaxy-s10-5g.jpg",
+    "commonsFile": "SAMSUNG Galaxy S10 5G.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Dinkun Chen",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SAMSUNG_Galaxy_S10_5G.jpg"
+  },
+  "galaxy-s21-plus": {
+    "file": "galaxy-s21-plus.png",
+    "commonsFile": "GalaxyS21+.png",
+    "license": "CC BY 4.0",
+    "artist": "Marcusph",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:GalaxyS21%2B.png"
+  },
+  "galaxy-s9-plus": {
+    "file": "galaxy-s9-plus.jpg",
+    "commonsFile": "Samsung Galaxy S9+ standby mode, full face, cropped.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Skorp24",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S9%2B_standby_mode%2C_full_face%2C_cropped.jpg"
+  },
+  "galaxy-z-flip3": {
+    "file": "galaxy-z-flip3.jpg",
+    "commonsFile": "Samsung Galaxy Z Flip3 5G 001 (51542024598).jpg",
+    "license": "CC BY-SA 2.0",
+    "artist": "Jan Helebrant",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Z_Flip3_5G_001_(51542024598).jpg"
+  },
+  "iphone-13-pro-max": {
+    "file": "iphone-13-pro-max.jpg",
+    "commonsFile": "IPhone 13 Pro Max Sierra Blue 128g.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "茅野ふたば",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_13_Pro_Max_Sierra_Blue_128g.jpg"
+  },
+  "iphone-14-plus": {
+    "file": "iphone-14-plus.jpg",
+    "commonsFile": "A blue iPhone 14 Plus.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Kskhh",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_blue_iPhone_14_Plus.jpg"
+  },
+  "galaxy-note20-ultra": {
+    "file": "galaxy-note20-ultra.jpg",
+    "commonsFile": "Samsung Galaxy Note 20 Ultra Mystic Bronze.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Kskhh",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Note_20_Ultra_Mystic_Bronze.jpg"
+  },
+  "galaxy-s10": {
+    "file": "galaxy-s10.jpg",
+    "commonsFile": "Samsung Galaxy S10 (32233892097).jpg",
+    "license": "CC BY 2.0",
+    "artist": "Kārlis Dambrāns",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S10_(32233892097).jpg"
+  },
+  "galaxy-s20-fe": {
+    "file": "galaxy-s20-fe.jpg",
+    "commonsFile": "Samsung Galaxy S20 FE Back.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "X-SHLIED",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S20_FE_Back.jpg"
+  },
+  "galaxy-z-fold3": {
+    "file": "galaxy-z-fold3.jpg",
+    "commonsFile": "Samsung Galaxy Z Fold3 5G 001 (51542505259).jpg",
+    "license": "CC BY-SA 2.0",
+    "artist": "Jan Helebrant",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Z_Fold3_5G_001_(51542505259).jpg"
   }
 }
