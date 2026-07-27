@@ -37,6 +37,10 @@ export async function generateMetadata({
       display ? ` 화면 수리비는 현 중고 시세 대비 ${formatPct(phone.metrics.repairBurdenPct ?? 0, 0)}.` : ""
     }`,
     alternates: { canonical: `/phones/${model}/repair` },
+    // 공식 수리비 데이터가 없으면 빈약 페이지 — 색인 제외
+    ...(phone.repairCosts.length === 0
+      ? { robots: { index: false, follow: true } }
+      : {}),
   };
 }
 

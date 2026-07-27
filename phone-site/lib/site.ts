@@ -8,6 +8,18 @@ export const SITE_DESCRIPTION =
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://phondex.example.com";
 
+// 연락처 — 필요 시 전용 주소로 교체
+export const CONTACT_EMAIL = "appdevsimsimi@gmail.com";
+
+/** 푸터 하단 법적/정보 링크 */
+export const INFO_LINKS = [
+  { href: "/about", label: "소개" },
+  { href: "/methodology", label: "데이터 방법론" },
+  { href: "/guide", label: "가이드" },
+  { href: "/privacy", label: "개인정보처리방침" },
+  { href: "/contact", label: "문의" },
+] as const;
+
 export const NAV_ITEMS = [
   { href: "/phones", label: "기종 목록" },
   { href: "/finder", label: "폰 찾기" },
@@ -17,6 +29,7 @@ export const NAV_ITEMS = [
   { href: "/calendar", label: "지원종료 캘린더" },
   { href: "/repair-cost", label: "수리비 비교" },
   { href: "/issues", label: "이슈 센터" },
+  { href: "/guide", label: "가이드" },
   { href: "/my", label: "내 폰" },
 ] as const;
 

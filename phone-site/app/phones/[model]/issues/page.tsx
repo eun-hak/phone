@@ -48,6 +48,10 @@ export async function generateMetadata({
         ? `${phone.name}의 알려진 이슈: ${phone.issues.map((i) => i.title).join(", ")}. 증상과 해결 순서를 정리했습니다.`
         : `${phone.name}은 현재까지 수록된 고질 이슈가 없습니다.`,
     alternates: { canonical: `/phones/${model}/issues` },
+    // 보고된 이슈가 없으면 빈약 페이지 — 색인 제외(내비게이션은 유지)
+    ...(phone.issues.length === 0
+      ? { robots: { index: false, follow: true } }
+      : {}),
   };
 }
 
