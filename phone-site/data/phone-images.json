@@ -239,30 +239,6 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Z_Fold_7_Unfolded.jpg",
     "entity": "Q135280843"
   },
-  "iphone-11-pro-max": {
-    "file": "iphone-11-pro-max.png",
-    "commonsFile": "IPhone 11 Pro Max Midnight Green.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_11_Pro_Max_Midnight_Green.svg",
-    "entity": "Q67216219"
-  },
-  "iphone-11": {
-    "file": "iphone-11.png",
-    "commonsFile": "IPhone 11 Green.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "TheGoldenBox",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_11_Green.svg",
-    "entity": "Q67214165"
-  },
-  "iphone-12-mini": {
-    "file": "iphone-12-mini.png",
-    "commonsFile": "IPhone 12 Mini Blue.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_12_Mini_Blue.svg",
-    "entity": "Q100326594"
-  },
   "iphone-12-pro-max": {
     "file": "iphone-12-pro-max.png",
     "commonsFile": "IPhone 12 Pro Max.png",
@@ -270,14 +246,6 @@
     "artist": "Chabulsqu1",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_12_Pro_Max.png",
     "entity": "Q100326646"
-  },
-  "iphone-12": {
-    "file": "iphone-12.png",
-    "commonsFile": "IPhone 12 Blue.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_12_Blue.svg",
-    "entity": "Q96608989"
   },
   "iphone-13-mini": {
     "file": "iphone-13-mini.png",
@@ -287,30 +255,6 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_13_Mini_Gr%C3%BCn_Freigestellt.png",
     "entity": "Q108541666"
   },
-  "iphone-13": {
-    "file": "iphone-13.png",
-    "commonsFile": "IPhone 13 vector.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_13_vector.svg",
-    "entity": "Q108118280"
-  },
-  "iphone-14-pro-max": {
-    "file": "iphone-14-pro-max.png",
-    "commonsFile": "IPhone 14 Pro vector.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_14_Pro_vector.svg",
-    "entity": "Q113816991"
-  },
-  "iphone-14": {
-    "file": "iphone-14.png",
-    "commonsFile": "IPhone 14 vector.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_14_vector.svg",
-    "entity": "Q110397828"
-  },
   "iphone-15-plus": {
     "file": "iphone-15-plus.jpg",
     "commonsFile": "IPhone 15 Plus.jpeg",
@@ -318,126 +262,6 @@
     "artist": "Ka Kit Pang",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_15_Plus.jpeg",
     "entity": "Q124653339"
-  },
-  "iphone-15-pro-max": {
-    "file": "iphone-15-pro-max.png",
-    "commonsFile": "IPhone 15 Pro Max Vector.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_15_Pro_Max_Vector.svg",
-    "entity": "Q125178718"
-  },
-  "iphone-15-pro": {
-    "file": "iphone-15-pro.png",
-    "commonsFile": "IPhone 15 Pro Vector.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_15_Pro_Vector.svg",
-    "entity": "Q122442399"
-  },
-  "iphone-15": {
-    "file": "iphone-15.png",
-    "commonsFile": "IPhone 15 Vector.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_15_Vector.svg",
-    "entity": "Q121992935"
-  },
-  "iphone-16-plus": {
-    "file": "iphone-16-plus.png",
-    "commonsFile": "IPhone 16 Plus Vector.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_16_Plus_Vector.svg",
-    "entity": "Q130312645"
-  },
-  "iphone-16-pro-max": {
-    "file": "iphone-16-pro-max.png",
-    "commonsFile": "IPhone 16 Pro Max Vector.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_16_Pro_Max_Vector.svg",
-    "entity": "Q130315105"
-  },
-  "iphone-16-pro": {
-    "file": "iphone-16-pro.png",
-    "commonsFile": "IPhone 16 Pro Vector.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_16_Pro_Vector.svg",
-    "entity": "Q130267746"
-  },
-  "iphone-16": {
-    "file": "iphone-16.png",
-    "commonsFile": "IPhone 16 Vector.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_16_Vector.svg",
-    "entity": "Q130267745"
-  },
-  "iphone-17-pro-max": {
-    "file": "iphone-17-pro-max.png",
-    "commonsFile": "IPhone 17 Pro Max Vector.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_17_Pro_Max_Vector.svg",
-    "entity": "Q136203050"
-  },
-  "iphone-17-pro": {
-    "file": "iphone-17-pro.png",
-    "commonsFile": "IPhone 17 Pro Vector.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_17_Pro_Vector.svg",
-    "entity": "Q136193477"
-  },
-  "iphone-17": {
-    "file": "iphone-17.png",
-    "commonsFile": "IPhone 17 Vector.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_17_Vector.svg",
-    "entity": "Q136193312"
-  },
-  "iphone-air": {
-    "file": "iphone-air.png",
-    "commonsFile": "IPhone Air Vector.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_Air_Vector.svg",
-    "entity": "Q136193414"
-  },
-  "iphone-se-3": {
-    "file": "iphone-se-3.png",
-    "commonsFile": "IPhone SE (2nd generation) white vector.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "TheGoldenBox",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_SE_(2nd_generation)_white_vector.svg",
-    "entity": "Q111153193"
-  },
-  "iphone-x": {
-    "file": "iphone-x.png",
-    "commonsFile": "IPhone X vector.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_X_vector.svg",
-    "entity": "Q39510168"
-  },
-  "iphone-xr": {
-    "file": "iphone-xr.png",
-    "commonsFile": "IPhone XR Blue.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_XR_Blue.svg",
-    "entity": "Q56599334"
-  },
-  "iphone-xs": {
-    "file": "iphone-xs.png",
-    "commonsFile": "IPhone XS Gold.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_XS_Gold.svg",
-    "entity": "Q56599248"
   },
   "galaxy-note9": {
     "file": "galaxy-note9.png",
@@ -487,38 +311,6 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Fold_5.jpg",
     "entity": "Q120730784"
   },
-  "iphone-11-pro": {
-    "file": "iphone-11-pro.png",
-    "commonsFile": "IPhone 11 Pro Midnight Green.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_11_Pro_Midnight_Green.svg",
-    "entity": "Q67216142"
-  },
-  "iphone-12-pro": {
-    "file": "iphone-12-pro.png",
-    "commonsFile": "IPhone 12 Pro Gold.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_12_Pro_Gold.svg",
-    "entity": "Q100319367"
-  },
-  "iphone-13-pro": {
-    "file": "iphone-13-pro.png",
-    "commonsFile": "IPhone 13 Pro vector.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_13_Pro_vector.svg",
-    "entity": "Q108541719"
-  },
-  "iphone-14-pro": {
-    "file": "iphone-14-pro.png",
-    "commonsFile": "IPhone 14 Pro vector.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_14_Pro_vector.svg",
-    "entity": "Q113800722"
-  },
   "iphone-se-2": {
     "file": "iphone-se-2.png",
     "commonsFile": "IPhone SE (2nd generation) white vector.svg",
@@ -526,14 +318,6 @@
     "artist": "TheGoldenBox",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_SE_(2nd_generation)_white_vector.svg",
     "entity": "Q90696274"
-  },
-  "iphone-xs-max": {
-    "file": "iphone-xs-max.png",
-    "commonsFile": "IPhone XS Max Gold.svg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Rafael Fernandez",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_XS_Max_Gold.svg",
-    "entity": "Q56599233"
   },
   "galaxy-s9": {
     "file": "galaxy-s9.png",
@@ -675,5 +459,194 @@
     "license": "CC BY-SA 4.0",
     "artist": "Kyu3a",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galaxy_S26_Ultra_-_1.jpg"
+  },
+  "iphone-11-pro-max": {
+    "file": "iphone-11-pro-max.jpg",
+    "commonsFile": "Iphone 11 pro max.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Ahmadkurdi44",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iphone_11_pro_max.jpg"
+  },
+  "iphone-11-pro": {
+    "file": "iphone-11-pro.jpg",
+    "commonsFile": "2019-12-22 IPhone 11 Pro.jpg",
+    "license": "CC BY 2.0",
+    "artist": "Shinji",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019-12-22_IPhone_11_Pro.jpg"
+  },
+  "iphone-12-mini": {
+    "file": "iphone-12-mini.jpg",
+    "commonsFile": "IPhone 12 mini.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Ssu",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_12_mini.jpg"
+  },
+  "iphone-12": {
+    "file": "iphone-12.jpg",
+    "commonsFile": "IPhone 12 Black 256g.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "茅野ふたば",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_12_Black_256g.jpg"
+  },
+  "iphone-13": {
+    "file": "iphone-13.jpg",
+    "commonsFile": "IPhone 13.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Kskhh",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_13.jpg"
+  },
+  "iphone-14-pro-max": {
+    "file": "iphone-14-pro-max.jpg",
+    "commonsFile": "Deep Purple iPhone 14 Pro Max front photo.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Nishino Asuka",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Deep_Purple_iPhone_14_Pro_Max_front_photo.jpg"
+  },
+  "iphone-14-pro": {
+    "file": "iphone-14-pro.jpg",
+    "commonsFile": "IPhone 14 Pro.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "iGeeksBlog",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_14_Pro.jpg"
+  },
+  "iphone-14": {
+    "file": "iphone-14.jpg",
+    "commonsFile": "IPhone 14 20240225.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "メイド理世",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_14_20240225.jpg"
+  },
+  "iphone-15-pro": {
+    "file": "iphone-15-pro.jpg",
+    "commonsFile": "Apple iPhone 15 Pro.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "IPHONE 15",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apple_iPhone_15_Pro.jpg"
+  },
+  "iphone-16": {
+    "file": "iphone-16.jpg",
+    "commonsFile": "IPhone 16 (54251031797).jpg",
+    "license": "CC BY-SA 2.0",
+    "artist": "メイド理世",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_16_(54251031797).jpg"
+  },
+  "iphone-17-pro-max": {
+    "file": "iphone-17-pro-max.jpg",
+    "commonsFile": "IPhone 17 Pro Max.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "茅野ふたば",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_17_Pro_Max.jpg"
+  },
+  "iphone-11": {
+    "file": "iphone-11.jpg",
+    "commonsFile": "IPhone 11.jpeg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Rberchie",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_11.jpeg"
+  },
+  "iphone-12-pro": {
+    "file": "iphone-12-pro.jpg",
+    "commonsFile": "IPhone 12 Pro Pacific Blue 128g.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "茅野ふたば",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_12_Pro_Pacific_Blue_128g.jpg"
+  },
+  "iphone-15-pro-max": {
+    "file": "iphone-15-pro-max.jpg",
+    "commonsFile": "IPhone 15 Pro Max.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Kyu3",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_15_Pro_Max.jpg"
+  },
+  "iphone-13-pro": {
+    "file": "iphone-13-pro.jpg",
+    "commonsFile": "IPhone 13 Pro.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "SimonWaldherr",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_13_Pro.jpg"
+  },
+  "iphone-15": {
+    "file": "iphone-15.jpg",
+    "commonsFile": "Apple iPhone 15.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "IPHONE 15",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apple_iPhone_15.jpg"
+  },
+  "iphone-16-pro-max": {
+    "file": "iphone-16-pro-max.jpg",
+    "commonsFile": "IPhone 16 Pro Max White 256g.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "茅野ふたば",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_16_Pro_Max_White_256g.jpg"
+  },
+  "iphone-se-3": {
+    "file": "iphone-se-3.jpg",
+    "commonsFile": "IPhone SE 3 Starlight front, 27 May 2024.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "メイド理世",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_SE_3_Starlight_front%2C_27_May_2024.jpg"
+  },
+  "iphone-x": {
+    "file": "iphone-x.jpg",
+    "commonsFile": "Apple iPhone X - front (8121).jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Gregory Varnum",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apple_iPhone_X_-_front_(8121).jpg"
+  },
+  "iphone-16-plus": {
+    "file": "iphone-16-plus.jpg",
+    "commonsFile": "Back of iPhone 16 Plus.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Kyu3a",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Back_of_iPhone_16_Plus.jpg"
+  },
+  "iphone-16-pro": {
+    "file": "iphone-16-pro.jpg",
+    "commonsFile": "IPhone 16 Pro (54251031592).jpg",
+    "license": "CC BY-SA 2.0",
+    "artist": "メイド理世",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_16_Pro_(54251031592).jpg"
+  },
+  "iphone-17-pro": {
+    "file": "iphone-17-pro.jpg",
+    "commonsFile": "IPhone 17 Pro.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "茅野ふたば",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_17_Pro.jpg"
+  },
+  "iphone-17": {
+    "file": "iphone-17.jpg",
+    "commonsFile": "White iPhone 17.jpg",
+    "license": "CC0",
+    "artist": "Ahmad Ali Karim",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:White_iPhone_17.jpg"
+  },
+  "iphone-xr": {
+    "file": "iphone-xr.jpg",
+    "commonsFile": "IPhone XR Product Red A1984 US version front.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "茅野ふたば",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_XR_Product_Red_A1984_US_version_front.jpg"
+  },
+  "iphone-air": {
+    "file": "iphone-air.jpg",
+    "commonsFile": "Space Black iPhone Air.jpg",
+    "license": "CC0",
+    "artist": "Ahmad Ali Karim",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Space_Black_iPhone_Air.jpg"
+  },
+  "iphone-xs-max": {
+    "file": "iphone-xs-max.jpg",
+    "commonsFile": "IPhone XS Max.jpg",
+    "license": "CC0",
+    "artist": "Markus Kniebes",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_XS_Max.jpg"
+  },
+  "iphone-xs": {
+    "file": "iphone-xs.jpg",
+    "commonsFile": "IPhone XS.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Cullen Steber",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPhone_XS.jpg"
   }
 }
