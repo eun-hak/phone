@@ -72,6 +72,12 @@ const COMMONS_OVERRIDES = {
   "galaxy-z-fold3": "Samsung Galaxy Z Fold3 5G 001 (51542505259).jpg",
   "iphone-13-pro-max": "IPhone 13 Pro Max Sierra Blue 128g.jpg",
   "iphone-14-plus": "A blue iPhone 14 Plus.jpg",
+  "galaxy-s25": "20250124 삼성 갤럭시 s25.jpg",
+  "galaxy-s23-fe": "Samsung S23 FE.jpg",
+  "galaxy-z-flip7": "Samsung Galaxy Z Flip 7 Unfolded.jpg",
+  "galaxy-s26": "Galaxy S26.jpg",
+  "galaxy-s26-plus": "Galaxy S26 Plus.jpg",
+  "galaxy-s26-ultra": "Galaxy S26 Ultra - 1.jpg",
 };
 
 function englishName(slug) {

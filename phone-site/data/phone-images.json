@@ -633,5 +633,47 @@
     "license": "CC BY-SA 2.0",
     "artist": "Jan Helebrant",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Z_Fold3_5G_001_(51542505259).jpg"
+  },
+  "galaxy-s23-fe": {
+    "file": "galaxy-s23-fe.jpg",
+    "commonsFile": "Samsung S23 FE.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Ganesh Mohan T",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samsung_S23_FE.jpg"
+  },
+  "galaxy-s25": {
+    "file": "galaxy-s25.jpg",
+    "commonsFile": "20250124 삼성 갤럭시 s25.jpg",
+    "license": "CC0",
+    "artist": "Striker9498",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:20250124_%EC%82%BC%EC%84%B1_%EA%B0%A4%EB%9F%AD%EC%8B%9C_s25.jpg"
+  },
+  "galaxy-s26-plus": {
+    "file": "galaxy-s26-plus.jpg",
+    "commonsFile": "Galaxy S26 Plus.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Kyu3a",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galaxy_S26_Plus.jpg"
+  },
+  "galaxy-s26": {
+    "file": "galaxy-s26.jpg",
+    "commonsFile": "Galaxy S26.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Kyu3a",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galaxy_S26.jpg"
+  },
+  "galaxy-z-flip7": {
+    "file": "galaxy-z-flip7.jpg",
+    "commonsFile": "Samsung Galaxy Z Flip 7 Unfolded.jpg",
+    "license": "CC0",
+    "artist": "Matabalt",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Z_Flip_7_Unfolded.jpg"
+  },
+  "galaxy-s26-ultra": {
+    "file": "galaxy-s26-ultra.jpg",
+    "commonsFile": "Galaxy S26 Ultra - 1.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Kyu3a",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galaxy_S26_Ultra_-_1.jpg"
   }
 }
