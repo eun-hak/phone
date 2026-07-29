@@ -19,13 +19,20 @@ export default function AppleIcon() {
       >
         <svg width="120" height="120" viewBox="0 0 32 32">
           <rect x="9" y="4" width="14" height="24" rx="4" fill="#ffffff" />
-          <path
-            d="M12.4 16.2l2.6 2.6 4.7-5.5"
+          <circle
+            cx="14.8"
+            cy="14.6"
+            r="3.9"
             fill="none"
             stroke="#2a78d6"
-            strokeWidth="2.6"
+            strokeWidth="2.2"
+          />
+          <path
+            d="M17.7 17.5l2.8 2.8"
+            fill="none"
+            stroke="#2a78d6"
+            strokeWidth="2.5"
             strokeLinecap="round"
-            strokeLinejoin="round"
           />
         </svg>
       </div>
