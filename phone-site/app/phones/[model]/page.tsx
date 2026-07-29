@@ -18,6 +18,7 @@ import {
   formatYearMonth,
 } from "@/lib/format";
 import { DOC_TYPES } from "@/lib/site";
+import { ogImageMeta } from "@/lib/og";
 import { computeSellTiming, computeTco } from "@/lib/insights";
 import { breadcrumbJsonLd, phoneProductJsonLd } from "@/lib/jsonld";
 import Badge from "@/components/ui/Badge";
@@ -44,18 +45,37 @@ export async function generateMetadata({
   const { model } = await params;
   const phone = getPhone(model);
   if (!phone) return {};
+  const m = phone.metrics;
+  const og = ogImageMeta({
+    title: phone.name,
+    kicker: `${BRAND_LABELS[phone.brand]} · 결정 요약`,
+    subtitle: `구매 판단: ${m.verdict.label}`,
+    stats: [
+      ["잔존가치", formatPct(m.residualPct, 0)],
+      [
+        "보안지원",
+        phone.eol.securityEndDate
+          ? `${formatYearMonth(phone.eol.securityEndDate)}까지`
+          : "미상",
+      ],
+      [
+        "화면 수리",
+        m.displayRepairKRW !== null ? formatManwon(m.displayRepairKRW) : "미상",
+      ],
+    ],
+  });
   return {
     title: `${phone.name} — 사도 될까? 지원종료·수리비·시세 총정리`,
-    description: `${phone.name} 구매 판단: ${phone.metrics.verdict.label}. 보안지원 ${
+    description: `${phone.name} 구매 판단: ${m.verdict.label}. 보안지원 ${
       phone.eol.securityEndDate
         ? formatYearMonth(phone.eol.securityEndDate) + "까지"
         : "미상"
-    }, 잔존가치 ${formatPct(phone.metrics.residualPct, 0)}, 화면 수리비 ${
-      phone.metrics.displayRepairKRW !== null
-        ? formatManwon(phone.metrics.displayRepairKRW)
-        : "미상"
+    }, 잔존가치 ${formatPct(m.residualPct, 0)}, 화면 수리비 ${
+      m.displayRepairKRW !== null ? formatManwon(m.displayRepairKRW) : "미상"
     }.`,
     alternates: { canonical: `/phones/${model}` },
+    openGraph: { title: `${phone.name} — 폰덱스`, images: og },
+    twitter: { card: "summary_large_image", images: og },
   };
 }
 

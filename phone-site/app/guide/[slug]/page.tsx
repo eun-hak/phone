@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GUIDES, getGuide, type GuideBlock } from "@/lib/guides";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { ogImageMeta } from "@/lib/og";
 import { breadcrumbJsonLd, faqJsonLd } from "@/lib/jsonld";
 import JsonLd from "@/components/seo/JsonLd";
 import Badge from "@/components/ui/Badge";
@@ -22,6 +23,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const g = getGuide(slug);
   if (!g) return {};
+  const og = ogImageMeta({
+    title: g.title,
+    kicker: `가이드 · ${g.tags[0] ?? ""}`,
+    subtitle: g.description,
+  });
   return {
     title: g.title,
     description: g.description,
@@ -30,7 +36,9 @@ export async function generateMetadata({
       type: "article",
       title: g.title,
       description: g.description,
+      images: og,
     },
+    twitter: { card: "summary_large_image", images: og },
   };
 }
 

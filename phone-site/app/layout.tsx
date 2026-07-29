@@ -8,6 +8,13 @@ import {
   SITE_TAGLINE,
   SITE_URL,
 } from "@/lib/site";
+import { ogImageMeta } from "@/lib/og";
+
+const defaultOg = ogImageMeta({
+  title: "이 폰, 사도 될까요?",
+  kicker: "휴대폰 결정 사전",
+  subtitle: "지원종료·수리비·잔존가치·총소유비용까지, 데이터로 고르는 휴대폰",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -20,6 +27,11 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     type: "website",
     locale: "ko_KR",
+    images: defaultOg,
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: defaultOg,
   },
   robots: { index: true, follow: true },
 };
