@@ -88,6 +88,11 @@
       "date": "2026-07-02",
       "priceKRW": 700000,
       "source": "cetizen-bunjang"
+    },
+    {
+      "date": "2026-08-01",
+      "priceKRW": 630000,
+      "source": "번개장터 개인매물 중앙값 (자동 수집)"
     }
   ]
 }
