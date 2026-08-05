@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/site/Header";
 import Footer from "@/components/site/Footer";
 import {
+  ADSENSE_CLIENT,
+  GA_ID,
+  GSC_VERIFICATION,
+  NAVER_VERIFICATION,
   SITE_DESCRIPTION,
   SITE_NAME,
   SITE_TAGLINE,
@@ -34,6 +39,13 @@ export const metadata: Metadata = {
     images: defaultOg,
   },
   robots: { index: true, follow: true },
+  // 검색엔진 소유 확인 (HTML 태그 방식). 환경변수 없으면 미삽입.
+  verification: {
+    ...(GSC_VERIFICATION ? { google: GSC_VERIFICATION } : {}),
+    ...(NAVER_VERIFICATION
+      ? { other: { "naver-site-verification": NAVER_VERIFICATION } }
+      : {}),
+  },
 };
 
 export default function RootLayout({
@@ -53,6 +65,28 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+
+        {/* Google Analytics 4 — NEXT_PUBLIC_GA_ID 있을 때만 */}
+        {GA_ID ? (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga4" strategy="afterInteractive">
+              {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`}
+            </Script>
+          </>
+        ) : null}
+
+        {/* Google AdSense — NEXT_PUBLIC_ADSENSE_CLIENT 있을 때만 */}
+        {ADSENSE_CLIENT ? (
+          <Script
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+            strategy="afterInteractive"
+            crossOrigin="anonymous"
+          />
+        ) : null}
       </body>
     </html>
   );

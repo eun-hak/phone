@@ -11,6 +11,12 @@ export const SITE_URL =
 // 연락처 — 필요 시 전용 주소로 교체
 export const CONTACT_EMAIL = "qtree.comp@gmail.com";
 
+// 분석·광고·검색엔진 인증 — Vercel 환경변수로 주입 (없으면 미삽입)
+export const GA_ID = process.env.NEXT_PUBLIC_GA_ID; // 예: G-XXXXXXXXXX
+export const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT; // 예: ca-pub-2643737170468374
+export const GSC_VERIFICATION = process.env.NEXT_PUBLIC_GSC_VERIFICATION; // Search Console HTML 태그 방식 토큰
+export const NAVER_VERIFICATION = process.env.NEXT_PUBLIC_NAVER_VERIFICATION; // 네이버 서치어드바이저 토큰
+
 /** 푸터 하단 법적/정보 링크 */
 export const INFO_LINKS = [
   { href: "/about", label: "소개" },
