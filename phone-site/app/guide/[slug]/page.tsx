@@ -65,6 +65,41 @@ function Block({ block }: { block: GuideBlock }) {
       </ul>
     );
   }
+  if (block.type === "table") {
+    return (
+      <div className="overflow-x-auto">
+        <table className="w-full border-collapse text-sm">
+          <thead>
+            <tr className="border-b border-hairline text-left text-mut">
+              {block.headers?.map((h) => (
+                <th key={h} className="py-2 pr-4 font-semibold">
+                  {h}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {block.rows?.map((row, ri) => (
+              <tr key={ri} className="border-b border-hairline/60">
+                {row.map((cell, ci) => (
+                  <td
+                    key={ci}
+                    className={
+                      ci === 0
+                        ? "py-2 pr-4 font-medium text-ink"
+                        : "tnum py-2 pr-4 text-sub"
+                    }
+                  >
+                    {cell}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  }
   // steps
   return (
     <ol className="space-y-2.5 text-[15px] leading-7 text-sub">
