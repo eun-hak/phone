@@ -427,3 +427,96 @@ export function decisionScore(p: PhoneWithMetrics): number {
   const issue = clamp(15 - m.criticalOpenIssues * 12 - openCommon * 4, 0, 15);
   return Math.round((support + residual + repair + issue) * 10) / 10;
 }
+
+/* ─────────────────────────── 총평 (프로즈) ─────────────────────────── */
+
+/**
+ * 기종별 고유 총평 문장. 데이터 버킷(지원 수명·잔존율·감가속도·수리부담·이슈)에
+ * 따라 문장 자체가 달라져, 기종마다 다른 서술이 나오도록 구성한다.
+ * 반환 배열의 첫 문장은 리드, 나머지는 근거 문장. (편집팀 검수 대상)
+ */
+export function phoneVerdict(p: PhoneWithMetrics): string[] {
+  const m = p.metrics;
+  const name = p.name;
+  const out: string[] = [];
+  const yrs = m.monthsLeftSecurity !== null ? m.monthsLeftSecurity / 12 : null;
+
+  // 1) 종합 스탠스 — 지원 수명
+  if (m.eolStatus === "ended") {
+    out.push(
+      `${name}은(는) 이미 보안 업데이트가 종료된 기종입니다. 새로 장만하기보다, 이미 쓰고 있다면 금융·인증 같은 민감한 용도를 줄이고 보조폰으로 활용하는 편이 현실적입니다.`,
+    );
+  } else if (m.eolStatus === "urgent") {
+    out.push(
+      `${name}은(는) 보안 업데이트 종료가 1년 안쪽으로 다가온 기종입니다. 지금 새로 사기엔 남은 수명이 짧아, 급하지 않다면 지원이 더 남은 기종과 함께 저울질하는 것이 좋습니다.`,
+    );
+  } else if (yrs !== null && yrs >= 4) {
+    out.push(
+      `${name}은(는) 보안 업데이트가 약 ${Math.round(yrs)}년 더 남아, 지금 사도 오래 안전하게 쓸 수 있는 축에 드는 기종입니다.`,
+    );
+  } else if (yrs !== null && yrs >= 2) {
+    out.push(
+      `${name}은(는) 보안 업데이트가 약 ${Math.round(yrs)}년가량 남아, 중기적으로 무난하게 쓸 수 있는 기종입니다.`,
+    );
+  } else if (yrs !== null) {
+    out.push(
+      `${name}은(는) 보안 업데이트 잔여가 2년이 채 안 남아, 장기 사용보다는 단기·보조 용도에 어울리는 시점에 접어들었습니다.`,
+    );
+  } else {
+    out.push(
+      `${name}의 공식 지원 종료일은 아직 확정 공개되지 않아, 과거 업데이트 정책을 근거로 추정치를 함께 제공합니다.`,
+    );
+  }
+
+  // 2) 잔존가치 + 감가 속도
+  if (m.residualPct >= 60) {
+    out.push(
+      `중고 잔존가치는 출시가의 약 ${Math.round(m.residualPct)}%로 감가 방어가 좋은 편이라, 되팔 때 손해가 적어 총소유비용이 낮습니다.`,
+    );
+  } else if (m.residualPct >= 35) {
+    out.push(
+      `중고 잔존가치는 출시가의 약 ${Math.round(m.residualPct)}% 수준으로 평균적인 감가 흐름을 보입니다.`,
+    );
+  } else {
+    out.push(
+      `중고 잔존가치가 출시가의 약 ${Math.round(m.residualPct)}%까지 내려와, 신품보다 중고로 접근할 때 가성비가 살아나는 구간입니다.`,
+    );
+  }
+  // 월평균 하락률: 구형폰의 2포인트 시세 아티팩트로 비현실적 값이 나올 수 있어
+  // 상한(15%)을 둬 신뢰 가능한 구간에서만 서술한다.
+  if (
+    m.avgMonthlyDropPct !== null &&
+    m.avgMonthlyDropPct >= 2.5 &&
+    m.avgMonthlyDropPct <= 15
+  ) {
+    out.push(
+      `최근 감가 속도가 빠른 구간(월평균 약 ${formatPct(m.avgMonthlyDropPct)})이라, 처분 계획이 있다면 미룰수록 손해가 커집니다.`,
+    );
+  }
+
+  // 3) 수리비 부담
+  if (m.repairBurdenPct !== null && m.displayRepairKRW !== null) {
+    if (m.repairBurdenPct >= 45) {
+      out.push(
+        `화면 수리비가 현 시세의 약 ${Math.round(m.repairBurdenPct)}%에 달해 파손 시 타격이 큰 편이라, 케이스·보험을 적극 고려할 만합니다.`,
+      );
+    } else {
+      out.push(
+        `화면 수리비는 현 시세의 약 ${Math.round(m.repairBurdenPct)}% 수준으로, 파손 리스크는 감당 가능한 편입니다.`,
+      );
+    }
+  }
+
+  // 4) 이슈
+  if (m.criticalOpenIssues > 0) {
+    out.push(
+      `미해결 중대 이슈가 보고돼 있어, 특히 중고로 살 때는 해당 증상 여부를 반드시 확인해야 합니다.`,
+    );
+  } else if (p.issues.filter((i) => i.status === "open").length > 0) {
+    out.push(
+      `일부 알려진 이슈가 아직 진행형이니, 구매 전 '알려진 이슈' 항목을 확인하세요.`,
+    );
+  }
+
+  return out;
+}

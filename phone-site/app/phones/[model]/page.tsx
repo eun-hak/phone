@@ -19,7 +19,7 @@ import {
 } from "@/lib/format";
 import { DOC_TYPES } from "@/lib/site";
 import { ogImageMeta } from "@/lib/og";
-import { computeSellTiming, computeTco } from "@/lib/insights";
+import { computeSellTiming, computeTco, phoneVerdict } from "@/lib/insights";
 import { breadcrumbJsonLd, phoneProductJsonLd } from "@/lib/jsonld";
 import Badge from "@/components/ui/Badge";
 import StatTile from "@/components/ui/StatTile";
@@ -140,6 +140,7 @@ export default async function PhoneHubPage({
       : `지금 팔면 ${formatManwon(timing.nowKRW)} · 처분 3루트 비교`;
 
   const usedCheck = buildUsedCheck(phone);
+  const verdictProse = phoneVerdict(phone);
 
   const rivals = CURATED_COMPARES.filter(([a, b]) => a === model || b === model)
     .map(([a, b]) => {
@@ -219,7 +220,7 @@ export default async function PhoneHubPage({
             {m.verdict.label}
           </Badge>
           <span className="text-xs text-mut">
-            데이터 기반 자동 판정 · 시세 기준일 {m.latestResaleDate}
+            데이터 종합 판단 · 시세 기준일 {m.latestResaleDate}
           </span>
         </div>
         <ul className="mt-4 space-y-2">
@@ -292,6 +293,28 @@ export default async function PhoneHubPage({
           />
         </section>
       )}
+
+      {/* 총평 (프로즈) */}
+      <section aria-labelledby="summary" className="mt-10">
+        <h2
+          id="summary"
+          className="text-xl font-bold tracking-tight"
+        >
+          총평 — {phone.name}, 지금 사도 될까?
+        </h2>
+        <div className="mt-4 rounded-2xl border border-hairline bg-card p-5 shadow-card sm:p-6">
+          <div className="space-y-3 text-[15px] leading-7 text-sub">
+            <p className="text-ink">{verdictProse[0]}</p>
+            {verdictProse.length > 1 && (
+              <p>{verdictProse.slice(1).join(" ")}</p>
+            )}
+          </div>
+          <p className="mt-4 border-t border-hairline pt-3 text-xs text-mut">
+            폰덱스 편집팀 · 공식 자료와 중고 시세 데이터를 종합한 판단 · 시세
+            기준일 {m.latestResaleDate}
+          </p>
+        </div>
+      </section>
 
       {/* 문서 5종 */}
       <section aria-labelledby="docs" className="mt-10">
