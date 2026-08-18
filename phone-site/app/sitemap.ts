@@ -7,7 +7,7 @@ import {
 import { RANKINGS } from "@/lib/rankings";
 import { SERIES_LIST } from "@/lib/series";
 import { GUIDES } from "@/lib/guides";
-import { DOC_TYPES } from "@/lib/site";
+import { DOC_TYPES, NOINDEX_DOC_KEYS } from "@/lib/site";
 import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -38,8 +38,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const phoneRoutes: MetadataRoute.Sitemap = phones.flatMap((p) => {
-    // 데이터가 없어 빈약한 문서는 색인 대상에서 제외 (noindex 와 일치)
+    // 중복성 높은 계산기·링크 유형(care·sell·tco·buy·used-check)은 색인 제외 —
+    // 각 페이지 metadata 의 robots:{index:false} 와 일치. 사용자는 메인 페이지에서 접근.
+    // 데이터가 없어 빈약한 문서(issues·repair)도 제외.
     const docKeys = DOC_TYPES.map((d) => d.key).filter((key) => {
+      if (NOINDEX_DOC_KEYS.includes(key)) return false;
       if (key === "issues" && p.issues.length === 0) return false;
       if (key === "repair" && p.repairCosts.length === 0) return false;
       return true;
@@ -57,12 +60,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "weekly" as const,
         priority: 0.7,
       })),
-      {
-        url: `${SITE_URL}/phones/${p.slug}/used-check`,
-        lastModified: now,
-        changeFrequency: "weekly" as const,
-        priority: 0.7,
-      },
     ];
   });
 

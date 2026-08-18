@@ -26,6 +26,7 @@ export async function generateMetadata({
     title: `${phone.name} 싸게 사는 법 — 자급제 vs 지원금 vs 알뜰폰`,
     description: `${phone.name} 구매 루트 비교. 현 중고 시세 ${formatManwon(phone.metrics.latestResale)} 기준으로 신품·중고·통신사 루트의 손익을 정리했습니다.`,
     alternates: { canonical: `/phones/${model}/buy` },
+    robots: { index: false, follow: true },
   };
 }
 

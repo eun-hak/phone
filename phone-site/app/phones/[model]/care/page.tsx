@@ -36,6 +36,7 @@ export async function generateMetadata({
         : "데이터 기준"
     } 기준으로 ${CARE_NAME[phone.brand]} 가입의 손익분기 파손 확률을 계산합니다. 보험료를 입력하면 이득/손해 구간이 바로 나옵니다.`,
     alternates: { canonical: `/phones/${model}/care` },
+    robots: { index: false, follow: true },
   };
 }
 

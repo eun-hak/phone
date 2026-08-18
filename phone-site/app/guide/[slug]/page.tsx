@@ -131,7 +131,11 @@ export default async function GuidePage({
     description: g.description,
     datePublished: g.updated,
     dateModified: g.updated,
-    author: { "@type": "Organization", name: SITE_NAME },
+    author: {
+      "@type": "Organization",
+      name: `${SITE_NAME} 편집팀`,
+      url: `${SITE_URL}/about`,
+    },
     publisher: { "@type": "Organization", name: SITE_NAME },
     mainEntityOfPage: `${SITE_URL}/guide/${g.slug}`,
     inLanguage: "ko",
@@ -175,9 +179,18 @@ export default async function GuidePage({
           {g.title}
         </h1>
         <p className="mt-3 text-[15px] leading-7 text-sub">{g.intro}</p>
-        <p className="mt-2 text-xs text-mut">
-          최종 수정 <time className="tnum">{g.updated}</time>
-        </p>
+        <div className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-mut">
+          <Link
+            href="/about"
+            className="font-medium text-sub hover:text-accent"
+          >
+            글 · 폰덱스 편집팀
+          </Link>
+          <span aria-hidden="true">·</span>
+          <span>
+            최종 수정 <time className="tnum">{g.updated}</time>
+          </span>
+        </div>
       </header>
 
       <div className="mt-8 space-y-10">
@@ -209,6 +222,23 @@ export default async function GuidePage({
           </dl>
         </section>
       )}
+
+      <section className="mt-12 rounded-2xl border border-hairline bg-card p-5 shadow-card">
+        <p className="text-sm font-bold">폰덱스 편집팀</p>
+        <p className="mt-1.5 text-sm leading-6 text-sub">
+          폰덱스 편집팀은 제조사·통신사 공식 자료와 중고 거래 시세를 직접
+          수집·교차검증해 휴대폰 구매·보유·중고 결정에 필요한 데이터를 정리합니다.
+          모든 수치는 출처와 기준일을 함께 표기하고, 추정치는 추정임을 명시합니다.
+        </p>
+        <div className="mt-3 flex flex-wrap gap-4 text-xs font-medium">
+          <Link href="/about" className="text-accent hover:underline">
+            폰덱스 소개 →
+          </Link>
+          <Link href="/methodology" className="text-accent hover:underline">
+            데이터 방법론 →
+          </Link>
+        </div>
+      </section>
 
       {g.related.length > 0 && (
         <section className="mt-12">

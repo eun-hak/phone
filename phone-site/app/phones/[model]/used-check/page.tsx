@@ -30,6 +30,7 @@ export async function generateMetadata({
       phone.metrics.latestResale,
     )}, 활성화 잠금·IMEI까지 한 번에 점검하세요.`,
     alternates: { canonical: `/phones/${model}/used-check` },
+    robots: { index: false, follow: true },
   };
 }
 

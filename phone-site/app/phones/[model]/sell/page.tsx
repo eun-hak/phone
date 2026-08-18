@@ -33,6 +33,7 @@ export async function generateMetadata({
     title: `${phone.name} 언제·어디에 팔까 — 판매 타이밍과 처분 루트`,
     description: `${phone.name} 현 시세 ${formatManwon(phone.metrics.latestResale)} (A급 기준). 신형 발표 일정과 감가 속도로 판매 타이밍을, 개인거래·매입업체·보상판매 3루트의 실수령액을 비교합니다.`,
     alternates: { canonical: `/phones/${model}/sell` },
+    robots: { index: false, follow: true },
   };
 }
 
