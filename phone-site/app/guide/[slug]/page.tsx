@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { GUIDES, getGuide, type GuideBlock } from "@/lib/guides";
+import { getLiveGuides, getGuide, isGuideLive, type GuideBlock } from "@/lib/guides";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import { ogImageMeta } from "@/lib/og";
 import { breadcrumbJsonLd, faqJsonLd } from "@/lib/jsonld";
@@ -12,7 +12,7 @@ export const revalidate = 86400;
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return GUIDES.map((g) => ({ slug: g.slug }));
+  return getLiveGuides().map((g) => ({ slug: g.slug }));
 }
 
 export async function generateMetadata({
@@ -122,7 +122,7 @@ export default async function GuidePage({
 }) {
   const { slug } = await params;
   const g = getGuide(slug);
-  if (!g) notFound();
+  if (!g || !isGuideLive(g)) notFound();
 
   const articleLd = {
     "@context": "https://schema.org",

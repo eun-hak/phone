@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { GUIDES, type Guide } from "@/lib/guides";
+import { getLiveGuides, type Guide } from "@/lib/guides";
 import { SITE_NAME } from "@/lib/site";
 import { itemListJsonLd } from "@/lib/jsonld";
 import JsonLd from "@/components/seo/JsonLd";
@@ -37,15 +37,16 @@ function GuideCard({ g }: { g: Guide }) {
 }
 
 export default function GuideIndexPage() {
-  const reports = GUIDES.filter((g) => g.kind === "report");
-  const guides = GUIDES.filter((g) => g.kind !== "report");
+  const live = getLiveGuides();
+  const reports = live.filter((g) => g.kind === "report");
+  const guides = live.filter((g) => g.kind !== "report");
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6">
       <JsonLd
         data={itemListJsonLd(
           "폰덱스 가이드",
-          GUIDES.map((g) => ({ name: g.title, path: `/guide/${g.slug}` })),
+          live.map((g) => ({ name: g.title, path: `/guide/${g.slug}` })),
         )}
       />
       <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">

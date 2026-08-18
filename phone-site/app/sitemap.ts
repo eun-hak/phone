@@ -6,7 +6,7 @@ import {
 } from "@/lib/phones";
 import { RANKINGS } from "@/lib/rankings";
 import { SERIES_LIST } from "@/lib/series";
-import { GUIDES } from "@/lib/guides";
+import { getLiveGuides } from "@/lib/guides";
 import { DOC_TYPES, NOINDEX_DOC_KEYS } from "@/lib/site";
 import { SITE_URL } from "@/lib/site";
 
@@ -86,7 +86,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const guideRoutes: MetadataRoute.Sitemap = GUIDES.map((g) => ({
+  const guideRoutes: MetadataRoute.Sitemap = getLiveGuides().map((g) => ({
     url: `${SITE_URL}/guide/${g.slug}`,
     lastModified: new Date(g.updated),
     changeFrequency: "monthly",

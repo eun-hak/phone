@@ -1,0 +1,34 @@
+# 폰덱스 에디토리얼 캘린더 — 예약 발행 자동 공개
+# 미리 써둔 글(guides.ts 의 publishAt)을 매일 재빌드로 공개한다.
+# 날짜가 지난 글만 사이트에 노출되므로, 이 워크플로는 "매일 재빌드 트리거" 역할만 한다.
+# (Vercel 은 main 푸시마다 자동 배포 → 빌드 시점 날짜 기준으로 publishAt 게이트 통과 글이 공개됨)
+# 예약 큐를 다 소진한 뒤에는 Actions 탭에서 이 워크플로를 비활성화하면 된다.
+name: daily-publish
+
+on:
+  schedule:
+    - cron: "10 0 * * *" # 매일 09:10 KST — 그날 예약된 글 공개
+  workflow_dispatch: # 수동 실행(즉시 재빌드)도 허용
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 발행 트리거 커밋 (Vercel 재빌드 → 오늘자 예약 글 공개)
+        run: |
+          DATE=$(date -u +%F)
+          echo "last daily publish check: ${DATE} (UTC)" > phone-site/data/.publish-log
+          git config user.name "phondex-bot"
+          git config user.email "actions@github.com"
+          git add phone-site/data/.publish-log
+          if git diff --cached --quiet; then
+            git commit --allow-empty -m "chore: 일일 발행 체크 ${DATE}"
+          else
+            git commit -m "chore: 일일 발행 체크 ${DATE}"
+          fi
+          git push
