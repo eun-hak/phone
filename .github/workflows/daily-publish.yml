@@ -7,7 +7,11 @@ name: daily-publish
 
 on:
   schedule:
-    - cron: "10 0 * * *" # 매일 09:10 KST — 그날 예약된 글 공개
+    # GitHub cron 은 고부하 시 지연되므로, UTC 자정 직후 여러 번 시도해 그날 글이 이르게 공개되도록 한다.
+    # 게이트가 멱등(그날 예약 글만 공개)이라 하루 여러 번 실행돼도 안전하다.
+    - cron: "2 0 * * *" # 09:02 KST
+    - cron: "22 0 * * *" # 09:22 KST (백업)
+    - cron: "2 1 * * *" # 10:02 KST (백업)
   workflow_dispatch: # 수동 실행(즉시 재빌드)도 허용
 
 permissions:
