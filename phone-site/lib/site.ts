@@ -97,7 +97,13 @@ export type DocTypeKey = (typeof DOC_TYPES)[number]["key"];
  * 사용자는 메인 기종 페이지에서 계속 접근 가능. sitemap 제외 + 각 페이지 robots:{index:false} 와 일치.
  * (used-check 은 DOC_TYPES 밖이라 sitemap 에서 별도로 이미 제외됨)
  */
-export const NOINDEX_DOC_KEYS: DocTypeKey[] = ["buy", "tco", "care", "sell"];
+export const NOINDEX_DOC_KEYS: DocTypeKey[] = [
+  "buy",
+  "tco",
+  "care",
+  "sell",
+  "resale",
+];
 
 /** 홈·허브에서 노출하는 인터랙티브 도구 목록 */
 export const TOOLS = [

@@ -8,6 +8,7 @@ import {
   formatYearMonth,
 } from "@/lib/format";
 import { DOC_TYPES, TOOLS } from "@/lib/site";
+import { getLiveGuides } from "@/lib/guides";
 import { webSiteJsonLd } from "@/lib/jsonld";
 import PhoneCard from "@/components/phone/PhoneCard";
 import Badge from "@/components/ui/Badge";
@@ -32,6 +33,8 @@ export default function Home() {
   const residualTop = [...phones]
     .sort((a, b) => b.metrics.residualPct - a.metrics.residualPct)
     .slice(0, 6);
+
+  const latestGuides = getLiveGuides().slice(0, 6);
 
   const dataPoints = phones.reduce(
     (acc, p) => acc + p.resale.length + p.repairCosts.length + p.issues.length,
@@ -93,6 +96,54 @@ export default function Home() {
       </section>
 
       <div className="mx-auto max-w-6xl space-y-16 px-4 py-14 sm:px-6">
+        {/* 최신 리포트 */}
+        {latestGuides.length > 0 && (
+          <section aria-labelledby="latest-reports">
+            <div className="flex items-baseline justify-between">
+              <h2
+                id="latest-reports"
+                className="text-xl font-bold tracking-tight"
+              >
+                최신 데이터 리포트
+              </h2>
+              <Link
+                href="/guide"
+                className="text-sm font-medium text-accent hover:underline"
+              >
+                전체 리포트 →
+              </Link>
+            </div>
+            <p className="mt-1 text-sm text-sub">
+              실측 시세·수리비·지원 기간 데이터로 직접 분석한 구매·중고 결정
+              리포트입니다.
+            </p>
+            <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {latestGuides.map((g) => (
+                <Link
+                  key={g.slug}
+                  href={`/guide/${g.slug}`}
+                  className="group block rounded-xl border border-hairline bg-card p-5 shadow-card transition-all hover:-translate-y-0.5 hover:border-accent-strong/40 hover:shadow-pop"
+                >
+                  <div className="flex flex-wrap items-center gap-2">
+                    {g.tags.slice(0, 1).map((t) => (
+                      <Badge key={t} tone="neutral">
+                        {t}
+                      </Badge>
+                    ))}
+                    <span className="text-xs text-mut">{g.readMin}분</span>
+                  </div>
+                  <p className="mt-2.5 text-[15px] font-bold leading-snug group-hover:text-accent">
+                    {g.title}
+                  </p>
+                  <p className="mt-1.5 text-xs leading-5 text-sub">
+                    {g.description}
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* 인터랙티브 도구 */}
         <section aria-labelledby="tools">
           <h2 id="tools" className="text-xl font-bold tracking-tight">
@@ -204,7 +255,7 @@ export default function Home() {
                     <td className="tnum text-sub">{i + 1}</td>
                     <td>
                       <Link
-                        href={`/phones/${p.slug}/resale`}
+                        href={`/phones/${p.slug}`}
                         className="font-medium hover:text-accent"
                       >
                         {p.name}

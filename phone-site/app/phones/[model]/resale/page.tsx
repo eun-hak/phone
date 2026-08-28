@@ -31,6 +31,7 @@ export async function generateMetadata({
         : ""
     }.`,
     alternates: { canonical: `/phones/${model}/resale` },
+    robots: { index: false, follow: true },
   };
 }
 
