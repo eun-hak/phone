@@ -4,7 +4,15 @@
  */
 
 export interface GuideBlock {
-  type: "p" | "ul" | "steps" | "note" | "table" | "chart" | "method";
+  type:
+    | "p"
+    | "ul"
+    | "steps"
+    | "note"
+    | "table"
+    | "chart"
+    | "method"
+    | "verdict";
   text?: string;
   items?: string[];
   headers?: string[];
@@ -468,6 +476,21 @@ export const GUIDES: Guide[] = [
         heading: "3년 월 실소유비용 비교",
         blocks: [
           {
+            type: "verdict",
+            text: "중급기가 무조건 싸게 먹히지 않습니다. 아이폰 16(플래그십)이 월 1.2만원으로, 갤럭시 S25 FE(준플래그십)의 월 2.3만원보다 오히려 쌉니다 — 감가 방어 때문입니다.",
+          },
+          {
+            type: "chart",
+            text: "3년 월 실소유비용 — 낮을수록 실제로 싸게 쓴 폰",
+            series: [
+              { label: "아이폰 SE 3세대", value: 0.8, display: "0.8만" },
+              { label: "갤럭시 A35", value: 0.9, display: "0.9만" },
+              { label: "아이폰 16", value: 1.2, display: "1.2만" },
+              { label: "갤럭시 S25", value: 2.0, display: "2.0만" },
+              { label: "갤럭시 S25 FE", value: 2.3, display: "2.3만" },
+            ],
+          },
+          {
             type: "table",
             headers: ["기종", "구분", "출시가", "월 실비용"],
             rows: [
@@ -872,6 +895,16 @@ export const GUIDES: Guide[] = [
         heading: "부위별 수리비 비교",
         blocks: [
           {
+            type: "chart",
+            text: "화면 수리비 — 폴드 내부 화면은 바(bar)형의 4배",
+            series: [
+              { label: "갤럭시 Z 폴드7", value: 76, display: "76만" },
+              { label: "아이폰 16", value: 42, display: "42만" },
+              { label: "갤럭시 Z 플립7", value: 37, display: "37만" },
+              { label: "갤럭시 S25", value: 18, display: "18만" },
+            ],
+          },
+          {
             type: "table",
             headers: ["기종", "화면", "배터리"],
             rows: [
@@ -1118,6 +1151,18 @@ export const GUIDES: Guide[] = [
       {
         heading: "1회 파손 절감액 — 기종에 따라 7만~61만",
         blocks: [
+          {
+            type: "chart",
+            text: "1회 화면 파손 시 케어로 아끼는 금액 — 폴더블·프로일수록 케어가 값을 한다",
+            series: [
+              { label: "갤럭시 Z 폴드7", value: 61, display: "61만" },
+              { label: "아이폰 16 프로", value: 45, display: "45만" },
+              { label: "아이폰 16", value: 38, display: "38만" },
+              { label: "갤럭시 S25 울트라", value: 22, display: "22만" },
+              { label: "갤럭시 S25", value: 13, display: "13만" },
+              { label: "갤럭시 A35", value: 7, display: "7만" },
+            ],
+          },
           {
             type: "table",
             headers: ["기종", "무보험 액정", "케어 자기부담", "1회 절감"],
@@ -1500,6 +1545,10 @@ export const GUIDES: Guide[] = [
         heading: "월 실비용 = (출시가 − 현 시세) ÷ 보유 개월",
         blocks: [
           {
+            type: "verdict",
+            text: "3년 실비용은 아이폰 15가 월 1.5만원, 갤럭시 Z 폴드5가 월 4.2만원입니다. 비싼 폰이 반드시 비싼 사용료는 아닙니다 — 감가를 넣으면 순서가 바뀝니다.",
+          },
+          {
             type: "p",
             text: "지금 중고로 팔 때 실제로 빠진 돈을 보유 개월로 나눈 값입니다. 요금제·액세서리를 뺀 순수 기기 비용 기준입니다.",
           },
@@ -1589,6 +1638,18 @@ export const GUIDES: Guide[] = [
         heading: "같은 세대, 티어별 잔존율",
         blocks: [
           {
+            type: "chart",
+            text: "같은 세대 안에서 티어별 잔존율 — 상위 티어가 더 잘 버티지 않는다",
+            series: [
+              { label: "아이폰 16", value: 78, display: "78%" },
+              { label: "아이폰 16 프맥", value: 74, display: "74%" },
+              { label: "아이폰 16 프로", value: 71, display: "71%" },
+              { label: "갤럭시 S24+", value: 55, display: "55%" },
+              { label: "갤럭시 S24 울트라", value: 44, display: "44%" },
+              { label: "갤럭시 S24", value: 38, display: "38%" },
+            ],
+          },
+          {
             type: "table",
             headers: ["기종", "출시가", "잔존율"],
             rows: [
@@ -1668,6 +1729,21 @@ export const GUIDES: Guide[] = [
       {
         heading: "이미 보안 지원이 끝난 기종",
         blocks: [
+          {
+            type: "verdict",
+            text: "이미 22개 기종의 보안 지원이 끝났고, 11개가 1년 안에 끝납니다. 특히 아이폰 X는 이번 달 종료라, 보유 중이라면 지금 처분·교체 방침을 정할 시점입니다.",
+          },
+          {
+            type: "chart",
+            text: "1년 내 보안지원 종료까지 남은 개월",
+            series: [
+              { label: "아이폰 X", value: 1, display: "1개월" },
+              { label: "아이폰 XR·XS", value: 4, display: "4개월" },
+              { label: "갤럭시 S22 계열", value: 6, display: "6개월" },
+              { label: "갤럭시 A33·A53", value: 8, display: "8개월" },
+              { label: "Z 플립4·폴드4", value: 12, display: "12개월" },
+            ],
+          },
           {
             type: "p",
             text: "폰덱스 집계 기준 22개 기종이 이미 보안 지원 종료 상태입니다. 갤럭시 구형이 대부분이고, 아이폰은 상대적으로 지원 기간이 길어 아직 대부분 유지됩니다.",
@@ -1942,6 +2018,10 @@ export const GUIDES: Guide[] = [
         heading: "브랜드 평균 — 아이폰이 더 비싸다",
         blocks: [
           {
+            type: "verdict",
+            text: "액정 수리비는 기종에 따라 10만원에서 76만원까지 벌어집니다. '아이폰이 비싸다'보다 '어떤 기종이냐'가 훨씬 결정적입니다 — 폴더블이 최상단을 차지합니다.",
+          },
+          {
             type: "table",
             headers: ["브랜드", "평균 액정 수리비", "범위"],
             rows: [
@@ -2046,6 +2126,10 @@ export const GUIDES: Guide[] = [
       {
         heading: "감가 방어 TOP10 (출시 1년 이상)",
         blocks: [
+          {
+            type: "verdict",
+            text: "출시 1년 이상 기종 중 감가 방어 1위는 아이폰 16(78%)입니다. 상위권은 아이폰이 독식하지만, 갤럭시 Z 폴드7·S25 계열도 70% 안팎으로 선방합니다.",
+          },
           {
             type: "chart",
             text: "감가 방어 TOP10 잔존율 (출시 1년 이상 기종만)",
@@ -2157,6 +2241,10 @@ export const GUIDES: Guide[] = [
       {
         heading: "같은 3년 된 폰으로 비교하면",
         blocks: [
+          {
+            type: "verdict",
+            text: "같은 3년을 써도 아이폰 15는 출시가의 60%가 남고, 갤럭시 S23은 28%만 남습니다. 2~3년 뒤 되팔 계획이라면 이 격차가 실제 지출을 가릅니다.",
+          },
           {
             type: "p",
             text: "감가는 연식이 클수록 커지므로, 브랜드를 공정하게 비교하려면 '같은 나이'의 기종을 봐야 합니다. 2023년에 출시돼 지금 약 3년 된 기종들의 잔존율입니다.",

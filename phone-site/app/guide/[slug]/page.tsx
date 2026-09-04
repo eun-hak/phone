@@ -65,6 +65,16 @@ function Block({ block }: { block: GuideBlock }) {
       </ul>
     );
   }
+  if (block.type === "verdict") {
+    return (
+      <div className="rounded-xl border-l-4 border-accent-strong bg-accent-soft py-4 pl-5 pr-4">
+        <p className="text-xs font-bold tracking-wide text-accent">결론부터</p>
+        <p className="mt-1.5 text-[15px] font-medium leading-7 text-ink">
+          {block.text}
+        </p>
+      </div>
+    );
+  }
   if (block.type === "chart") {
     const series = block.series ?? [];
     const max = Math.max(...series.map((s) => s.value), 1);
