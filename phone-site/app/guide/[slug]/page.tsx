@@ -65,6 +65,50 @@ function Block({ block }: { block: GuideBlock }) {
       </ul>
     );
   }
+  if (block.type === "chart") {
+    const series = block.series ?? [];
+    const max = Math.max(...series.map((s) => s.value), 1);
+    return (
+      <figure className="rounded-xl border border-hairline bg-card p-4 shadow-card sm:p-5">
+        {block.text && (
+          <figcaption className="mb-3.5 text-xs font-semibold text-mut">
+            {block.text}
+          </figcaption>
+        )}
+        <div className="space-y-2.5">
+          {series.map((s) => (
+            <div
+              key={s.label}
+              className="grid grid-cols-[6.5rem_1fr_3.25rem] items-center gap-2.5 sm:grid-cols-[9.5rem_1fr_3.5rem] sm:gap-3"
+            >
+              <span className="truncate text-xs leading-5 text-sub">
+                {s.label}
+              </span>
+              <span className="h-2.5 overflow-hidden rounded-full bg-accent-soft">
+                <span
+                  className="block h-full rounded-full bg-accent-strong"
+                  style={{ width: `${Math.max(2, (s.value / max) * 100)}%` }}
+                />
+              </span>
+              <span className="tnum text-right text-xs font-semibold text-ink">
+                {s.display ?? s.value}
+              </span>
+            </div>
+          ))}
+        </div>
+      </figure>
+    );
+  }
+  if (block.type === "method") {
+    return (
+      <aside className="rounded-xl border border-dashed border-hairline bg-card p-4">
+        <p className="text-xs font-bold tracking-wide text-mut">
+          데이터 수집·검증 방법
+        </p>
+        <p className="mt-2 text-sm leading-6 text-sub">{block.text}</p>
+      </aside>
+    );
+  }
   if (block.type === "table") {
     return (
       <div className="overflow-x-auto">

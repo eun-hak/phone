@@ -4,11 +4,16 @@
  */
 
 export interface GuideBlock {
-  type: "p" | "ul" | "steps" | "note" | "table";
+  type: "p" | "ul" | "steps" | "note" | "table" | "chart" | "method";
   text?: string;
   items?: string[];
   headers?: string[];
   rows?: string[][];
+  /**
+   * chart: 단일 계열 가로 막대. 모든 값을 직접 라벨하므로 범례·툴팁 없이도
+   * 데이터가 텍스트로 완전히 접근 가능하다. display 는 표시용 문자열(단위 포함).
+   */
+  series?: { label: string; value: number; display?: string }[];
 }
 export interface GuideSection {
   heading: string;
@@ -1499,6 +1504,19 @@ export const GUIDES: Guide[] = [
             text: "지금 중고로 팔 때 실제로 빠진 돈을 보유 개월로 나눈 값입니다. 요금제·액세서리를 뺀 순수 기기 비용 기준입니다.",
           },
           {
+            type: "chart",
+            text: "3년 보유 시 월 실소유비용 — 낮을수록 실제로 싸게 쓴 폰",
+            series: [
+              { label: "갤럭시 A24", value: 0.7, display: "0.7만" },
+              { label: "아이폰 15", value: 1.5, display: "1.5만" },
+              { label: "갤럭시 S23 FE", value: 1.6, display: "1.6만" },
+              { label: "아이폰 15 프로", value: 2.1, display: "2.1만" },
+              { label: "갤럭시 S24 울트라", value: 3.1, display: "3.1만" },
+              { label: "갤럭시 Z 플립5", value: 3.1, display: "3.1만" },
+              { label: "갤럭시 Z 폴드5", value: 4.2, display: "4.2만" },
+            ],
+          },
+          {
             type: "table",
             headers: ["기종", "3년 손실", "월 실비용"],
             rows: [
@@ -1941,6 +1959,20 @@ export const GUIDES: Guide[] = [
         heading: "수리비 비싼 TOP5 — 폴더블이 점령",
         blocks: [
           {
+            type: "chart",
+            text: "액정 수리비 스펙트럼 — 같은 '액정 교체'인데 10만원에서 76만원까지",
+            series: [
+              { label: "갤럭시 Z 폴드7", value: 76, display: "76만" },
+              { label: "아이폰 16 프맥", value: 71, display: "71만" },
+              { label: "아이폰 16 프로", value: 49, display: "49만" },
+              { label: "아이폰 16", value: 42, display: "42만" },
+              { label: "갤럭시 Z 플립7", value: 37, display: "37만" },
+              { label: "갤럭시 S25 울트라", value: 29, display: "29만" },
+              { label: "갤럭시 S25", value: 18, display: "18만" },
+              { label: "갤럭시 A35", value: 10, display: "10만" },
+            ],
+          },
+          {
             type: "table",
             headers: ["기종", "공식 액정 수리비"],
             rows: [
@@ -2014,6 +2046,22 @@ export const GUIDES: Guide[] = [
       {
         heading: "감가 방어 TOP10 (출시 1년 이상)",
         blocks: [
+          {
+            type: "chart",
+            text: "감가 방어 TOP10 잔존율 (출시 1년 이상 기종만)",
+            series: [
+              { label: "아이폰 16", value: 78, display: "78%" },
+              { label: "아이폰 16 프맥", value: 74, display: "74%" },
+              { label: "갤럭시 Z 폴드7", value: 71, display: "71%" },
+              { label: "아이폰 16 프로", value: 71, display: "71%" },
+              { label: "갤럭시 S25+", value: 70, display: "70%" },
+              { label: "갤럭시 S25", value: 68, display: "68%" },
+              { label: "아이폰 16 플러스", value: 67, display: "67%" },
+              { label: "갤럭시 A36", value: 63, display: "63%" },
+              { label: "아이폰 15", value: 60, display: "60%" },
+              { label: "갤럭시 S25 울트라", value: 59, display: "59%" },
+            ],
+          },
           {
             type: "table",
             headers: ["순위", "기종", "브랜드", "잔존율"],
@@ -2114,6 +2162,19 @@ export const GUIDES: Guide[] = [
             text: "감가는 연식이 클수록 커지므로, 브랜드를 공정하게 비교하려면 '같은 나이'의 기종을 봐야 합니다. 2023년에 출시돼 지금 약 3년 된 기종들의 잔존율입니다.",
           },
           {
+            type: "chart",
+            text: "2023년 출시(약 3년 경과) 기종의 잔존율 — 같은 나이로 맞춘 비교",
+            series: [
+              { label: "아이폰 15", value: 60, display: "60%" },
+              { label: "아이폰 15 프로", value: 53, display: "53%" },
+              { label: "아이폰 15 프로 맥스", value: 53, display: "53%" },
+              { label: "갤럭시 S23 울트라", value: 35, display: "35%" },
+              { label: "갤럭시 S23", value: 28, display: "28%" },
+              { label: "갤럭시 Z 폴드5", value: 28, display: "28%" },
+              { label: "갤럭시 Z 플립5", value: 20, display: "20%" },
+            ],
+          },
+          {
             type: "table",
             headers: ["기종 (2023 출시)", "브랜드", "잔존율"],
             rows: [
@@ -2146,6 +2207,10 @@ export const GUIDES: Guide[] = [
           {
             type: "note",
             text: "단순 평균은 각 브랜드의 기종 연식·라인업 구성에 영향을 받으므로, 앞의 '동일 연식 비교'가 더 정확합니다. 다만 방향성은 일치합니다 — 아이폰이 평균적으로 감가를 덜 겪습니다.",
+          },
+          {
+            type: "method",
+            text: "잔존율은 (현재 중고 시세 ÷ 출시가)로 계산했고, 시세는 개인 거래 매물 중앙값을 정기 수집한 값입니다. 브랜드 비교에서는 연식이 섞이면 왜곡이 생기므로, 같은 해(2023년) 출시 기종만 따로 뽑아 교차 검증했습니다. 출시 1년 미만 기종은 첫해 급락이 반영되지 않아 잔존율이 부풀려 보이므로 비교에서 제외했습니다.",
           },
         ],
       },
@@ -2273,6 +2338,17 @@ export const GUIDES: Guide[] = [
             text: "폴더블은 바(bar)형 스마트폰보다 감가가 가파릅니다. 폰덱스가 집계한 세대별 현재 중고 시세와 잔존율(출시가 대비)은 다음과 같습니다.",
           },
           {
+            type: "chart",
+            text: "폴드 세대별 잔존율 — 폴드7(71%)과 폴드6(40%) 사이가 '감가 절벽'",
+            series: [
+              { label: "폴드7 (최신)", value: 71, display: "71%" },
+              { label: "폴드6", value: 40, display: "40%" },
+              { label: "폴드5", value: 28, display: "28%" },
+              { label: "폴드4", value: 19, display: "19%" },
+              { label: "폴드3", value: 12, display: "12%" },
+            ],
+          },
+          {
             type: "table",
             headers: ["폴드 세대", "출시가", "현재 시세", "잔존율"],
             rows: [
@@ -2301,6 +2377,10 @@ export const GUIDES: Guide[] = [
           {
             type: "note",
             text: "시세는 폰덱스 집계 개인거래 중앙값 기준 추정치이며, 실제 거래가는 배터리 성능·외관·구성품·색상에 따라 달라집니다.",
+          },
+          {
+            type: "method",
+            text: "이 리포트의 시세는 번개장터 등 개인 거래 매물의 중앙값을 정기적으로 수집해 집계한 값입니다. 수리비는 제조사 공식 수리 안내 페이지에서, 지원 종료일은 제조사 발표와 endoflife.date를 교차 확인해 정리합니다. 공식 발표가 없는 항목은 과거 정책을 근거로 한 '추정'임을 각 기종 문서에 명시하며, 변동 데이터는 자동 수집 파이프라인으로 매월 다시 갱신합니다.",
           },
         ],
       },
