@@ -1,14 +1,19 @@
 # 폰덱스 에디토리얼 캘린더 — 예약 발행 자동 공개
-# 미리 써둔 글(guides.ts 의 publishAt)을 매일 재빌드로 공개한다.
-# 날짜가 지난 글만 사이트에 노출되므로, 이 워크플로는 "매일 재빌드 트리거" 역할만 한다.
-# (Vercel 은 main 푸시마다 자동 배포 → 빌드 시점 날짜 기준으로 publishAt 게이트 통과 글이 공개됨)
+#
+# 동작: "마지막 트리거 이후 새로 공개 시점이 된 글"이 있을 때만 커밋·푸시한다.
+#   → Vercel 이 그 푸시로 재빌드하면서 publishAt 게이트가 열려 글이 공개된다.
+#   → 올릴 글이 없는 날은 아무것도 하지 않아 불필요한 풀빌드(992페이지)를 만들지 않는다.
+#
+# 누락 복구: 기준이 '오늘 날짜'가 아니라 '마지막 트리거 날짜 이후'라서,
+#   cron 이 하루 건너뛰어도 다음 실행에서 밀린 글을 자동으로 공개한다.
+#
 # 예약 큐를 다 소진한 뒤에는 Actions 탭에서 이 워크플로를 비활성화하면 된다.
 name: daily-publish
 
 on:
   schedule:
-    # GitHub cron 은 고부하 시 지연되므로, UTC 자정 직후 여러 번 시도해 그날 글이 이르게 공개되도록 한다.
-    # 게이트가 멱등(그날 예약 글만 공개)이라 하루 여러 번 실행돼도 안전하다.
+    # GitHub cron 은 고부하 시 지연되므로 UTC 자정 직후 여러 번 시도한다.
+    # 가드 덕분에 하루 여러 번 실행돼도 커밋은 최대 1회만 발생한다.
     - cron: "2 0 * * *" # 09:02 KST
     - cron: "22 0 * * *" # 09:22 KST (백업)
     - cron: "2 1 * * *" # 10:02 KST (백업)
@@ -23,16 +28,40 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: 발행 트리거 커밋 (Vercel 재빌드 → 오늘자 예약 글 공개)
+      - name: 공개할 글이 있는지 확인
+        id: check
         run: |
-          DATE=$(date -u +%F)
-          echo "last daily publish check: ${DATE} (UTC)" > phone-site/data/.publish-log
+          TODAY=$(date -u +%F)
+          LOG=phone-site/data/.publish-log
+          LAST=$(grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' "$LOG" 2>/dev/null | tail -1)
+          LAST=${LAST:-0000-00-00}
+
+          # 마지막 트리거 이후 ~ 오늘 사이에 공개 시점이 된 글
+          DUE=$(grep -oE 'publishAt: "[0-9]{4}-[0-9]{2}-[0-9]{2}"' phone-site/lib/guides.ts \
+                | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' \
+                | awk -v t="$TODAY" -v l="$LAST" '$1 <= t && $1 > l' | sort -u | tr '\n' ' ')
+
+          if [ -z "$DUE" ]; then
+            echo "공개할 새 글 없음 (마지막 트리거 ${LAST}, 오늘 ${TODAY}) — 빌드 생략"
+            echo "due=" >> "$GITHUB_OUTPUT"
+          else
+            echo "공개 대상: ${DUE}"
+            echo "due=${DUE}" >> "$GITHUB_OUTPUT"
+            echo "today=${TODAY}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 발행 트리거 커밋 (Vercel 재빌드 → 예약 글 공개)
+        if: steps.check.outputs.due != ''
+        run: |
+          TODAY=$(date -u +%F)
+          echo "last publish trigger: ${TODAY} (UTC) / released: ${{ steps.check.outputs.due }}" \
+            > phone-site/data/.publish-log
           git config user.name "phondex-bot"
           git config user.email "actions@github.com"
           git add phone-site/data/.publish-log
           if git diff --cached --quiet; then
-            git commit --allow-empty -m "chore: 일일 발행 체크 ${DATE}"
+            echo "변경 없음 — 커밋 생략"
           else
-            git commit -m "chore: 일일 발행 체크 ${DATE}"
+            git commit -m "chore: 예약 글 공개 ${{ steps.check.outputs.due }}"
+            git push
           fi
-          git push
