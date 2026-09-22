@@ -1,4 +1,29 @@
+"use client";
+
+import { useEffect, useRef } from "react";
 import { COUPANG } from "@/lib/site";
+
+type PartnersWindow = Window & {
+  PartnersCoupang?: { G: new (opts: Record<string, unknown>) => unknown };
+  __coupangGjs?: Promise<void>;
+};
+
+/** 쿠팡 공식 g.js 를 페이지당 한 번만 불러온다 */
+function loadGjs(): Promise<void> {
+  const w = window as PartnersWindow;
+  if (w.PartnersCoupang) return Promise.resolve();
+  if (!w.__coupangGjs) {
+    w.__coupangGjs = new Promise((resolve, reject) => {
+      const s = document.createElement("script");
+      s.src = "https://ads-partners.coupang.com/g.js";
+      s.async = true;
+      s.onload = () => resolve();
+      s.onerror = () => reject(new Error("coupang g.js load failed"));
+      document.head.appendChild(s);
+    });
+  }
+  return w.__coupangGjs;
+}
 
 /** 문서 성격별 안내 문구 — 검색해서 들어온 사람이 지금 고민하는 것에 맞춘다 */
 const CONTEXT_LABEL: Record<string, string> = {
@@ -14,28 +39,49 @@ const CONTEXT_LABEL: Record<string, string> = {
 };
 
 export default function CoupangBanner({ context }: { context?: string }) {
-  if (!COUPANG.bannerSrc) return null;
+  const ref = useRef<HTMLDivElement>(null);
+  const banner = COUPANG.banner;
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || !banner) return;
+    let cancelled = false;
+    loadGjs()
+      .then(() => {
+        const G = (window as PartnersWindow).PartnersCoupang?.G;
+        if (cancelled || !G || el.childElementCount > 0) return;
+        new G({
+          ...banner,
+          trackingCode: COUPANG.trackingCode,
+          tsource: "",
+          container: el,
+        });
+      })
+      .catch(() => {
+        /* 광고 차단기 등으로 로드 실패 시 조용히 비워둔다 */
+      });
+    return () => {
+      cancelled = true;
+      el.innerHTML = "";
+    };
+  }, [banner]);
+
+  if (!banner) return null;
   const label = (context && CONTEXT_LABEL[context]) ?? "관련 상품 둘러보기";
+
   return (
     <aside
       aria-label="쿠팡 파트너스 추천 상품"
       className="rounded-xl border border-hairline bg-card p-4 shadow-card"
     >
-      <p className="text-xs font-semibold text-mut">{label}</p>
-      <div className="mt-3 overflow-hidden rounded-lg">
-        <iframe
-          src={COUPANG.bannerSrc}
-          width="100%"
-          height={COUPANG.bannerHeight}
-          loading="lazy"
-          referrerPolicy="unsafe-url"
-          title="쿠팡 추천 상품"
-          className="block w-full border-0"
-        />
-      </div>
-      <p className="mt-2.5 text-[11px] leading-4 text-mut">
+      <p className="text-[13px] font-medium leading-5 text-ink">
         {COUPANG.disclosure}
       </p>
+      <p className="mt-2.5 text-xs font-semibold text-sub">{label}</p>
+      {/* 배너 폭 680px 고정 — 모바일에선 좌우로 밀어서 본다 */}
+      <div className="mt-2 overflow-x-auto">
+        <div ref={ref} style={{ minHeight: Number(banner.height) }} />
+      </div>
     </aside>
   );
 }

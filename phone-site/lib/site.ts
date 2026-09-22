@@ -21,13 +21,18 @@ export const NAVER_VERIFICATION = process.env.NEXT_PUBLIC_NAVER_VERIFICATION; //
 
 /**
  * 쿠팡 파트너스. 트래킹 코드(파트너 ID)는 모든 제휴 링크에 노출되는 공개값.
- * bannerSrc 는 파트너스 대시보드 → 다이나믹 배너 → iframe 코드의 src.
- * 비어 있으면 배너 슬롯을 렌더하지 않는다.
+ * banner 는 파트너스 대시보드 → 다이나믹 배너에서 발급한 코드의 값 그대로.
+ * banner 가 null 이면 배너·고지 문구를 모두 렌더하지 않는다.
  */
 export const COUPANG = {
   trackingCode: "AF4727666",
-  bannerSrc: "",
-  bannerHeight: 140,
+  banner: {
+    id: 1031998,
+    template: "carousel",
+    width: "680",
+    height: "140",
+  } as { id: number; template: string; width: string; height: string } | null,
+  /** 공정위 추천보증 심사지침 · 쿠팡 파트너스 가이드 지정 문구 (변형 금지) */
   disclosure:
     "이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
 } as const;
