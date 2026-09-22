@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 export const SITE_NAME = "폰덱스";
 export const SITE_NAME_EN = "Phondex";
 export const SITE_TAGLINE = "휴대폰 결정 사전";
@@ -93,9 +95,21 @@ export const DOC_TYPES = [
 export type DocTypeKey = (typeof DOC_TYPES)[number]["key"];
 
 /**
- * 검색 색인에서 제외하는 문서 유형 — 중복성 높은 계산기·링크 페이지.
- * 사용자는 메인 기종 페이지에서 계속 접근 가능. sitemap 제외 + 각 페이지 robots:{index:false} 와 일치.
- * (used-check 은 DOC_TYPES 밖이라 sitemap 에서 별도로 이미 제외됨)
+ * 구글에만 noindex, 네이버(Yeti) 등 다른 검색엔진엔 공개.
+ * 구글은 템플릿성 기종 문서를 저가치로 판정했지만 네이버는 같은 페이지로 유입을 주기 때문.
+ */
+export const ROBOTS_NAVER_ONLY: Metadata["robots"] = {
+  index: true,
+  follow: true,
+  googleBot: { index: false, follow: true },
+};
+
+/** 네이버 전용 사이트맵에 추가로 싣는 문서 유형 (구글 sitemap 에서는 제외) */
+export const NAVER_EXTRA_DOC_KEYS = ["tco", "care", "sell", "resale"] as const;
+
+/**
+ * 구글용 sitemap.xml 에서 제외하는 문서 유형.
+ * buy 는 전 검색엔진 noindex, 나머지(tco·care·sell·resale)는 구글만 noindex(ROBOTS_NAVER_ONLY).
  */
 export const NOINDEX_DOC_KEYS: DocTypeKey[] = [
   "buy",
