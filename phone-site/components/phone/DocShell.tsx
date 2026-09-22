@@ -1,3 +1,4 @@
+import CoupangBanner from "@/components/ads/CoupangBanner";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { DOC_TYPES, type DocTypeKey } from "@/lib/site";
@@ -104,7 +105,10 @@ export default function DocShell({
         )}
       </header>
 
-      <div className="mt-8 space-y-10">{children}</div>
+      <div className="mt-8 space-y-10">
+        {children}
+        <CoupangBanner context={docKey} />
+      </div>
     </div>
   );
 }

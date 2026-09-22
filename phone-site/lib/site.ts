@@ -19,6 +19,19 @@ export const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT; // 예: ca
 export const GSC_VERIFICATION = process.env.NEXT_PUBLIC_GSC_VERIFICATION; // Search Console HTML 태그 방식 토큰
 export const NAVER_VERIFICATION = process.env.NEXT_PUBLIC_NAVER_VERIFICATION; // 네이버 서치어드바이저 토큰
 
+/**
+ * 쿠팡 파트너스. 트래킹 코드(파트너 ID)는 모든 제휴 링크에 노출되는 공개값.
+ * bannerSrc 는 파트너스 대시보드 → 다이나믹 배너 → iframe 코드의 src.
+ * 비어 있으면 배너 슬롯을 렌더하지 않는다.
+ */
+export const COUPANG = {
+  trackingCode: "AF4727666",
+  bannerSrc: "",
+  bannerHeight: 140,
+  disclosure:
+    "이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+} as const;
+
 /** 푸터 하단 법적/정보 링크 */
 export const INFO_LINKS = [
   { href: "/about", label: "소개" },
