@@ -1,4 +1,3 @@
-import CoupangDisclosure from "@/components/ads/CoupangDisclosure";
 import CoupangBanner from "@/components/ads/CoupangBanner";
 import Link from "next/link";
 import type { ReactNode } from "react";
@@ -107,7 +106,6 @@ export default function DocShell({
       </header>
 
       <div className="mt-8 space-y-10">
-        <CoupangDisclosure />
         {children}
         <CoupangBanner context={docKey} />
       </div>

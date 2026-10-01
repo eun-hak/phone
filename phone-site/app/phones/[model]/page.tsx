@@ -29,7 +29,6 @@ import PhoneMedia from "@/components/phone/PhoneMedia";
 import { getPhoneImage } from "@/lib/phoneImages";
 import JsonLd from "@/components/seo/JsonLd";
 import CoupangBanner from "@/components/ads/CoupangBanner";
-import CoupangDisclosure from "@/components/ads/CoupangDisclosure";
 import { buildUsedCheck } from "@/lib/usedCheck";
 
 export const revalidate = 86400;
@@ -208,10 +207,6 @@ export default async function PhoneHubPage({
           sizePx={224}
         />
       </header>
-
-      <div className="mt-5">
-        <CoupangDisclosure />
-      </div>
 
       {/* 결정 요약 */}
       <section
