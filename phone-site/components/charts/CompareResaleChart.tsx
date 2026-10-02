@@ -30,7 +30,7 @@ export default function CompareResaleChart({
 }: {
   series: [Series, Series];
 }) {
-  const prepared = series.map((s) => {
+  const prepared0 = series.map((s) => {
     const sorted = [...s.points].sort((a, b) => a.date.localeCompare(b.date));
     return {
       name: s.name,
@@ -40,6 +40,29 @@ export default function CompareResaleChart({
       })),
     };
   });
+
+  // 두 기종의 기록 시점이 다를 수 있다(한쪽만 수집된 달이 존재).
+  // 인덱스로 맞추면 서로 다른 달이 같은 x에 겹치고, 개수가 다르면 참조가 깨진다.
+  // 그래서 공통으로 존재하는 날짜만 뽑아 날짜 기준으로 정렬한다.
+  const commonDates = prepared0[0].values
+    .map((v) => v.date)
+    .filter((d) => prepared0[1].values.some((v) => v.date === d));
+
+  if (commonDates.length < 2) {
+    return (
+      <p className="text-sm leading-6 text-sub">
+        두 기종의 시세 기록이 겹치는 구간이 부족해 추이 비교를 표시할 수
+        없습니다. 아래 표에서 각 기종의 현재 잔존가치를 확인하세요.
+      </p>
+    );
+  }
+
+  const prepared = prepared0.map((s) => ({
+    name: s.name,
+    values: commonDates.map(
+      (d) => s.values.find((v) => v.date === d) as { date: string; pct: number },
+    ),
+  }));
 
   const allPcts = prepared.flatMap((s) => s.values.map((v) => v.pct));
   const lo = Math.max(0, Math.floor((Math.min(...allPcts) - 4) / 10) * 10);
