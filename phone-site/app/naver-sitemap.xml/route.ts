@@ -1,12 +1,9 @@
 import sitemap from "@/app/sitemap";
-import { getAllPhones } from "@/lib/phones";
-import { NAVER_EXTRA_DOC_KEYS, SITE_URL } from "@/lib/site";
+
 
 /**
- * 네이버 서치어드바이저 제출용 사이트맵.
- * 구글용 sitemap.xml 전체 + 구글에만 noindex 한 기종 문서(tco·care·sell·resale·used-check).
- * robots.txt 에는 올리지 않는다 — 구글이 읽으면 'noindex URL 제출' 경고가 생기므로
- * 네이버 서치어드바이저에서만 직접 제출한다.
+ * 네이버 서치어드바이저에 제출해 둔 주소. 검색엔진별 색인 분리를 해제한 뒤로는
+ * sitemap.xml 과 내용이 같다. 이미 제출된 URL 이라 404 가 나지 않도록 유지한다.
  */
 export const dynamic = "force-static";
 
@@ -16,14 +13,7 @@ const escapeXml = (s: string) =>
 export function GET() {
   const base = sitemap();
   const now = new Date();
-  const extra = getAllPhones().flatMap((p) =>
-    [...NAVER_EXTRA_DOC_KEYS, "used-check"].map((key) => ({
-      url: `${SITE_URL}/phones/${p.slug}/${key}`,
-      lastModified: now,
-    })),
-  );
-
-  const urls = [...base, ...extra]
+  const urls = base
     .map((e) => {
       const lastmod =
         e.lastModified instanceof Date

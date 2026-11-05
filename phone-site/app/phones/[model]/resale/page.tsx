@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { ROBOTS_NAVER_ONLY } from "@/lib/site";
 import { notFound } from "next/navigation";
 import { getAllPhones, getPhone } from "@/lib/phones";
 import { formatKRW, formatManwon, formatPct } from "@/lib/format";
@@ -32,7 +31,6 @@ export async function generateMetadata({
         : ""
     }.`,
     alternates: { canonical: `/phones/${model}/resale` },
-    robots: ROBOTS_NAVER_ONLY,
   };
 }
 

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { ROBOTS_NAVER_ONLY } from "@/lib/site";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllPhones, getPhone } from "@/lib/phones";
@@ -35,7 +34,6 @@ export async function generateMetadata({
         : "시세 기록이 쌓이면 계산됩니다"
     }. 구매가에서 2년 뒤 예상 매도가를 뺀 순비용으로 계산합니다.`,
     alternates: { canonical: `/phones/${model}/tco` },
-    robots: ROBOTS_NAVER_ONLY,
   };
 }
 

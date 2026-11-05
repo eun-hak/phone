@@ -1,5 +1,3 @@
-import type { Metadata } from "next";
-
 export const SITE_NAME = "폰덱스";
 export const SITE_NAME_EN = "Phondex";
 export const SITE_TAGLINE = "휴대폰 결정 사전";
@@ -101,31 +99,6 @@ export const DOC_TYPES = [
 ] as const;
 
 export type DocTypeKey = (typeof DOC_TYPES)[number]["key"];
-
-/**
- * 구글에만 noindex, 네이버(Yeti) 등 다른 검색엔진엔 공개.
- * 구글은 템플릿성 기종 문서를 저가치로 판정했지만 네이버는 같은 페이지로 유입을 주기 때문.
- */
-export const ROBOTS_NAVER_ONLY: Metadata["robots"] = {
-  index: true,
-  follow: true,
-  googleBot: { index: false, follow: true },
-};
-
-/** 네이버 전용 사이트맵에 추가로 싣는 문서 유형 (구글 sitemap 에서는 제외) */
-export const NAVER_EXTRA_DOC_KEYS = ["tco", "care", "sell", "resale"] as const;
-
-/**
- * 구글용 sitemap.xml 에서 제외하는 문서 유형.
- * buy 는 전 검색엔진 noindex, 나머지(tco·care·sell·resale)는 구글만 noindex(ROBOTS_NAVER_ONLY).
- */
-export const NOINDEX_DOC_KEYS: DocTypeKey[] = [
-  "buy",
-  "tco",
-  "care",
-  "sell",
-  "resale",
-];
 
 /** 홈·허브에서 노출하는 인터랙티브 도구 목록 */
 export const TOOLS = [

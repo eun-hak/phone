@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { ROBOTS_NAVER_ONLY } from "@/lib/site";
 import { notFound } from "next/navigation";
 import { getAllPhones, getPhone } from "@/lib/phones";
 import { buildUsedCheck } from "@/lib/usedCheck";
@@ -31,7 +30,6 @@ export async function generateMetadata({
       phone.metrics.latestResale,
     )}, 활성화 잠금·IMEI까지 한 번에 점검하세요.`,
     alternates: { canonical: `/phones/${model}/used-check` },
-    robots: ROBOTS_NAVER_ONLY,
   };
 }
 
