@@ -53,8 +53,6 @@ export default function Footer() {
               확인하세요.
             </p>
             <p className="mt-2 text-xs leading-5 text-mut">
-              일부 외부 링크는 제휴 링크로, 구매 시 사이트에 수수료가 지급될 수
-              있습니다.{" "}
               <Link href="/privacy" className="underline hover:text-accent">
                 개인정보처리방침
               </Link>

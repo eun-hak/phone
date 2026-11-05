@@ -162,12 +162,6 @@ export default async function BuyPage({
           </div>
         </section>
 
-        <p className="rounded-lg bg-wash px-4 py-3 text-xs leading-5 text-mut">
-          위 쿠팡 링크는 제휴 링크가 될 수 있으며, 구매 시 사이트에 수수료가
-          지급될 수 있습니다. 링크 여부와 무관하게 내용은 동일한 기준으로
-          작성됩니다.
-        </p>
-
         <section aria-label="자주 묻는 질문">
           <h2 className="text-lg font-bold tracking-tight">자주 묻는 질문</h2>
           <dl className="mt-4 space-y-4">

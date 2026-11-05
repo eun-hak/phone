@@ -14,7 +14,9 @@ export const CONTACT_EMAIL = "qtree.comp@gmail.com";
 
 // 분석·광고·검색엔진 인증 — Vercel 환경변수로 주입 (없으면 미삽입)
 export const GA_ID = process.env.NEXT_PUBLIC_GA_ID; // 예: G-XXXXXXXXXX
-export const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT; // 예: ca-pub-2643737170468374
+// 애드센스 — plentyer.com 퍼블리셔 계정(루트 ads.txt 와 일치해야 서브도메인에 광고가 나간다).
+// 공개값이고, 옛 환경변수가 남아 덮어쓰는 사고를 막으려 코드에 고정한다.
+export const ADSENSE_CLIENT = "ca-pub-1410200096892996";
 // 검색엔진 소유 확인 토큰 — 페이지 소스에 노출되는 공개값이라 코드에 둔다.
 export const GSC_VERIFICATION = "nGLC6wqeingyxdWpDtTR9DKlBw7TNDT9A8_l8PrHWt0"; // Google Search Console
 export const NAVER_VERIFICATION = "5f0e3dd91ce9c220093f06d47127be51266f2a68"; // 네이버 서치어드바이저
@@ -24,24 +26,6 @@ export const BING_VERIFICATION = "112BB0292D8A2BCD2A6CA3E7C8C100B4"; // Bing Web
 export const GTM_ID = "GTM-T53ST4GG";
 /** 네이버 애널리틱스(wcslog) 계정 */
 export const NAVER_WA = "1e0110f973f4190";
-
-/**
- * 쿠팡 파트너스. 트래킹 코드(파트너 ID)는 모든 제휴 링크에 노출되는 공개값.
- * banner 는 파트너스 대시보드 → 다이나믹 배너에서 발급한 코드의 값 그대로.
- * banner 가 null 이면 배너·고지 문구를 모두 렌더하지 않는다.
- */
-export const COUPANG = {
-  trackingCode: "AF4727666",
-  banner: {
-    id: 1031998,
-    template: "carousel",
-    width: "680",
-    height: "140",
-  } as { id: number; template: string; width: string; height: string } | null,
-  /** 공정위 추천보증 심사지침 · 쿠팡 파트너스 가이드 지정 문구 (변형 금지) */
-  disclosure:
-    "이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
-} as const;
 
 /** 푸터 하단 법적/정보 링크 */
 export const INFO_LINKS = [

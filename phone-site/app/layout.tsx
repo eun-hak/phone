@@ -98,14 +98,12 @@ export default function RootLayout({
           </>
         ) : null}
 
-        {/* Google AdSense — NEXT_PUBLIC_ADSENSE_CLIENT 있을 때만 */}
-        {ADSENSE_CLIENT ? (
-          <Script
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
-            strategy="afterInteractive"
-            crossOrigin="anonymous"
-          />
-        ) : null}
+        {/* Google AdSense — 자동 광고(대시보드에서 배치 제어) */}
+        <Script
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
       </body>
     </html>
   );

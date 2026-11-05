@@ -28,7 +28,6 @@ import EolBar from "@/components/phone/EolBar";
 import PhoneMedia from "@/components/phone/PhoneMedia";
 import { getPhoneImage } from "@/lib/phoneImages";
 import JsonLd from "@/components/seo/JsonLd";
-import CoupangBanner from "@/components/ads/CoupangBanner";
 import { buildUsedCheck } from "@/lib/usedCheck";
 
 export const revalidate = 86400;
@@ -347,10 +346,6 @@ export default async function PhoneHubPage({
           ))}
         </div>
       </section>
-
-      <div className="mt-6">
-        <CoupangBanner context="buy" />
-      </div>
 
       {/* 중고 구매 체크리스트 CTA */}
       <section aria-label="중고 구매 체크리스트" className="mt-6">
