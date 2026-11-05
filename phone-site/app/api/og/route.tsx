@@ -165,7 +165,7 @@ export async function GET(req: Request) {
           }}
         >
           <span style={{ fontSize: "26px", fontWeight: 700, color: C.accent }}>
-            qtree.kr
+            phondex.plentyer.com
           </span>
           <span style={{ fontSize: "22px", color: C.mut }}>
             데이터로 고르는 휴대폰

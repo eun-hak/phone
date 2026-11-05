@@ -6,9 +6,8 @@ export const SITE_TAGLINE = "휴대폰 결정 사전";
 export const SITE_DESCRIPTION =
   "이 폰, 사도 될까? 기종별 업데이트 종료일·공식 수리비·알려진 이슈·구매 루트·중고 잔존가치부터 총소유비용·판매 타이밍까지 — 폰에 대한 모든 결정을 데이터로.";
 
-// 배포 도메인. Vercel 환경변수 NEXT_PUBLIC_SITE_URL 로 덮어쓸 수 있음.
-export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://qtree.kr";
+// 배포 도메인. qtree.kr 에서 이전했고, 옛 환경변수가 남아 덮어쓰는 사고를 막으려 코드에 고정한다.
+export const SITE_URL = "https://phondex.plentyer.com";
 
 // 연락처 — 필요 시 전용 주소로 교체
 export const CONTACT_EMAIL = "qtree.comp@gmail.com";

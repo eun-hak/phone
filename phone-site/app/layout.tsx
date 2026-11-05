@@ -42,6 +42,9 @@ export const metadata: Metadata = {
     images: defaultOg,
   },
   robots: { index: true, follow: true },
+  alternates: {
+    types: { "application/rss+xml": `${SITE_URL}/rss.xml` },
+  },
   // 검색엔진 소유 확인 (HTML 태그 방식)
   verification: {
     google: GSC_VERIFICATION,
