@@ -16,8 +16,15 @@ export const CONTACT_EMAIL = "qtree.comp@gmail.com";
 // 분석·광고·검색엔진 인증 — Vercel 환경변수로 주입 (없으면 미삽입)
 export const GA_ID = process.env.NEXT_PUBLIC_GA_ID; // 예: G-XXXXXXXXXX
 export const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT; // 예: ca-pub-2643737170468374
-export const GSC_VERIFICATION = process.env.NEXT_PUBLIC_GSC_VERIFICATION; // Search Console HTML 태그 방식 토큰
-export const NAVER_VERIFICATION = process.env.NEXT_PUBLIC_NAVER_VERIFICATION; // 네이버 서치어드바이저 토큰
+// 검색엔진 소유 확인 토큰 — 페이지 소스에 노출되는 공개값이라 코드에 둔다.
+export const GSC_VERIFICATION = "nGLC6wqeingyxdWpDtTR9DKlBw7TNDT9A8_l8PrHWt0"; // Google Search Console
+export const NAVER_VERIFICATION = "5f0e3dd91ce9c220093f06d47127be51266f2a68"; // 네이버 서치어드바이저
+export const BING_VERIFICATION = "112BB0292D8A2BCD2A6CA3E7C8C100B4"; // Bing Webmaster
+
+/** Google Tag Manager 컨테이너 */
+export const GTM_ID = "GTM-T53ST4GG";
+/** 네이버 애널리틱스(wcslog) 계정 */
+export const NAVER_WA = "1e0110f973f4190";
 
 /**
  * 쿠팡 파트너스. 트래킹 코드(파트너 ID)는 모든 제휴 링크에 노출되는 공개값.

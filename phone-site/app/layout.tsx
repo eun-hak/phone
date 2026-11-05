@@ -5,8 +5,10 @@ import Header from "@/components/site/Header";
 import Footer from "@/components/site/Footer";
 import {
   ADSENSE_CLIENT,
+  BING_VERIFICATION,
   GA_ID,
   GSC_VERIFICATION,
+  GTM_ID,
   NAVER_VERIFICATION,
   SITE_DESCRIPTION,
   SITE_NAME,
@@ -14,6 +16,7 @@ import {
   SITE_URL,
 } from "@/lib/site";
 import { ogImageMeta } from "@/lib/og";
+import NaverAnalytics from "@/components/analytics/NaverAnalytics";
 
 const defaultOg = ogImageMeta({
   title: "이 폰, 사도 될까요?",
@@ -39,12 +42,13 @@ export const metadata: Metadata = {
     images: defaultOg,
   },
   robots: { index: true, follow: true },
-  // 검색엔진 소유 확인 (HTML 태그 방식). 환경변수 없으면 미삽입.
+  // 검색엔진 소유 확인 (HTML 태그 방식)
   verification: {
-    ...(GSC_VERIFICATION ? { google: GSC_VERIFICATION } : {}),
-    ...(NAVER_VERIFICATION
-      ? { other: { "naver-site-verification": NAVER_VERIFICATION } }
-      : {}),
+    google: GSC_VERIFICATION,
+    other: {
+      "naver-site-verification": NAVER_VERIFICATION,
+      "msvalidate.01": BING_VERIFICATION,
+    },
   },
 };
 
@@ -65,6 +69,18 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+
+        {/* Google Tag Manager */}
+        <Script
+          src={`https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="gtm-init" strategy="afterInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());`}
+        </Script>
+
+        {/* 네이버 애널리틱스 */}
+        <NaverAnalytics />
 
         {/* Google Analytics 4 — NEXT_PUBLIC_GA_ID 있을 때만 */}
         {GA_ID ? (
